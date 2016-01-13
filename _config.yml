@@ -43,6 +43,10 @@ collections:
     title: "Backgrounds"
     permalink: /:collection/:title/
     output: true
+  feats:
+    title: "Feats"
+    permalink: /:collection/:title/
+    output: true
   classes:
     title: "Classes"
     permalink: /:collection/:title/
