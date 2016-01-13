@@ -2,7 +2,7 @@
 title: Antilife Shell
 classes:
   - Druid
-level: 5th
+level: 5
 school: Abjuration
 casting_time: 1 action
 range: Self (10 foot radius)

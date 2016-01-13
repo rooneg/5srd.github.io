@@ -7,7 +7,8 @@ school: Illusion
 casting_time: 1 action
 range: Touch
 components: V, S, M
-material_components: a small square of silk
+material_components:
+  - a small square of silk
 duration: 24 hours
 saving_throw: None
 ---
