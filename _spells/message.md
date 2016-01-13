@@ -2,6 +2,7 @@
 title: Message
 classes:
   - Bard
+  - Sorcerer
   - Wizard
 level: 0
 school: Transmutation

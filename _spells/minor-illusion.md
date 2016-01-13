@@ -2,7 +2,9 @@
 title: Minor Illusion
 classes:
   - Bard
+  - Sorcerer
   - Warlock
+  - Wizard
 level: 0
 school: Illusion
 casting_time: 1 action
