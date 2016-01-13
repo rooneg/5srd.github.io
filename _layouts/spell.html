@@ -1,0 +1,100 @@
+---
+layout: default
+---
+
+{% unless page.classes %}
+  <div class="alert alert-warning" role="alert">
+    This spell is missing classes.
+  </div>
+{% endunless %}
+
+{% unless page.level %}
+  <div class="alert alert-warning" role="alert">
+    This spell is missing a level.
+  </div>
+{% endunless %}
+
+{% unless page.school %}
+  <div class="alert alert-warning" role="alert">
+    This spell is missing a school.
+  </div>
+{% endunless %}
+
+{% unless page.casting_time %}
+  <div class="alert alert-warning" role="alert">
+    This spell is missing a casting time.
+  </div>
+{% endunless %}
+
+{% unless page.range %}
+  <div class="alert alert-warning" role="alert">
+    This spell is missing a range.
+  </div>
+{% endunless %}
+
+{% unless page.target or page.area %}
+  <div class="alert alert-warning" role="alert">
+    This spell is missing a target or area.
+  </div>
+{% endunless %}
+
+{% unless page.components %}
+  <div class="alert alert-warning" role="alert">
+    This spell is missing components.
+  </div>
+{% endunless %}
+
+{% unless page.duration %}
+  <div class="alert alert-warning" role="alert">
+    This spell is missing a duration.
+  </div>
+{% endunless %}
+
+{% unless page.saving_throw %}
+  <div class="alert alert-warning" role="alert">
+    This spell is missing a saving throw.
+  </div>
+{% endunless %}
+
+{% if page.classes or page.level or page.school %}
+  <h6>
+    {% if page.classes %}
+      {{ page.classes | array_to_sentence_string }}{% if page.level or page.school %},{% endif %}
+    {% endif %}
+    {% if page.level %}
+      {{ page.level }}{% if page.level %}{% if page.level == 1 %}st{% endif %}{% if page.level == 2 %}nd{% endif %}{% if page.level == 3 %}rd{% endif %}{% if page.level > 4 %}th{% endif %}-level{% endif %}
+    {% endif %}
+    {{ page.school }}
+  </h6>
+{% endif %}
+
+<dl>
+  {% if page.casting_time %}
+    <dt>Casting Time</dt>
+    <dd>{{ page.casting_time }}</dd>
+  {% endif %}
+
+  {% if page.range %}
+    <dt>Range</dt>
+    <dd>{{ page.range }}</dd>
+  {% endif %}
+
+  {% if page.components %}
+    <dt>Components</dt>
+    <dd>{{ page.components }} {% if page.material_components %}({{ page.material_components }}){% endif %}</dd>
+  {% endif %}
+
+  {% if page.duration %}
+    <dt>Duration</dt>
+    <dd>{{ page.duration }}</dd>
+  {% endif %}
+
+  {% if page.saving_throw %}
+    <dt>Saving Throw</dt>
+    <dd>{{ page.saving_throw }}</dd>
+  {% endif %}
+</dl>
+
+{{ content }}
+
+{% include oglnotice.html %}

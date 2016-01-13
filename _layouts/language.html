@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<dl class="dl-horizontal row">
+  <dt class="col-sm-3">Group</dt>
+  <dd class="col-sm-9">{{ page.group }}</dd>
+
+  <dt class="col-sm-3">Typical Speakers</dt>
+  <dd class="col-sm-9">{{ page.typical_speakers | array_to_sentence_string }}</dd>
+
+  <dt class="col-sm-3">Script</dt>
+  <dd class="col-sm-9">{{ page.script }}</dd>
+</dl>
+
+{{ content }}

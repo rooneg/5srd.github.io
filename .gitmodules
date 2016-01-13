@@ -14,3 +14,7 @@
 	path = vendor/html5shiv
 	url = https://github.com/aFarkas/html5shiv.git
 	branch = 3.7.3
+[submodule "jquery"]
+	path = vendor/jquery
+	url = https://github.com/jquery/jquery.git
+	branch = 2.2.0

@@ -24,6 +24,11 @@ defaults:
       type: spells
     values:
       layout: spell
+  - scope:
+      path: ""
+      type: languages
+    values:
+      layout: language
 
 collections:
   animals:
