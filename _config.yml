@@ -9,8 +9,11 @@ redcarpet:
 
 exclude:
   - CNAME
-  - vendor
   - README.md
+  - vendor/bootstrap/docs
+
+keep_files:
+  - vendor
 
 permalink: /:title/
 
