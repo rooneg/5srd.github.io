@@ -2,22 +2,8 @@
 title: Backgrounds
 permalink: /backgrounds/
 nav: true
+layout: backgrounds
 ---
-
-<div class="col-md-3 pull-md-right">
-  {% assign background_groups = site.backgrounds | group_by: 'group' %}
-  {% for background_group in background_groups %}
-  <table class="table table-sm">
-    <caption>{{ background_group.name | capitalize }} Backgrounds</caption>
-    <tbody>
-    {% for background in background_group.items %}
-      <tr>
-        <td><a href="{{ background.url }}">{{ background.title }}</a></td>
-    {% endfor %}
-    </tbody>
-  </table>
-  {% endfor %}
-</div>
 
 Every story has a beginning. Your character’s background reveals where you came from, how you became an adventurer, and your place in the world. Your fighter might have been a courageous knight or a grizzled soldier. Your wizard could have been a sage or an artisan. Your rogue might have gotten by as a guild thief or commanded audiences as a jester.
 

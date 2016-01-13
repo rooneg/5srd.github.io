@@ -1,0 +1,20 @@
+---
+layout: ogl-notice
+---
+
+<div class="col-md-3 pull-md-right">
+  {% assign background_groups = site.backgrounds | group_by: 'group' %}
+  {% for background_group in background_groups %}
+  <table class="table table-sm">
+    <caption>{{ background_group.name | capitalize }} Backgrounds</caption>
+    <tbody>
+    {% for background in background_group.items %}
+      <tr>
+        <td><a href="{{ background.url }}">{{ background.title }}</a></td>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% endfor %}
+</div>
+
+{{ content }}

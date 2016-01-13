@@ -1,31 +1,9 @@
 ---
 title: Languages
+permalink: /languages/
 nav: true
+layout: languages
 ---
-
-<div class="col-md-6 pull-md-right">
-  {% assign language_groups = site.languages | group_by: 'group' %}
-  {% for language_group in language_groups %}
-  <table class="table table-sm">
-    <caption>{{ language_group.name | capitalize }} Languages</caption>
-    <thead>
-      <tr>
-        <th>Language</th>
-        <th>Typical Speakers</th>
-        <th>Script</th>
-      </tr>
-    </thead>
-    <tbody>
-    {% for language in language_group.items %}
-      <tr>
-        <td><a href="{{ language.url }}">{{ language.title }}</a></td>
-        <td>{{ language.typical_speakers | array_to_sentence_string }}</td>
-        <td>{{ language.script }}</td>
-    {% endfor %}
-    </tbody>
-  </table>
-  {% endfor %}
-</div>
 
 Your race indicates the languages your character can speak by default, and your background might give you access to one or more additional languages of your choice. Note these languages on your character sheet.
 
