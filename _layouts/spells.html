@@ -14,9 +14,8 @@ layout: ogl-notice
 {% assign spellcaster_classes = spellcaster_classes | remove_first: '|' | split: '|' | sort %}
 
 {% for class in spellcaster_classes %}
-  <h2>{{ class }} Spells</h2>
-
   <table class="table table-responsive">
+    <caption>{{ class }} Spells</caption>
     <thead>
       <tr>
         <td>Spell</td>
