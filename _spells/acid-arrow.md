@@ -7,7 +7,6 @@ school: Evocation
 ritual: false
 casting_time: 1 action
 range: 90 feet
-target: ???
 components: V, S, M
 material_components:
   - powdered rhubarb leaf

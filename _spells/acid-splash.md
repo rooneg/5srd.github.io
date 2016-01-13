@@ -11,7 +11,7 @@ range: 60 feet
 target: One creature, or two creatures that are within 5 feet of each other
 components: V, S
 duration: Instantaneous
-saving_throw: Dexterity
+saving_throw: Dexterity negates
 ---
 
 You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage.
