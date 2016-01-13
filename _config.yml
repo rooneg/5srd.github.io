@@ -10,6 +10,7 @@ redcarpet:
 exclude:
   - CNAME
   - vendor
+  - README.md
 
 permalink: /:title/
 
