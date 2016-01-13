@@ -13,3 +13,7 @@ caption {
   color: rgb(55, 58, 60);
   font-weight: bold;
 }
+
+table th, table td {
+  padding: 0.25rem;
+}

@@ -21,7 +21,7 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: default
+      layout: ogl-notice
   - scope:
       path: ""
       type: spells
