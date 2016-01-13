@@ -2,22 +2,8 @@
 title: Races
 permalink: /races/
 nav: true
+layout: races
 ---
-
-<div class="col-md-3 pull-md-right">
-  {% assign race_groups = site.races | group_by: 'group' %}
-  {% for race_group in race_groups %}
-  <table class="table table-sm">
-    <caption>{{ race_group.name | capitalize }} Races</caption>
-    <tbody>
-    {% for race in race_group.items %}
-      <tr>
-        <td><a href="{{ race.url }}">{{ race.title }}</a></td>
-    {% endfor %}
-    </tbody>
-  </table>
-  {% endfor %}
-</div>
 
 The description of each race includes racial traits that are common to members of that race. The following entries appear among the traits of most races.
 
