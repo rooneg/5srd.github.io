@@ -1,0 +1,53 @@
+---
+layout: ogl-notice
+---
+
+{% assign mapped_class_list = site.spells | map: 'classes' %}
+{% assign spellcaster_classes = array[] %}
+{% for class_list in mapped_class_list %}
+  {% for this_class in class_list %}
+    {% unless spellcaster_classes contains this_class %}
+      {% capture spellcaster_classes %}{{ spellcaster_classes }}|{{ this_class }}{% endcapture %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+{% assign spellcaster_classes = spellcaster_classes | remove_first: '|' | split: '|' | sort %}
+
+{% for class in spellcaster_classes %}
+  <h2>{{ class }} Spells</h2>
+
+  <table class="table table-responsive">
+    <thead>
+      <tr>
+        <td>Spell</td>
+        <td>Classes</td>
+        <td>Level</td>
+        <td>School</td>
+        <td>Casting Time</td>
+        <td>Range</td>
+        <td>Components</td>
+        <td>Saving Throw</td>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% assign sorted_spells = site.spells | sort: 'title' | sort: 'level' %}
+      {% for spell in sorted_spells %}
+        {% if spell.classes contains class %}
+          <tr>
+            <td><i><a href="{{ spell.url }}">{{ spell.title | downcase }}</a></i></td>
+            <td>{{ spell.classes | array_to_sentence_string }}</td>
+            <td>{{ spell.level }}</td>
+            <td>{{ spell.school }}</td>
+            <td>{{ spell.casting_time }}</td>
+            <td>{{ spell.range }}</td>
+            <td>{{ spell.components }}</td>
+            <td>{{ spell.saving_throw }}</td>
+          </tr>
+        {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
+{% endfor %}
+
+{{ content }}

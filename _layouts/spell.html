@@ -32,12 +32,6 @@ layout: ogl-notice
   </div>
 {% endunless %}
 
-{% unless page.target or page.area %}
-  <div class="alert alert-warning" role="alert">
-    This spell is missing a target or area.
-  </div>
-{% endunless %}
-
 {% unless page.components %}
   <div class="alert alert-warning" role="alert">
     This spell is missing components.
@@ -56,42 +50,41 @@ layout: ogl-notice
   </div>
 {% endunless %}
 
-{% if page.classes or page.level or page.school %}
-  <h6>
-    {% if page.classes %}
-      {{ page.classes | array_to_sentence_string }}{% if page.level or page.school %},{% endif %}
-    {% endif %}
-    {% if page.level %}
-      {{ page.level }}{% if page.level %}{% if page.level == 1 %}st{% endif %}{% if page.level == 2 %}nd{% endif %}{% if page.level == 3 %}rd{% endif %}{% if page.level > 4 %}th{% endif %}-level{% endif %}
-    {% endif %}
-    {{ page.school }}
-  </h6>
-{% endif %}
 
-<dl>
+<dl class="dl-horizontal row">
+    <dt class="col-sm-3 col-md-2">Classes</dt>
+    <dd class="col-sm-9 col-md-10">
+      {{ page.classes | join: ', ' }}
+    </dd>
+
+  <dt class="col-sm-3 col-md-2">Classification</dt>
+  <dd class="col-sm-9 col-md-10">
+    {{ page.level }}{% if page.level %}{% case page.level %}{% when 1 %}st{% when 2 %}nd{% when 3 %}rd{% else %}th{% endcase %}-level{% endif %} {{ page.school }} {% if page.ritual %}(ritual){% endif %}
+  </dd>
+
   {% if page.casting_time %}
-    <dt>Casting Time</dt>
-    <dd>{{ page.casting_time }}</dd>
+    <dt class="col-sm-3 col-md-2">Casting Time</dt>
+    <dd class="col-sm-9 col-md-10">{{ page.casting_time }}</dd>
   {% endif %}
 
   {% if page.range %}
-    <dt>Range</dt>
-    <dd>{{ page.range }}</dd>
+    <dt class="col-sm-3 col-md-2">Range</dt>
+    <dd class="col-sm-9 col-md-10">{{ page.range }}</dd>
   {% endif %}
 
   {% if page.components %}
-    <dt>Components</dt>
-    <dd>{{ page.components }} {% if page.material_components %}({{ page.material_components }}){% endif %}</dd>
+    <dt class="col-sm-3 col-md-2">Components</dt>
+    <dd class="col-sm-9 col-md-10">{{ page.components }} {% if page.material_components %}({{ page.material_components | array_to_sentence_string }}){% endif %}</dd>
   {% endif %}
 
   {% if page.duration %}
-    <dt>Duration</dt>
-    <dd>{{ page.duration }}</dd>
+    <dt class="col-sm-3 col-md-2">Duration</dt>
+    <dd class="col-sm-9 col-md-10">{{ page.duration }}</dd>
   {% endif %}
 
   {% if page.saving_throw %}
-    <dt>Saving Throw</dt>
-    <dd>{{ page.saving_throw }}</dd>
+    <dt class="col-sm-3 col-md-2">Saving Throw</dt>
+    <dd class="col-sm-9 col-md-10">{{ page.saving_throw }}</dd>
   {% endif %}
 </dl>
 

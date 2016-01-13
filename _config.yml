@@ -75,3 +75,5 @@ collections:
     title: "Spells"
     permalink: /:collection/:title/
     output: true
+
+array: []
