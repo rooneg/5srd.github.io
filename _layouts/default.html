@@ -21,13 +21,20 @@
       <div class="container">
         <a class="navbar-brand" href="/">{{ site.title }}</a>
         <ul class="nav navbar-nav">
-          {% for page in site.pages %}
-            {% if page.nav %}
+          {% if page.collection %}
+            {% assign collection_url = page.collection | append: '/' | prepend: '/' %}
+            {% assign other_pages = site.pages | where: 'url', collection_url %}
+            {% for other_page in other_pages %}
               <li class="nav-item">
-                <a class="nav-link" href="{{ page.url }}">{{ page.title }}</a>
+                <a class="nav-link" href="{{ other_page.url }}">&raquo; {{ other_page.title }}</a>
               </li>
-            {% endif %}
-          {% endfor %}
+            {% endfor %}
+          {% endif %}
+          {% if page.url != "/index.html" %}
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ page.url }}">&raquo; {{ page.title }}</a>
+            </li>
+          {% endif %}
         </ul>
       </div>
     </nav>

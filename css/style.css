@@ -17,3 +17,11 @@ caption {
 table th, table td {
   padding: 0.25rem;
 }
+
+.navbar .navbar-nav .nav-item {
+  margin-left: 0.3rem;
+}
+
+.navbar .navbar-brand {
+  margin-right: 0;
+}
