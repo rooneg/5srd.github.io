@@ -34,7 +34,7 @@ speed: 30
 
 When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.
 
-After you use your breath weapon, you can’t use it again until you complete a short or long rest.
+After you use your breath weapon, you can't use it again until you complete a short or long rest.
 
 **Damage Resistance.** You have resistance to the damage type associated with your draconic ancestry.
 

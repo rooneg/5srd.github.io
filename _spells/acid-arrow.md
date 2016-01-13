@@ -11,7 +11,7 @@ target: ???
 components: V, S, M
 material_components:
   - powdered rhubarb leaf
-  - an adder’s stomach
+  - an adder's stomach
 duration: Instantaneous
 saving_throw: None
 ---

@@ -17,7 +17,7 @@ Many tieflings are indistinguishable from humans. Others have small horns, point
 
 **Speed.** Your base walking speed is 30 feet.
 
-**Darkvision.** Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.
+**Darkvision.** Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
 
 **Hellish Resistance.** You have resistance to fire damage.
 

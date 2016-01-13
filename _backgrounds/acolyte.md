@@ -30,22 +30,22 @@ Acolytes are shaped by their experience in temples or other religious communitie
 | 4  | Nothing can shake my optimistic attitude.                                                                          |
 | 5  | I quote (or misquote) sacred texts and proverbs in almost every situation.                                         |
 | 6  | I am tolerant (or intolerant) of other faiths and respect (or condemn) the worship of other gods.                  |
-| 7  | I’ve enjoyed fine food, drink, and high society among my temple’s elite. Rough living grates on me.                |
-| 8  | I’ve spent so long in the temple that I have little practical experience dealing with people in the outside world. |
+| 7  | I've enjoyed fine food, drink, and high society among my temple's elite. Rough living grates on me.                |
+| 8  | I've spent so long in the temple that I have little practical experience dealing with people in the outside world. |
 
 | d6 | Ideal                                                                                                                  |
 |:--:|:-----------------------------------------------------------------------------------------------------------------------|
 | 1  | Tradition. The ancient traditions of worship and sacrifice must be preserved and upheld. (Lawful)                      |
 | 2  | Charity. I always try to help those in need, no matter what the personal cost. (Good)                                  |
 | 3  | Change. We must help bring about the changes the gods are constantly working in the world. (Chaotic)                   |
-| 4  | Power. I hope to one day rise to the top of my faith’s religious hierarchy. (Lawful)                                   |
+| 4  | Power. I hope to one day rise to the top of my faith's religious hierarchy. (Lawful)                                   |
 | 5  | Faith. I trust that my deity will guide my actions. I have faith that if I work hard, things will go well. (Lawful)    |
-| 6  | Aspiration. I seek to prove myself worthy of my god’s favor by matching my actions against his or her teachings. (Any) |
+| 6  | Aspiration. I seek to prove myself worthy of my god's favor by matching my actions against his or her teachings. (Any) |
 
 | d6 | Flaw                                                                                          |
 |:--:|:----------------------------------------------------------------------------------------------|
 | 1  | I judge others harshly, and myself even more severely.                                        |
-| 2  | I put too much trust in those who wield power within my temple’s hierarchy.                   |
+| 2  | I put too much trust in those who wield power within my temple's hierarchy.                   |
 | 3  | My piety sometimes leads me to blindly trust those that profess faith in my god.              |
 | 4  | I am inflexible in my thinking.                                                               |
 | 5  | I am suspicious of strangers and expect the worst of them.                                    |
