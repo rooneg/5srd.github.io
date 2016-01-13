@@ -1,0 +1,16 @@
+[submodule "REM-unit-polyfill"]
+	path = vendor/REM-unit-polyfill
+	url = https://github.com/chuckcarpenter/REM-unit-polyfill.git
+	branch = v1.3.3
+[submodule "bootstrap"]
+	path = vendor/bootstrap
+	url = https://github.com/twbs/bootstrap.git
+	branch = v4.0.0-alpha.2
+[submodule "Respond"]
+	path = vendor/Respond
+	url = https://github.com/scottjehl/Respond.git
+	branch = 1.4.2
+[submodule "html5shiv"]
+	path = vendor/html5shiv
+	url = https://github.com/aFarkas/html5shiv.git
+	branch = 3.7.3
