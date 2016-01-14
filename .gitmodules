@@ -18,3 +18,6 @@
 	path = vendor/jquery
 	url = https://github.com/jquery/jquery.git
 	branch = 2.2.0
+[submodule "jekyll-table-of-contents"]
+	path = vendor/jekyll-table-of-contents
+	url = https://github.com/ghiculescu/jekyll-table-of-contents

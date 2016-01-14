@@ -19,6 +19,7 @@ starting_equipment:
   - leather armor
   - any simple weapon
   - two daggers
+has_spells: true
 ---
 
 | Level | Proficiency Bonus | Features                        | Cantrips Known | Spells Known | Spell Slots | Slot Level | Invocations Known |

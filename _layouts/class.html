@@ -43,3 +43,39 @@ layout: ogl-notice
 </dl>
 
 {{ content }}
+
+{% if page.has_spells %}
+  <h2 id="{{ page.title | downcase | uri_escape }}-spells">{{ page.title }} Spells</h2>
+
+  <table class="table table-responsive">
+    <caption>{{ page.title }} Spells</caption>
+    <thead>
+      <tr>
+        <th>Spell</th>
+        <th class="text-sm-center">Level</th>
+        <th>School</th>
+        <th>Casting Time</th>
+        <th>Range</th>
+        <th>Components</th>
+        <th>Saving Throw</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% assign sorted_spells = site.spells | sort: 'title' | sort: 'level' %}
+      {% for spell in sorted_spells %}
+        {% if spell.classes contains page.title %}
+          <tr>
+            <td><i><a href="{{ spell.url }}">{{ spell.title | downcase }}</a></i></td>
+            <td class="text-sm-center">{{ spell.level }}</td>
+            <td>{{ spell.school }}</td>
+            <td>{{ spell.casting_time }}</td>
+            <td>{{ spell.range }}</td>
+            <td>{{ spell.components }}</td>
+            <td>{{ spell.saving_throw }}</td>
+          </tr>
+        {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
+{% endif %}
