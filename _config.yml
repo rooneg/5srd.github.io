@@ -36,54 +36,50 @@ defaults:
       layout: class
   - scope:
       path: ""
-      type: spells
-    values:
-      layout: spell
-  - scope:
-      path: ""
       type: languages
     values:
       layout: language
+  - scope:
+      path: ""
+      type: spells
+    values:
+      layout: spell
 
 collections:
   animals:
-    title: "Animals"
     permalink: /:collection/:title/
     output: true
   backgrounds:
-    title: "Backgrounds"
     permalink: /:collection/:title/
     output: true
   feats:
-    title: "Feats"
     permalink: /:collection/:title/
     output: true
   classes:
-    title: "Classes"
+    permalink: /:collection/:title/
+    output: true
+  diseases:
     permalink: /:collection/:title/
     output: true
   languages:
-    title: "Languages"
     permalink: /:collection/:title/
     output: true
   magic-items:
-    title: "Magic Items"
     permalink: /:collection/:title/
     output: true
   monsters:
-    title: "Monsters"
     permalink: /:collection/:title/
     output: true
   npcs:
-    title: "NPCs"
     permalink: /:collection/:title/
     output: true
   races:
-    title: "Races"
     permalink: /:collection/:title/
     output: true
   spells:
-    title: "Spells"
+    permalink: /:collection/:title/
+    output: true
+  traps:
     permalink: /:collection/:title/
     output: true
 

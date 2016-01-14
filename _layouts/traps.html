@@ -1,0 +1,21 @@
+---
+layout: ogl-notice
+---
+
+<div class="col-md-3 pull-md-right">
+  {% assign trap_groups = site.traps | group_by: 'group' %}
+  {% for trap_group in trap_groups %}
+  <table class="table table-sm">
+    <caption>{{ trap_group.name | capitalize }} Traps</caption>
+    <tbody>
+    {% for trap in trap_group.items %}
+      <tr>
+        <td><a href="{{ trap.url }}">{{ trap.title }}</a></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% endfor %}
+</div>
+
+{{ content }}

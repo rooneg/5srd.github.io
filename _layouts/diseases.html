@@ -1,0 +1,21 @@
+---
+layout: ogl-notice
+---
+
+<div class="col-md-3 pull-md-right">
+  {% assign disease_groups = site.diseases | group_by: 'group' %}
+  {% for disease_group in disease_groups %}
+  <table class="table table-sm">
+    <caption>{{ disease_group.name | capitalize }} Diseases</caption>
+    <tbody>
+    {% for disease in disease_group.items %}
+      <tr>
+        <td><a href="{{ disease.url }}">{{ disease.title }}</a></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% endfor %}
+</div>
+
+{{ content }}
