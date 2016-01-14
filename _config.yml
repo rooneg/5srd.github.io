@@ -41,6 +41,11 @@ defaults:
       layout: language
   - scope:
       path: ""
+      type: poisons
+    values:
+      layout: poison
+  - scope:
+      path: ""
       type: spells
     values:
       layout: spell
@@ -71,6 +76,9 @@ collections:
     permalink: /:collection/:title/
     output: true
   npcs:
+    permalink: /:collection/:title/
+    output: true
+  poisons:
     permalink: /:collection/:title/
     output: true
   races:
