@@ -27,6 +27,17 @@ table th, table td {
   padding: 0.25rem;
 }
 
+.table-ability-scores thead th, .table-ability-scores tbody td {
+  border: none;
+  text-align: center;
+  padding: 0.25rem;
+}
+
+.dl-horizontal dt {
+  clear: both;
+  margin-bottom: 0.5rem;
+}
+
 .navbar .navbar-nav .nav-item {
   margin-left: 0.3rem;
 }

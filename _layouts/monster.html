@@ -1,0 +1,130 @@
+---
+layout: ogl-notice
+---
+
+{% assign str_bonus = page.str | divided_by: 2 | minus: 5 %}
+{% assign dex_bonus = page.dex | divided_by: 2 | minus: 5 %}
+{% assign con_bonus = page.con | divided_by: 2 | minus: 5 %}
+{% assign int_bonus = page.int | divided_by: 2 | minus: 5 %}
+{% assign wis_bonus = page.wis | divided_by: 2 | minus: 5 %}
+{% assign cha_bonus = page.cha | divided_by: 2 | minus: 5 %}
+{% assign hp_bonus = con_bonus | times: page.hd %}
+
+<div class="pull-left-md col-md-6">
+  <div class="card">
+    <div class="card-header">
+      <h4 class="card-title">{{ page.title }}</h4>
+      <h6 class="card-subtitle text-muted">{{ page.size | capitalize }} {{ page.type | downcase }}, {{ page.alignment | downcase }}</h6>
+    </div>
+    <div class="card-block">
+      <dl class="dl-horizontal row" style="margin-bottom: 0;">
+        <dt class="col-md-4 col-lg-3">Armor Class</dt>
+        <dd class="col-md-8 col-lg-9">{{ page.ac }} {% if page.natural_armor %}(natural armor){% endif %}</dd>
+
+        <dt class="col-md-4 col-lg-3">Hit Points</dt>
+        <dd class="col-md-8 col-lg-9">{{ page.hp }} ({{ page.hd }}d{{ page.hd_size }}{% if hp_bonus >= 0 %}+{% endif %}{{ hp_bonus }})</dd>
+
+        <dt class="col-md-4 col-lg-3">Speed</dt>
+        <dd class="col-md-8 col-lg-9">
+          {% for speed in page.speeds %}{% if speed.name != 'walk' %}{{ speed.name }}{% endif %} {{ speed.speed }} ft.{% unless forloop.last %}, {% endunless %}{% endfor %}
+        </dd>
+      </dl>
+
+      <table class="table table-ability-scores">
+        <thead>
+          <tr>
+            <th>Str</th>
+            <th>Dex</th>
+            <th>Con</th>
+            <th>Int</th>
+            <th>Wis</th>
+            <th>Cha</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ page.str }} ({% if str_bonus >= 0 %}+{% endif %}{{ str_bonus }})</td>
+            <td>{{ page.dex }} ({% if dex_bonus >= 0 %}+{% endif %}{{ dex_bonus }})</td>
+            <td>{{ page.con }} ({% if con_bonus >= 0 %}+{% endif %}{{ con_bonus }})</td>
+            <td>{{ page.int }} ({% if int_bonus >= 0 %}+{% endif %}{{ int_bonus }})</td>
+            <td>{{ page.wis }} ({% if wis_bonus >= 0 %}+{% endif %}{{ wis_bonus }})</td>
+            <td>{{ page.cha }} ({% if cha_bonus >= 0 %}+{% endif %}{{ cha_bonus }})</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <dl class="dl-horizontal row" style="margin-bottom: 0;">
+        {% if page.skills %}
+          <dt class="col-md-4 col-lg-3">Skills</dt>
+          <dd class="col-md-8 col-lg-9">{% for skill in page.skills %}{{ skill.name }} {% if skill.bonus >= 0 %}+{% else %}-{% endif %}{{ skill.bonus }}{% unless forloop.last %}, {% endunless %}{% endfor %}</dd>
+        {% endif %}
+
+        {% if page.damage_resistances %}
+          <dt class="col-md-4 col-lg-3">Damage Resistances</dt>
+          <dd class="col-md-8 col-lg-9">{{ page.damage_resistances | join: ', ' }}</dd>
+        {% endif %}
+
+        {% if page.damage_immunities %}
+          <dt class="col-md-4 col-lg-3">Damage Immunities</dt>
+          <dd class="col-md-8 col-lg-9">{{ page.damage_immunities | join: ', ' }}</dd>
+        {% endif %}
+
+        {% if page.condition_immunities %}
+          <dt class="col-md-4 col-lg-3">Condition Immunities</dt>
+          <dd class="col-md-8 col-lg-9">{{ page.condition_immunities | join: ', ' }}</dd>
+        {% endif %}
+
+        <dt class="col-md-4 col-lg-3">Senses</dt>
+        <dd class="col-md-8 col-lg-9">
+          {% for sense in page.senses %}{{ sense.name }} {{ sense.range }} ft.,{% endfor %}
+          passive Perception {{ page.skills | where: 'name', 'Perception' | map: 'bonus' | plus: 10 }}
+        </dd>
+
+        <dt class="col-md-4 col-lg-3">Languages</dt>
+        <dd class="col-md-8 col-lg-9">{% if page.languages %}{{ page.languages | join: ', ' }}{% else %}&mdash;{% endif %}</dd>
+
+        <dt class="col-md-4 col-lg-3">Challenge</dt>
+        <dd class="col-md-8 col-lg-9">
+          {% case page.challenge %}
+            {% when 0.125 %}
+              &#8539;
+            {% when 0.25 %}
+              &frac14;
+            {% when 0.5 %}
+              &frac12;
+            {% else %}
+              {{ page.challenge }}
+          {% endcase %}
+
+          ({{ site.challenge_xp | where: 'rating', page.challenge | map: 'xp' }} XP)
+        </dd>
+      </dl>
+    </div>
+
+    {% if page.special_traits %}
+      <div class="card-header">Special Traits</div>
+      <div class="card-block">
+        <dl style="margin-bottom: 0;">
+          {% for trait in page.special_traits %}
+            <dt>{{ trait.name }}</dt>
+            <dd>{{ trait.text | markdownify | remove: '<p>' | remove: '</p>' }}</dd>
+          {% endfor %}
+        </dl>
+      </div>
+    {% endif %}
+
+    {% if page.actions %}
+      <div class="card-header">Actions</div>
+      <div class="card-block">
+        <dl style="margin-bottom: 0;">
+          {% for action in page.actions %}
+            <dt>{{ action.name }}</dt>
+            <dd>{{ action.text | markdownify | remove: '<p>' | remove: '</p>' }}</dd>
+          {% endfor %}
+        </dl>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{{ content }}
