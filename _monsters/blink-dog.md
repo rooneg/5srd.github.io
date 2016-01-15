@@ -6,7 +6,6 @@ alignment: Lawful Good
 ac: 13
 hp: 22
 hd: 4
-hd_size: 8
 speeds:
   - name: walk
     speed: 40

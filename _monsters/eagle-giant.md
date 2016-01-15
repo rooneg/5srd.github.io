@@ -6,7 +6,6 @@ alignment: Neutral Good
 ac: 13
 hp: 26
 hd: 4
-hd_size: 10
 speeds:
   - name: walk
     speed: 10

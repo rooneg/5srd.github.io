@@ -98,6 +98,20 @@ collections:
 
 array: []
 
+hd_sizes:
+  - size: Tiny
+    hd_size: 4
+  - size: Small
+    hd_size: 6
+  - size: Medium
+    hd_size: 8
+  - size: Large
+    hd_size: 10
+  - size: Huge
+    hd_size: 12
+  - size: Gargantuan
+    hd_size: 20
+
 challenge_xp:
   - rating: 0
     xp: 0

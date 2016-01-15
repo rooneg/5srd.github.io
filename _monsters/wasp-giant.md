@@ -6,7 +6,6 @@ alignment: Unaligned
 ac: 12
 hp: 13
 hd: 3
-hd_size: 8
 speeds:
   - name: walk
     speed: 10

@@ -9,6 +9,7 @@ layout: ogl-notice
 {% assign wis_bonus = page.wis | divided_by: 2 | minus: 5 %}
 {% assign cha_bonus = page.cha | divided_by: 2 | minus: 5 %}
 {% assign hp_bonus = con_bonus | times: page.hd %}
+{% assign proficiency_bonus = page.hd | round | minus: 1 | divided_by: 4 | plus: 2 %}
 
 <div class="pull-left-md col-md-6">
   <div class="card">
@@ -22,7 +23,7 @@ layout: ogl-notice
         <dd class="col-md-8 col-lg-9">{{ page.ac }} {% if page.natural_armor %}(natural armor){% endif %}</dd>
 
         <dt class="col-md-4 col-lg-3">Hit Points</dt>
-        <dd class="col-md-8 col-lg-9">{{ page.hp }} ({{ page.hd }}d{{ page.hd_size }}{% if hp_bonus >= 0 %}+{% endif %}{{ hp_bonus }})</dd>
+        <dd class="col-md-8 col-lg-9">{{ page.hp }} ({{ page.hd }}d{{ site.hd_sizes | where: 'size', page.size | map: 'hd_size' }}{% if hp_bonus >= 0 %}+{% endif %}{{ hp_bonus }})</dd>
 
         <dt class="col-md-4 col-lg-3">Speed</dt>
         <dd class="col-md-8 col-lg-9">

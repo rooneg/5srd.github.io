@@ -7,7 +7,6 @@ ac: 13
 natural_armor: true
 hp: 4
 hd: 1
-hd_size: 6
 speeds:
   - name: walk
     speed: 30

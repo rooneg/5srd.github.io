@@ -6,7 +6,6 @@ alignment: Neutral Evil
 ac: 12
 hp: 39
 hd: 6
-hd_size: 8
 speeds:
   - name: walk
     speed: 40
