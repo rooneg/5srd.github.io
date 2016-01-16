@@ -194,7 +194,6 @@ tenets.
 
 You gain oath spells at the paladin levels listed.
 
-| Oath of Devotion Spells                                  |
 | Paladin Level | Spells                                   |
 |:--------------|:-----------------------------------------|
 |      3rd      | protection from evil and good, sanctuary |
