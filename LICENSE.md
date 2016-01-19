@@ -1,8 +1,20 @@
 ---
-title: OPEN GAME LICENSE Version 1.0a
+title: Legal Information
 permalink: /ogl/
 layout: no-ogl-notice
 ---
+
+Permission to copy, modify and distribute the files collectively comprising 5srd is granted solely through the  use of the Open Gaming License, Version 1.0a.
+
+This material is being released using the Open Gaming License Version 1.0a and you should read and understand the terms of that license before using this material.  
+
+The text of the Open Gaming License itself is not Open Game Content. Instructions on using the License are provided within the License itself.
+
+**Designation of Product Identity:** All company names and logos; all artwork, backgrounds, and logos; all trade dress, and graphic design elements. Any mechanics or other items which have previously been designated as Open Game Content or are in the public domain are not included in this declaration.
+
+**Declaration of Open Game Content:** All 5srd content not designated as Product Identity is declared Open Game Content as described in Section 1(d) of the Open Game License Version 1.0a.
+
+## OPEN GAME LICENSE Version 1.0a
 
 The following text is the property of Wizards of the Coast, Inc. and is Copyright 2000 Wizards of the Coast, Inc ("Wizards"). All Rights Reserved.
 
