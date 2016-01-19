@@ -1,0 +1,8 @@
+{% assign subclasses = site.subclasses | where: 'class', page.title | sort: 'title' %}
+{% if subclasses %}
+<ul>
+  {% for subclass in subclasses %}
+  <li><a href="{{ subclass.url }}">{{ subclass.title }}</a></li>
+  {% endfor %}
+</ul>
+{% endif %}

@@ -1,0 +1,38 @@
+---
+layout: ogl-notice
+---
+
+{% assign classes = site.classes | where: 'title', page.class %}
+<p>
+{% for class in classes %}
+  <a class="btn btn-secondary" href="{{ class.url }}"><span class="octicon octicon-chevron-left"></span>
+ {{ class.title }}</a>
+{% endfor %}
+</p>
+
+{{ content }}
+
+<h2 id="{{ page.title | append: ' Features' | slug}}">{{ page.title | append: ' Features' }}</h2>
+
+<table class="table" style="width: auto;">
+  <caption>{{ page.title }} Features</caption>
+  <thead>
+    <tr>
+      <th class="text-xs-center">Level</th>
+      <th>Feature</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for feature in page.features | sort: 'name' | sort: 'level' %}
+      <tr>
+        <td class="text-xs-center">{{ feature.level }}</td>
+        <td>{{ feature.name }}</td>
+      </tr>
+    {% endfor %}
+</table>
+
+{% for feature in page.features | sort: 'name' | sort: 'level' %}
+  <h3 id="{{ feature.name | slug }}">{{ feature.name }} <small class="text-muted">(Level {{ feature.level }})</small></h3>
+
+  {{ feature.text | markdownify }}
+{% endfor %}

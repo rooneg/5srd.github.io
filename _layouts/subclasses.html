@@ -1,0 +1,25 @@
+---
+layout: ogl-notice
+---
+
+<div class="col-md-4 pull-md-right">
+  {% assign subclass_groups = site.subclasses | group_by: 'class' | sort: 'name' %}
+  {% for subclass_group in subclass_groups %}
+    <div class="card">
+      <div class="card-block">
+        <table class="table table-sm">
+          <caption><a href="{{ site.classes | where: 'title', subclass_group.name | map: 'url' }}">{{ subclass_group.name | capitalize }}</a> Subclasses</caption>
+          <tbody>
+          {% for subclass in subclass_group.items %}
+            <tr>
+              <td><a href="{{ subclass.url }}">{{ subclass.title }}</a></td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+{{ content }}
