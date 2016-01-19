@@ -376,11 +376,10 @@ layout: ogl-notice
               {% for ability_score in page.ability_scores %}
                 <strong>{{ ability_score[0] | truncate: 3, '' }}</strong>
                 {% if page.saving_throw_proficiencies contains ability_score[0] %}
-                  {{ ability_score[1] | divided_by: 2 | minus: 5 | plus: proficiency_bonus | prepend: '+' | replace_first: '+-', '-' }}
+                  {{ ability_score[1] | divided_by: 2 | minus: 5 | plus: proficiency_bonus | prepend: '+' | replace_first: '+-', '-' }}{% unless forloop.last %}, {% endunless %}
                 {% else %}
-                  {{ ability_score[1] | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-' }}
+                  {{ ability_score[1] | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-' }}{% unless forloop.last %}, {% endunless %}
                 {% endif %}
-                {% unless forloop.last %}, {% endunless %}
               {% endfor %}
             </p>
 
