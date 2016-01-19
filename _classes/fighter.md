@@ -3,9 +3,11 @@ title: Fighter
 group: Standard
 hit_die: 10
 armor_proficiencies:
-  - All, Shields
+  - All
+  - Shields
 weapon_proficiencies:
-  - Simple, Martial
+  - Simple
+  - Martial
 tool_proficiencies:
 saving_throw_proficiencies:
   - Strength
@@ -79,7 +81,9 @@ You have a limited well of stamina that you can draw on to protect yourself from
 
 ### Martial Archetype
 
-At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques.  Choose Champion, Battle Master, or Eldritch Knight, all detailed at the end of the class description. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level.
+At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques. Different fighters choose different approaches to perfecting their fighting prowess. The martial archetype you choose to emulate reflects your approach. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level.
+
+{% include subclass_list.html %}
 
 ### Ability Score Improvement
 
@@ -91,29 +95,3 @@ Beginning at 5th level, you can attack twice, instead of once, whenever you take
 
 ### Indomitable
 Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can’t use this feature again until you finish a long rest.  You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level.
-
-## Martial Archetypes
-
-Different fighters choose different approaches to perfecting their fighting prowess. The martial archetype you choose to emulate reflects your approach.
-
-### Champion
-
-The archetypal Champion focuses on the development of raw physical power honed to deadly perfection. Those who model themselves on this archetype combine rigorous training with physical excellence to deal devastating blows.
-
-#### Improved Critical
-
-Beginning when you choose this archetype at 3rd level, your weapon attacks score a critical hit on a roll of 19 or 20.
-
-#### Remarkable Athlete
-
-Starting at 7th level, you can add half your proficiency bonus (round up) to any Strength, Dexterity, or Constitution check you make that doesn’t already use your proficiency bonus.  In addition, when you make a running long jump, the distance you can cover increases by a number of feet equal to your Strength modifier.
-
-#### Additional Fighting Style
-
-At 10th level, you can choose a second option from the Fighting Style class feature.
-
-#### Superior Critical
-Starting at 15th level, your weapon attacks score a critical hit on a roll of 18–20.
-
-#### Survivor
-At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left.  You don’t gain this benefit if you have 0 hit points.

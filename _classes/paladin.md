@@ -20,28 +20,28 @@ starting_equipment:
 has_spells: true
 ---
 
-| Level | Proficiency Bonus | Features                                   | 1st | 2nd | 3rd | 4th | 5th |
+| Level | Proficiency Bonus |                  Features                  | 1st | 2nd | 3rd | 4th | 5th |
 |:-----:|:-----------------:|:------------------------------------------:|:----|:---:|:---:|:---:|:---:|
-| 1st   |        +2         | Divine Sense, Lay on Hands                 |   ̶  |   ̶  |   ̶  |   ̶  |   ̶  |
-| 2nd   |        +2         | Fighting Style, Spellcasting, Divine Smite |  2  |   ̶  |   ̶  |   ̶  |   ̶  |
-| 3rd   |        +2         | Divine Health, Sacred Oath                 |  3  |   ̶  |   ̶  |   ̶  |   ̶  |
-| 4th   |        +2         | Ability Score Improvement                  |  3  |   ̶  |   ̶  |   ̶  |   ̶  |
-| 5th   |        +3         | Extra Attack                               |  4  |  2  |   ̶  |   ̶  |   ̶  |
-| 6th   |        +3         | Aura of Protection                         |  4  |  2  |   ̶  |   ̶  |   ̶  |
-| 7th   |        +3         | Sacred Oath feature                        |  4  |  3  |   ̶  |   ̶  |   ̶  |
-| 8th   |        +3         | Ability Score Improvement                  |  4  |  3  |   ̶  |   ̶  |   ̶  |
-| 9th   |        +4         |  ̶                                          |  4  |  3  |  2  |   ̶  |   ̶  |
-| 10th  |        +4         | Aura of Courage                            |  4  |  3  |  2  |   ̶  |   ̶  |
-| 11th  |        +4         | Improved Divine Smite                      |  4  |  3  |  3  |   ̶  |   ̶  |
-| 12th  |        +4         | Ability Score Improvement                  |  4  |  3  |  3  |   ̶  |   ̶  |
-| 13th  |        +5         |  ̶                                          |  4  |  3  |  3  |  1  |   ̶  |
-| 14th  |        +5         | Cleansing Touch                            |  4  |  3  |  3  |  1  |   ̶  |
-| 15th  |        +5         | Sacred Oath feature                        |  4  |  3  |  3  |  2  |   ̶  |
-| 16th  |        +5         | Ability Score Improvement                  |  4  |  3  |  3  |  2  |   ̶  |
-| 17th  |        +6         |  ̶                                          |  4  |  3  |  3  |  3  |  1  |
-| 18th  |        +6         | Aura improvements                          |  4  |  3  |  3  |  3  |  1  |
-| 19th  |        +6         | Ability Score Improvement                  |  4  |  3  |  3  |  3  |  2  |
-| 20th  |        +6         | Sacred Oath feature                        |  4  |  3  |  3  |  3  |  2  |
+|  1st  |        +2         |         Divine Sense, Lay on Hands         | ̶    |  ̶   |  ̶   |  ̶   |  ̶   |
+|  2nd  |        +2         | Fighting Style, Spellcasting, Divine Smite | 2   |  ̶   |  ̶   |  ̶   |  ̶   |
+|  3rd  |        +2         |         Divine Health, Sacred Oath         | 3   |  ̶   |  ̶   |  ̶   |  ̶   |
+|  4th  |        +2         |         Ability Score Improvement          | 3   |  ̶   |  ̶   |  ̶   |  ̶   |
+|  5th  |        +3         |                Extra Attack                | 4   |  2  |  ̶   |  ̶   |  ̶   |
+|  6th  |        +3         |             Aura of Protection             | 4   |  2  |  ̶   |  ̶   |  ̶   |
+|  7th  |        +3         |            Sacred Oath feature             | 4   |  3  |  ̶   |  ̶   |  ̶   |
+|  8th  |        +3         |         Ability Score Improvement          | 4   |  3  |  ̶   |  ̶   |  ̶   |
+|  9th  |        +4         |                      ̶                      | 4   |  3  |  2  |  ̶   |  ̶   |
+| 10th  |        +4         |              Aura of Courage               | 4   |  3  |  2  |  ̶   |  ̶   |
+| 11th  |        +4         |           Improved Divine Smite            | 4   |  3  |  3  |  ̶   |  ̶   |
+| 12th  |        +4         |         Ability Score Improvement          | 4   |  3  |  3  |  ̶   |  ̶   |
+| 13th  |        +5         |                      ̶                      | 4   |  3  |  3  |  1  |  ̶   |
+| 14th  |        +5         |              Cleansing Touch               | 4   |  3  |  3  |  1  |  ̶   |
+| 15th  |        +5         |            Sacred Oath feature             | 4   |  3  |  3  |  2  |  ̶   |
+| 16th  |        +5         |         Ability Score Improvement          | 4   |  3  |  3  |  2  |  ̶   |
+| 17th  |        +6         |                      ̶                      | 4   |  3  |  3  |  3  |  1  |
+| 18th  |        +6         |             Aura improvements              | 4   |  3  |  3  |  3  |  1  |
+| 19th  |        +6         |         Ability Score Improvement          | 4   |  3  |  3  |  3  |  2  |
+| 20th  |        +6         |            Sacred Oath feature             | 4   |  3  |  3  |  3  |  2  |
 
 ## Class Features
 
@@ -116,19 +116,21 @@ By 3rd level, the divine magic flowing through you makes you immune to disease.
 
 ### Sacred Oath
 
-When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose the Oath of Devotion, the Oath of the Ancients, or the Oath of Vengeance, all detailed at the end of the class description.
+When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Becoming a paladin involves taking vows that commit the paladin to the cause of righteousness, an active path of fighting wickedness. The final oath, taken when he or she reaches 3rd level, is the culmination of all the paladin’s training. Some characters with this class don’t consider themselves true paladins until they have reached 3rd level and made this oath. For others, the actual swearing of the oath is a formality, an official stamp on what has always been true in the paladin’s heart. Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.
 
-Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.
-
-### Oath Spells
-
-Each oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don’t count against the number of spells you can prepare each day.
-
-If you gain an oath spell that doesn’t appear on the paladin spell list, the spell is nonetheless a paladin spell for you.
+{% include subclass_list.html %}
 
 #### Channel Divinity
 
-Your oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.  When you use your Channel Divinity, you choose which option to use. You must then finish a short or long rest to use your Channel Divinity again.  Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your paladin spell save DC.
+Your oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it. When you use your Channel Divinity, you choose which option to use. You must then finish a short or long rest to use your Channel Divinity again. Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your paladin spell save DC.
+
+#### Breaking Your Oath
+
+A paladin tries to hold to the highest standards of conduct, but even the most virtuous paladin is fallible. Sometimes the right path proves too demanding, sometimes a situation calls for the lesser of two evils, and sometimes the heat of emotion causes a paladin to transgress his or her oath.
+
+A paladin who has broken a vow typically seeks absolution from a cleric who shares his or her faith or from another paladin of the same order. The paladin might spend an allnight vigil in prayer as a sign of penitence, or undertake a fast or similar act of self-denial. After a rite of confession and forgiveness, the paladin starts fresh.
+
+If a paladin willfully violates his or her oath and shows no sign of repentance, the consequences can be more serious.  At the GM’s discretion, an impenitent paladin might be forced to abandon this class and adopt another.
 
 ### Ability Score Improvement
 
@@ -159,83 +161,3 @@ By 11th level, you are so suffused with righteous might that all your melee weap
 Beginning at 14th level, you can use your action to end one spell on yourself or on one willing creature that you touch.
 
 You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain expended uses when you finish a long rest.
-
-## Sacred Oaths
-
-Becoming a paladin involves taking vows that commit the paladin to the cause of righteousness, an active path of fighting wickedness. The final oath, taken when he or she reaches 3rd level, is the culmination of all the paladin’s training. Some characters with this class don’t consider themselves true paladins until they have reached 3rd level and made this oath. For others, the actual swearing of the oath is a formality, an official stamp on what has always been true in the paladin’s heart.
-
-### Oath of Devotion
-The Oath of Devotion binds a paladin to the loftiest 
-ideals of justice, virtue, and order. Sometimes called 
-cavaliers, white knights, or holy warriors, these 
-paladins meet the ideal of the knight in shining 
-armor, acting with honor in pursuit of justice and the 
-greater good. They hold themselves to the highest 
-standards of conduct, and some, for better or worse, 
-hold the rest of the world to the same standards. 
-Many who swear this oath are devoted to gods of 
-law and good and use their gods’ tenets as the 
-measure of their devotion. They hold angels—the 
-perfect servants of good—as their ideals, and 
-incorporate images of angelic wings into their 
-helmets or coats of arms.
-
-#### Tenets of Devotion
-Though the exact words and strictures of the Oath of Devotion vary, paladins of this oath share these 
-tenets.
-
-*Honesty*. Don’t lie or cheat. Let your word be your promise.
-*Courage*. Never fear to act, though caution is wise.
-*Compassion*. Aid others, protect the weak, and punish those who threaten them. Show mercy to your foes, but temper it with wisdom.
-*Honor*. Treat others with fairness, and let your honorable deeds be an example to them. Do as much good as possible while causing the least amount of harm.
-*Duty*. Be responsible for your actions and their consequences, protect those entrusted to your care, and obey those who have just authority over you.
-
-#### Oath Spells
-
-You gain oath spells at the paladin levels listed.
-
-| Paladin Level | Spells                                   |
-|:--------------|:-----------------------------------------|
-|      3rd      | protection from evil and good, sanctuary |
-|      5th      | lesser restoration, zone of truth        |
-|      9th      | beacon of hope, dispel magic             |
-|     13th      | freedom of movement, guardian of faith   |
-|     17th      | commune, flame strike                    |
-
-#### Channel Divinity
-
-When you take this oath at 3rd level, you gain the following two Channel Divinity options.
-
-*Sacred Weapon*. As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.
-
-You can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends.
-
-*Turn the Unholy*. As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.
-
-A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.
-
-#### Aura of Devotion
-
-Starting at 7th level, you and friendly creatures within 10 feet of you can’t be charmed while you are conscious.
-
-At 18th level, the range of this aura increases to 30 feet.
-
-#### Purity of Spirit
-
-Beginning at 15th level, you are always under the effects of a protection from evil and good spell.
-
-#### Holy Nimbus
-
-At 20th level, as an action, you can emanate an aura of sunlight. For 1 minute, bright light shines from you in a 30-foot radius, and dim light shines 30 feet beyond that.
-
-Whenever an enemy creature starts its turn in the bright light, the creature takes 10 radiant damage.  In addition, for the duration, you have advantage on saving throws against spells cast by fiends or undead.
-
-Once you use this feature, you can’t use it again until you finish a long rest.
-
-## Breaking Your Oath
-
-A paladin tries to hold to the highest standards of conduct, but even the most virtuous paladin is fallible. Sometimes the right path proves too demanding, sometimes a situation calls for the lesser of two evils, and sometimes the heat of emotion causes a paladin to transgress his or her oath.
-
-A paladin who has broken a vow typically seeks absolution from a cleric who shares his or her faith or from another paladin of the same order. The paladin might spend an allnight vigil in prayer as a sign of penitence, or undertake a fast or similar act of self-denial. After a rite of confession and forgiveness, the paladin starts fresh.
-
-If a paladin willfully violates his or her oath and shows no sign of repentance, the consequences can be more serious.  At the GM’s discretion, an impenitent paladin might be forced to abandon this class and adopt another.

@@ -54,6 +54,11 @@ defaults:
       type: spells
     values:
       layout: spell
+  - scope:
+      path: ""
+      type: subclasses
+    values:
+      layout: subclass
 
 collections:
   animals:
@@ -91,6 +96,9 @@ collections:
     output: true
   spells:
     permalink: /:collection/:title/
+    output: true
+  subclasses:
+    permalink: /subclasses/:title/
     output: true
   traps:
     permalink: /:collection/:title/
