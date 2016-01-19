@@ -49,7 +49,7 @@ has_spells: false
 
 ### Fighting Style
 
-You adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.
+You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.
 
 #### Archery
 
@@ -87,11 +87,11 @@ At 3rd level, you choose an archetype that you strive to emulate in your combat 
 
 ### Ability Score Improvement
 
-When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.
+When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 ### Extra Attack
 
 Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.  The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.
 
 ### Indomitable
-Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can’t use this feature again until you finish a long rest.  You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level.
+Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest.  You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level.

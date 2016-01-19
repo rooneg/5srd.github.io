@@ -15,7 +15,7 @@ skill_proficiencies:
 starting_equipment:
   - (a) a light crossbow and 20 bolts or (b) any simple weapon
   - (a) a component pouch or (b) an arcane focus
-  - (a) a scholar’s pack or (b) a dungeoneer’s pack
+  - (a) a scholar's pack or (b) a dungeoneer's pack
   - leather armor
   - any simple weapon
   - two daggers
