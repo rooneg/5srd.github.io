@@ -33,8 +33,8 @@ layout: ogl-notice
       <div class="tab-pane active" id="stats-5srd" role="tabpanel">
         <div class="card">
           <div class="card-header">
-            <h4 class="card-title">{{ page.title }}</h4>
-            <h6 class="card-subtitle text-muted">{{ page.size | capitalize }} {{ page.type | downcase }}, {{ page.alignment | downcase }}</h6>
+            <p class="h5 card-text m-b-half"><strong>{{ page.title }}</strong></p>
+            <p class="card-text compact">{{ page.size | capitalize }} {{ page.type | downcase }}, {{ page.alignment | downcase }}</p>
           </div>
           <div class="card-block">
             <dl class="dl-horizontal row" style="margin-bottom: 0;">
@@ -182,11 +182,11 @@ layout: ogl-notice
       <div class="tab-pane" id="stats-5th" role="tabpanel">
         <div class="card stats-standard">
           <div class="card-block">
-            <h2 class="h4" style="font-variant: small-caps; margin-top: 0;">{{ page.title }}</h4>
+            <p class="h5 card-text compact font-smallcaps m-b-half">{{ page.title }}</p>
 
             <p class="card-text compact"><i>{{ page.size | capitalize }} {{ page.type | downcase }}{{ page.tags | join: ', ' | prepend: ' (' | append: ')' | remove_first: ' ()' }}, {{ page.alignment | downcase }}</i></p>
 
-            <hr style="margin-top: 0.25rem; margin-bottom: 0.25rem;">
+            <hr class="m-y-half">
 
             <p class="card-text compact">
               <b>Armor Class</b>
@@ -205,7 +205,7 @@ layout: ogl-notice
               {% for speed in page.speeds %}{% if speed.name != 'walk' %}{{ speed.name }}{% endif %} {{ speed.speed }} ft.{% unless forloop.last %}, {% endunless %}{% endfor %}
             </p>
 
-            <hr style="margin-top: 0.25rem; margin-bottom: 0.25rem;">
+            <hr class="m-y-half">
 
             <table style="width: 100%;">
               <tbody>
@@ -225,7 +225,7 @@ layout: ogl-notice
               </tbody>
             </table>
 
-            <hr style="margin-top: 0.25rem; margin-bottom: 0.25rem;">
+            <hr class="m-y-half">
 
             {% if page.saving_throw_proficiencies %}
               <p class="card-text compact">
@@ -287,7 +287,7 @@ layout: ogl-notice
             </p>
 
             {% if page.special_traits %}
-              <hr>
+              <hr class="m-y-half">
 
               {% for trait in page.special_traits %}
                 <p class="card-text">
@@ -298,9 +298,9 @@ layout: ogl-notice
             {% endif %}
 
             {% if page.actions %}
-              <h3 class="h5" style="font-variant: small-caps; margin-top: 1rem;">Actions</h6>
+              <p class="h5 m-y-half font-smallcaps">Actions</p>
 
-              <hr style="margin-top: 0; margin-bottom: 0.25rem;">
+              <hr class="m-t-0 m-b-half">
 
               {% for action in page.actions %}
                 <p class="card-text">
@@ -311,9 +311,9 @@ layout: ogl-notice
             {% endif %}
 
             {% if page.reactions %}
-              <h5 style="font-variant: small-caps; margin-top: 1rem;">Reactions</h6>
+              <p class="h5 m-t-1 font-smallcaps">Reactions</p>
 
-              <hr style="margin-top: 0; margin-bottom: 0.25rem;">
+              <hr class="m-t-0 m-b-1">
 
               {% for action in page.reactions %}
                 <p class="card-text">
@@ -324,9 +324,9 @@ layout: ogl-notice
             {% endif %}
 
             {% if page.legendary_actions %}
-              <h5 style="font-variant: small-caps; margin-top: 1rem;">Legendary Actions</h6>
+              <p class="h5 m-t-1 font-smallcaps">Legendary Actions</p>
 
-              <hr style="margin-top: 0; margin-bottom: 0.25rem;">
+              <hr class="m-t-0 m-b-1">
 
               <p class="card-text">The creature can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The creature regains spent legendary actions at the start of its turn.</p>
 
@@ -343,10 +343,10 @@ layout: ogl-notice
 
       <div class="tab-pane" id="stats-4th" role="tabpanel">
         <div class="card">
-          <div class="card-header">
-            <h2 class="h6 card-title compact">
-              {{ page.title }}
-              <span class="pull-xs-right">Level {% case page.challenge %}
+          <div class="card-header p-y-half">
+            <p class="card-text compact">
+              <strong>{{ page.title }}</strong>
+              <span class="pull-xs-right"><strong>Level {% case page.challenge %}
                 {% when 0.125 %}
                   &#8539;
                 {% when 0.25 %}
@@ -356,18 +356,18 @@ layout: ogl-notice
                 {% else %}
                   {{ page.challenge }}
               {% endcase %}
-              {% if page.legendary_actions %}Legendary{% endif %}</span>
-            </h2>
+              {% if page.legendary_actions %}Legendary{% endif %}</strong></span>
+            </p>
             <p class="card-text compact">
               {{ page.size | capitalize }} {{ page.type | downcase }}
-              <span class="pull-xs-right">{{ site.data.challenge_xp | where: 'rating', page.challenge | map: 'xp' | first}} XP</span>
+              <span class="pull-xs-right">XP {{ site.data.challenge_xp | where: 'rating', page.challenge | map: 'xp' | first}}</span>
             </p>
           </div>
-          <div class="card-block">
+          <div class="card-block p-y-half">
             <p class="card-text compact hanging">
               <strong>Initiative</strong> {{ page.ability_scores.Dexterity | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-'}}
 
-              <span class="pull-xs-right"><strong>Senses</strong> Perception {{ page.skills | where: 'name', 'Perception' | map: 'bonus' | first | prepend: '+' | remove_first: '+-' }}{% if page.senses %}; {% endif %}{% for sense in page.senses %}{{ sense.name }} {{ sense.range }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+              <span class="pull-xs-right"><strong>Senses</strong> Perception {{ page.skills | where: 'name', 'Perception' | map: 'bonus' | first | plus: 0 | prepend: '+' | remove_first: '+-' }}{% if page.senses %}; {% endif %}{% for sense in page.senses %}{{ sense.name }} {{ sense.range }}{% unless forloop.last %}, {% endunless %}{% endfor %}
             </p>
 
             <p class="card-text compact hanging"><strong>HP</strong> {{ page.hp }}</p>
@@ -402,42 +402,42 @@ layout: ogl-notice
           </div>
 
           {% for action in page.actions %}
-            <div class="card-header">
+            <div class="card-header p-y-half">
               <p class="card-text"><strong>{{ action.name | append: '' | markdownify | remove: '<p>' | remove: '</p>' }}</strong> (action)</p>
             </div>
-            <div class="card-block">
+            <div class="card-block p-y-half">
               {{ action.text | append: '' | markdownify }}
             </div>
           {% endfor %}
 
           {% for action in page.legendary_actions %}
-            <div class="card-header">
+            <div class="card-header p-y-half">
               <p class="card-text"><strong>{{ action.name | remove: '<p>' | remove: '</p>'  }}</strong> (legendary action)</p>
             </div>
-            <div class="card-block">
+            <div class="card-block p-y-half">
               {{ action.text | append: '' | markdownify }}
             </div>
           {% endfor %}
 
           {% for action in page.reactions %}
-            <div class="card-header">
+            <div class="card-header p-y-half">
               <p class="card-text"><strong>{{ action.name | remove: '<p>' | remove: '</p>'  }}</strong> (reaction)</p>
             </div>
-            <div class="card-block">
+            <div class="card-block p-y-half">
               {{ reaction.text | append: '' | markdownify }}
             </div>
           {% endfor %}
 
           {% for trait in page.special_traits %}
-            <div class="card-header">
+            <div class="card-header p-y-half">
               <p class="card-text"><strong>{{ trait.name | remove: '<p>' | remove: '</p>'  }}</strong></p>
             </div>
-            <div class="card-block">
+            <div class="card-block p-y-half">
               {{ trait.text | append: '' | markdownify }}
             </div>
           {% endfor %}
 
-          <div class="card-header">
+          <div class="card-header p-y-half">
             <p class="card-text compact hanging">
               <strong>Alignment</strong> {{ page.alignment }}
 
