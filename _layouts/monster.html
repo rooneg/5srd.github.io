@@ -19,10 +19,13 @@ layout: ogl-notice
         <a class="nav-link active" data-toggle="tab" href="#stats-5srd" role="tab">5srd</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#stats-standard" role="tab">Standard</a>
+        <a class="nav-link" data-toggle="tab" href="#stats-5th" role="tab">5th Era</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#stats-compact" role="tab">Compact</a>
+        <a class="nav-link" data-toggle="tab" href="#stats-4th" role="tab">4th Era</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#stats-1st" role="tab">1st Era</a>
       </li>
     </ul>
 
@@ -132,7 +135,7 @@ layout: ogl-notice
               <dl style="margin-bottom: 0;">
                 {% for trait in page.special_traits %}
                   <dt>{{ trait.name }}</dt>
-                  <dd>{{ trait.text | markdownify }}</dd>
+                  <dd>{{ trait.text | append: '' | markdownify }}</dd>
                 {% endfor %}
               </dl>
             </div>
@@ -144,7 +147,7 @@ layout: ogl-notice
               <dl style="margin-bottom: 0;">
                 {% for action in page.actions %}
                   <dt>{{ action.name }}</dt>
-                  <dd>{{ action.text | markdownify }}</dd>
+                  <dd>{{ action.text | append: '' | markdownify }}</dd>
                 {% endfor %}
               </dl>
             </div>
@@ -156,7 +159,7 @@ layout: ogl-notice
               <dl style="margin-bottom: 0;">
                 {% for action in page.reactions %}
                   <dt>{{ action.name }}</dt>
-                  <dd>{{ action.text | markdownify }}</dd>
+                  <dd>{{ action.text | append: '' | markdownify }}</dd>
                 {% endfor %}
               </dl>
             </div>
@@ -168,7 +171,7 @@ layout: ogl-notice
               <dl style="margin-bottom: 0;">
                 {% for action in page.legendary_actions %}
                   <dt>{{ action.name }}</dt>
-                  <dd>{{ action.text | markdownify }}</dd>
+                  <dd>{{ action.text | append: '' | markdownify }}</dd>
                 {% endfor %}
               </dl>
             </div>
@@ -176,10 +179,10 @@ layout: ogl-notice
         </div><!-- /.card -->
       </div>
 
-      <div class="tab-pane" id="stats-standard" role="tabpanel">
+      <div class="tab-pane" id="stats-5th" role="tabpanel">
         <div class="card stats-standard">
           <div class="card-block">
-            <h4 style="font-variant: small-caps;">{{ page.title }}</h4>
+            <h2 class="h4" style="font-variant: small-caps; margin-top: 0;">{{ page.title }}</h4>
 
             <p class="card-text compact"><i>{{ page.size | capitalize }} {{ page.type | downcase }}{{ page.tags | join: ', ' | prepend: ' (' | append: ')' | remove_first: ' ()' }}, {{ page.alignment | downcase }}</i></p>
 
@@ -289,20 +292,20 @@ layout: ogl-notice
               {% for trait in page.special_traits %}
                 <p class="card-text">
                   <b><i>{{ trait.name }}.</i></b>
-                  {{ trait.text | markdownify | remove_first: '<p>' }}
+                  {{ trait.text | append: '' | markdownify | remove_first: '<p>' }}
                 <!-- the missing /p is closed by markdownify -->
               {% endfor %}
             {% endif %}
 
             {% if page.actions %}
-              <h5 style="font-variant: small-caps; margin-top: 1rem;">Actions</h6>
+              <h3 class="h5" style="font-variant: small-caps; margin-top: 1rem;">Actions</h6>
 
               <hr style="margin-top: 0; margin-bottom: 0.25rem;">
 
               {% for action in page.actions %}
                 <p class="card-text">
                   <b><i>{{ action.name }}.</i></b>
-                  {{ action.text | markdownify | remove_first: '<p>' }}
+                  {{ action.text | append: '' | markdownify | remove_first: '<p>' }}
                 <!-- the missing /p is closed by markdownify -->
               {% endfor %}
             {% endif %}
@@ -315,7 +318,7 @@ layout: ogl-notice
               {% for action in page.reactions %}
                 <p class="card-text">
                   <b><i>{{ action.name }}.</i></b>
-                  {{ action.text | markdownify | remove_first: '<p>' }}
+                  {{ action.text | append: '' | markdownify | remove_first: '<p>' }}
                 <!-- the missing /p is closed by markdownify -->
               {% endfor %}
             {% endif %}
@@ -330,7 +333,7 @@ layout: ogl-notice
               {% for action in page.legendary_actions %}
                 <p class="card-text compact hanging">
                   <b>{{ action.name }}.</b>
-                  {{ action.text | markdownify | remove_first: '<p>' }}
+                  {{ action.text | append: '' | markdownify | remove_first: '<p>' }}
                 <!-- the missing /p is closed by markdownify -->
               {% endfor %}
             {% endif %}
@@ -338,7 +341,163 @@ layout: ogl-notice
         </div>
       </div>
 
-      <div class="tab-pane" id="stats-compact" role="tabpanel">
+      <div class="tab-pane" id="stats-4th" role="tabpanel">
+        <div class="card">
+          <div class="card-header">
+            <h2 class="h6 card-title compact">
+              {{ page.title }}
+              <span class="pull-xs-right">Level {% case page.challenge %}
+                {% when 0.125 %}
+                  &#8539;
+                {% when 0.25 %}
+                  &frac14;
+                {% when 0.5 %}
+                  &frac12;
+                {% else %}
+                  {{ page.challenge }}
+              {% endcase %}
+              {% if page.legendary_actions %}Legendary{% endif %}</span>
+            </h2>
+            <p class="card-text compact">
+              {{ page.size | capitalize }} {{ page.type | downcase }}
+              <span class="pull-xs-right">{{ site.data.challenge_xp | where: 'rating', page.challenge | map: 'xp' }} XP</span>
+            </p>
+          </div>
+          <div class="card-block">
+            <p class="card-text compact hanging">
+              <strong>Initiative</strong> {{ page.ability_scores.Dexterity | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-'}}
+
+              <span class="pull-xs-right"><strong>Senses</strong> Perception {{ page.skills | where: 'name', 'Perception' | map: 'bonus' | plus: 0 | prepend: '+' | remove_first: '+-' }}{% if page.senses %}; {% endif %}{% for sense in page.senses %}{{ sense.name }} {{ sense.range }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+            </p>
+
+            <p class="card-text compact hanging"><strong>HP</strong> {{ page.hp }}</p>
+
+            <p class="card-text compact hanging"><strong>AC</strong> {{ page.armor_class }};
+              {% for ability_score in page.ability_scores %}
+                <strong>{{ ability_score[0] | truncate: 3, '' }}</strong>
+                {% if page.saving_throw_proficiencies contains ability_score[0] %}
+                  {{ ability_score[1] | divided_by: 2 | minus: 5 | plus: proficiency_bonus | prepend: '+' | replace_first: '+-', '-' }}
+                {% else %}
+                  {{ ability_score[1] | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-' }}
+                {% endif %}
+                {% unless forloop.last %}, {% endunless %}
+              {% endfor %}
+            </p>
+
+            {% if page.damage_immunities or page.condition_immunities or page.damage_resistances %}
+              <p class="card-text compact hanging">
+                {% if page.damage_immunities or page.condition_immunities %}
+                  <strong>Immune</strong> {% if page.damage_immunities %}{{ page.damage_immunities | array_to_sentence_string }}{% endif %}{% if page.damage_immunities and page.condition_immunities %}; {% endif %} {% if page.condition_immunities %}{{ page.condition_immunities | array_to_sentence_string }}{% endif %}{% if page.damage_resistances %}; {% endif %}
+                {% endif %}
+
+                {% if page.damage_resistances %}
+                  <strong>Resist</strong> {{ page.damage_resistances | array_to_sentence_string }}
+                {% endif %}
+              </p>
+            {% endif %}
+
+            <p class="card-text compact hanging">
+              <strong>Speed</strong> {% for speed in page.speeds %}{% if speed.name != 'walk' %}{{ speed.name }}{% endif %} {{ speed.speed | divided_by: 5 }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+            </p>
+          </div>
+
+          {% for action in page.actions %}
+            <div class="card-header">
+              <p class="card-text"><strong>{{ action.name | append: '' | markdownify | remove: '<p>' | remove: '</p>' }}</strong> (action)</p>
+            </div>
+            <div class="card-block">
+              {{ action.text | append: '' | markdownify }}
+            </div>
+          {% endfor %}
+
+          {% for action in page.legendary_actions %}
+            <div class="card-header">
+              <p class="card-text"><strong>{{ action.name | remove: '<p>' | remove: '</p>'  }}</strong> (legendary action)</p>
+            </div>
+            <div class="card-block">
+              {{ action.text | append: '' | markdownify }}
+            </div>
+          {% endfor %}
+
+          {% for action in page.reactions %}
+            <div class="card-header">
+              <p class="card-text"><strong>{{ action.name | remove: '<p>' | remove: '</p>'  }}</strong> (reaction)</p>
+            </div>
+            <div class="card-block">
+              {{ reaction.text | append: '' | markdownify }}
+            </div>
+          {% endfor %}
+
+          {% for trait in page.special_traits %}
+            <div class="card-header">
+              <p class="card-text"><strong>{{ trait.name | remove: '<p>' | remove: '</p>'  }}</strong></p>
+            </div>
+            <div class="card-block">
+              {{ trait.text | append: '' | markdownify }}
+            </div>
+          {% endfor %}
+
+          <div class="card-header">
+            <p class="card-text compact hanging">
+              <strong>Alignment</strong> {{ page.alignment }}
+
+              <span class="pull-xs-right">
+                <strong>Languages</strong>
+                {% if page.languages %}
+                  {{ page.languages | array_to_sentence_string }}
+                {% else %}
+                  &mdash;
+                {% endif %}
+              </span>
+            </p>
+
+            {% if page.skills %}
+              <p class="card-text compact hanging">
+                <strong>Skills</strong>
+
+                {% for skill in page.skills %}{{ skill.name }} {% if skill.bonus >= 0 %}+{% else %}-{% endif %}{{ skill.bonus }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+              </p>
+            {% endif %}
+
+            <div class="row">
+              <div class="col-xs-4">
+                <strong>Str</strong>
+                {{ page.ability_scores.Strength }}
+                ({{ page.ability_scores.Strength | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-'}})
+              </div>
+              <div class="col-xs-4">
+                <strong>Dex</strong>
+                {{ page.ability_scores.Dexterity }}
+                ({{ page.ability_scores.Dexterity | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-'}})
+              </div>
+              <div class="col-xs-4">
+                <strong>Wis</strong>
+                {{ page.ability_scores.Wisdom }}
+                ({{ page.ability_scores.Wisdom | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-'}})
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4">
+                <strong>Con</strong>
+                {{ page.ability_scores.Constitution }}
+                ({{ page.ability_scores.Constitution | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-'}})
+              </div>
+              <div class="col-xs-4">
+                <strong>Int</strong>
+                {{ page.ability_scores.Intelligence }}
+                ({{ page.ability_scores.Intelligence | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-'}})
+              </div>
+              <div class="col-xs-4">
+                <strong>Cha</strong>
+                {{ page.ability_scores.Charisma }}
+                ({{ page.ability_scores.Charisma | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-'}})
+              </div><!-- /.col -->
+            </div><!-- /.row -->
+          </div><!-- /.card-header -->
+        </div><!-- /.card -->
+      </div><!-- /.tab-pane -->
+
+      <div class="tab-pane" id="stats-1st" role="tabpanel">
         <div class="card">
           <div class="card-block">
             <p class="card-text">
@@ -364,12 +523,12 @@ layout: ogl-notice
             </p>
 
             {% for action in page.actions %}
-              <p class="card-text"><b>{{ action.name }}</b> {{ action.text | markdownify | remove_first: '<p>' }}
+              <p class="card-text"><b>{{ action.name }}</b> {{ action.text | append: '' | markdownify | remove_first: '<p>' }}
               <!-- /p is closed by markdownify -->
             {% endfor %}
 
             {% for action in page.reactions %}
-              <p class="card-text"><b>{{ action.name }} (Reaction)</b> {{ action.text | markdownify | remove_first: '<p>' }}
+              <p class="card-text"><b>{{ action.name }} (Reaction)</b> {{ action.text | append: '' | markdownify | remove_first: '<p>' }}
               <!-- /p is closed by markdownify -->
             {% endfor %}
 
@@ -377,7 +536,7 @@ layout: ogl-notice
               <p class="card-text"><b>Legendary Actions (3/turn)</b></p>
               <ul class="unstyled">
                 {% for action in page.legendary_actions %}
-                  <li><i>{{ action.name }}</i> {{ action.text | markdownify }}</li>
+                  <li><i>{{ action.name }}</i> {{ action.text | append: '' | markdownify }}</li>
                   <!-- /p is closed by markdownify -->
                 {% endfor %}
               </ul>

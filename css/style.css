@@ -7,6 +7,14 @@ h2 {
   padding-bottom: 0.5rem;
 }
 
+h2.h1,
+h2.h3,
+h2.h4,
+h2.h5,
+h2.h6 {
+  border: none;
+}
+
 h3 {
   font-size: 1.2rem;
   margin-top: 1.5rem;
@@ -77,8 +85,18 @@ table th, table td {
   font-size: 0.95rem;
 }
 
-.stats-standard .compact {
+.card-title {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.card :last-child {
   margin-bottom: 0;
+}
+
+.card .compact {
+  margin-bottom: 0;
+  padding-top: 0;
 }
 
 .hanging {
