@@ -3,8 +3,8 @@ title: Sea Horse, Giant
 size: Large
 type: Beast
 alignment: Unaligned
-ac: 13
-natural_armor: true
+armor_class: 13
+armor_class_descriptor: natural armor
 hp: 16
 hd: 3
 speeds:
@@ -12,12 +12,13 @@ speeds:
     speed: 0
   - name: swim
     speed: 40
-str: 12
-dex: 15
-con: 11
-int: 2
-wis: 12
-cha: 5
+ability_scores:
+  Strength: 12
+  Dexterity: 15
+  Constitution: 11
+  Intelligence: 2
+  Wisdom: 12
+  Charisma: 5
 challenge: 0.5
 special_traits:
   - name: Charge
@@ -26,8 +27,12 @@ special_traits:
     text: The sea horse can breathe only underwater.
 actions:
   - name: Ram
-    text: >
+    text: |
       *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 4 (1d6 + 1) bludgeoning damage.
 ---
 
-Like their smaller kin, giant sea horses are shy, colorful fish with elongated bodies and curled tails. Aquatic elves train them as mounts.
+> **Source:** *Pathfinder Roleplaying Game Bestiary*.
+>
+> Giant seahorses are bear-sized versions of the common, harmless seahorse. Naturally docile and skittish, seahorses are easily trained to be mounts but are difficult to train for combat. They provide a smoother but slower ride than sharks or hippocampi.
+>
+> A giant seahorse is considered a quadruped for the purpose of carrying capacity. A light load for a giant seahorse is up to 500 pounds, a medium load is 1,000 pounds, and a heavy load is 1,600 pounds. It can drag 8,000 pounds.

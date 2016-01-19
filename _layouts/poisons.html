@@ -5,23 +5,27 @@ layout: ogl-notice
 <div class="col-md-3 pull-md-right">
   {% assign poison_types = site.poisons | group_by: 'type' | sort: 'name' %}
   {% for poison_type in poison_types %}
-  <table class="table table-sm">
-    <caption>{{ poison_type.name | capitalize }} Poisons</caption>
-    <thead>
-      <tr>
-        <th>Poison</th>
-        <th>DC</th>
-      </tr>
-    </thead>
-    <tbody>
-    {% for poison in poison_type.items %}
-      <tr>
-        <td><a href="{{ poison.url }}">{{ poison.title }}</a></td>
-        <td>{{ poison.saving_throw_dc }}</t>
-      </tr>
-    {% endfor %}
-    </tbody>
-  </table>
+    <div class="card">
+      <div class="card-block">
+        <table class="table table-sm">
+          <caption>{{ poison_type.name | capitalize }} Poisons</caption>
+          <thead>
+            <tr>
+              <th>Poison</th>
+              <th>DC</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for poison in poison_type.items %}
+            <tr>
+              <td><a href="{{ poison.url }}">{{ poison.title }}</a></td>
+              <td>{{ poison.saving_throw_dc }}</t>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
   {% endfor %}
 </div>
 

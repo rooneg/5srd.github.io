@@ -3,19 +3,20 @@ title: Boar, Giant
 size: Large
 type: Beast
 alignment: Unaligned
-ac: 12
-natural_armor: true
+armor_class: 12
+armor_class_descriptor: natural armor
 hp: 42
 hd: 5
 speeds:
   - name: walk
     speed: 40
-str: 17
-dex: 10
-con: 16
-int: 2
-wis: 7
-cha: 5
+ability_scores:
+  Strength: 17
+  Dexterity: 10
+  Constitution: 16
+  Intelligence: 2
+  Wisdom: 7
+  Charisma: 5
 challenge: 2
 special_traits:
   - name: Charge
@@ -24,6 +25,10 @@ special_traits:
     text: If the boar takes 10 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead.
 actions:
   - name: Tusk
-    text: >
+    text: |
       *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6 + 3) slashing damage.
 ---
+
+> **Source:** *Pathfinder Roleplaying Game Bestiary*.
+>
+> Whereas the boar is ill-tempered and generally unfriendly, the towering daeodon (known as the giant boar to most commoners and hunters) is legitimately hateful and violent. Although omnivorous like its smaller kin, the daeodon prefers to feed on flesh, and its razor-sharp tusks and keen eyesight make it particularly well suited as a predator. While the daeodon is primarily a scavenger, it isn't averse to attacking smaller creatures it encounters while searching for easier meals, or those who stumble unwittingly into its territory. Particularly brave or skilled [orcs](/monsters/orc/) are fond of using daeodons as mounts, and orc cavalry mounted on dire boars make for a fearsome force indeed. A typical adult daeodon is 10 feet long and 7 feet tall at the shoulder. It weighs approximately 2,000 pounds.

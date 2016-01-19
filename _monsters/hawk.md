@@ -3,7 +3,7 @@ title: Hawk
 size: Tiny
 type: Beast
 alignment: Unaligned
-ac: 13
+armor_class: 13
 hp: 1
 hd: 1
 speeds:
@@ -11,21 +11,26 @@ speeds:
     speed: 10
   - name: fly
     speed: 60
-str: 5
-dex: 16
-con: 8
-int: 2
-wis: 14
-cha: 6
+ability_scores:
+  Strength: 5
+  Dexterity: 16
+  Constitution: 8
+  Intelligence: 2
+  Wisdom: 14
+  Charisma: 6
 skills:
   - name: Perception
     bonus: 4
 challenge: 0
 special_traits:
   - name: Keen Sight
-    text: The hawk has advantage on Wisdom  (Perception) checks that rely on sight.
+    text: The hawk has advantage on Wisdom (Perception) checks that rely on sight.
 actions:
   - name: Talons
-    text: >
-      *Melee Weapon Attack:* +5 to hit, reach 5 ft.,  one target. *Hit:* 1 slashing damage.
+    text: |
+      *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 1 slashing damage.
 ---
+
+> **Source:** *Pathfinder Roleplaying Game Bestiary*.
+>
+> Falconers prize these majestic birds as trained hunting companions if raised from chicks and properly instructed.

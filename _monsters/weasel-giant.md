@@ -3,25 +3,26 @@ title: Weasel, Giant
 size: Medium
 type: Beast
 alignment: Unaligned
-ac: 13
+armor_class: 13
 hp: 9
 hd: 2
 speeds:
   - name: walk
     speed: 40
-str: 11
-dex: 16
-con: 10
-int: 4
-wis: 12
-cha: 5
+ability_scores:
+  Strength: 11
+  Dexterity: 16
+  Constitution: 10
+  Intelligence: 4
+  Wisdom: 12
+  Charisma: 5
 skills:
   - name: Perception
     bonus: 3
   - name: Stealth
     bonus: 5
 senses:
-  - name: Darkvision
+  - name: darkvision
     range: 60
 challenge: 0.125
 special_traits:
@@ -29,6 +30,12 @@ special_traits:
     text: The weasel has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 actions:
   - name: Bite
-    text: >
+    text: |
       *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 5 (1d4 + 3) piercing damage.
 ---
+
+> **Source:** *Pathfinder Roleplaying Game Bestiary 4*.
+>
+> Like their smaller cousins, giant weasels have long, slender bodies and short legs, and come in a variety of colors from reddish brown to snowy white. Giant weasels are active and tenacious predators, and have a reputation for being as clever as they are quick. Both highly aggressive and extremely territorial, they frequently attack creatures that are much larger than they are.
+>
+> Giant weasels are often trained to serve as guards and mounts by various Small humanoids. Adult giant weasels can grow to be 5 feet long, stand as high as 2-1/2 feet tall at the shoulder, and weigh up to 150 pounds.

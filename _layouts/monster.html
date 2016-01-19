@@ -9,123 +9,386 @@ layout: ogl-notice
 {% assign wis_bonus = page.wis | divided_by: 2 | minus: 5 %}
 {% assign cha_bonus = page.cha | divided_by: 2 | minus: 5 %}
 {% assign hp_bonus = con_bonus | times: page.hd %}
-{% assign proficiency_bonus = page.hd | round | minus: 1 | divided_by: 4 | plus: 2 %}
+{% assign proficiency_bonus = page.challenge | round | minus: 1 | divided_by: 4 | plus: 2 %}
+{% capture display_challenge %}{% case page.challenge %}{% when 0.125 %}&#8539;{% when 0.25 %}{% when 0.5 %}&frac12;{% else %}{{ page.challenge }}{% endcase %}{% endcapture %}
 
-<div class="pull-left-md col-md-6">
-  <div class="card">
-    <div class="card-header">
-      <h4 class="card-title">{{ page.title }}</h4>
-      <h6 class="card-subtitle text-muted">{{ page.size | capitalize }} {{ page.type | downcase }}, {{ page.alignment | downcase }}</h6>
-    </div>
-    <div class="card-block">
-      <dl class="dl-horizontal row" style="margin-bottom: 0;">
-        <dt class="col-md-4 col-lg-3">Armor Class</dt>
-        <dd class="col-md-8 col-lg-9">{{ page.ac }} {% if page.natural_armor %}(natural armor){% endif %}</dd>
+<div class="row">
+  <div class="col-md-6">
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#stats-5srd" role="tab">5srd</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#stats-standard" role="tab">Standard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#stats-compact" role="tab">Compact</a>
+      </li>
+    </ul>
 
-        <dt class="col-md-4 col-lg-3">Hit Points</dt>
-        <dd class="col-md-8 col-lg-9">{{ page.hp }} ({{ page.hd }}d{{ site.hd_sizes | where: 'size', page.size | map: 'hd_size' }}{% if hp_bonus >= 0 %}+{% endif %}{{ hp_bonus }})</dd>
+    <div class="tab-content">
+      <div class="tab-pane active" id="stats-5srd" role="tabpanel">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">{{ page.title }}</h4>
+            <h6 class="card-subtitle text-muted">{{ page.size | capitalize }} {{ page.type | downcase }}, {{ page.alignment | downcase }}</h6>
+          </div>
+          <div class="card-block">
+            <dl class="dl-horizontal row" style="margin-bottom: 0;">
+              <dt class="col-md-4 col-lg-3">Armor Class</dt>
+              <dd class="col-md-8 col-lg-9">{{ page.armor_class }} {% if page.armor_class_descriptor %}({{ page.armor_class_descriptor }}){% endif %}</dd>
 
-        <dt class="col-md-4 col-lg-3">Speed</dt>
-        <dd class="col-md-8 col-lg-9">
-          {% for speed in page.speeds %}{% if speed.name != 'walk' %}{{ speed.name }}{% endif %} {{ speed.speed }} ft.{% unless forloop.last %}, {% endunless %}{% endfor %}
-        </dd>
-      </dl>
+              <dt class="col-md-4 col-lg-3">Hit Points</dt>
+              <dd class="col-md-8 col-lg-9">{{ page.hp }} ({{ page.hd }}d{{ site.data.hd_sizes | where: 'size', page.size | map: 'hd_size' }}+{{ hp_bonus | prepend: '+' | remove_first: '+-' }})</dd>
 
-      <table class="table table-ability-scores">
-        <thead>
-          <tr>
-            <th>Str</th>
-            <th>Dex</th>
-            <th>Con</th>
-            <th>Int</th>
-            <th>Wis</th>
-            <th>Cha</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>{{ page.str }} ({% if str_bonus >= 0 %}+{% endif %}{{ str_bonus }})</td>
-            <td>{{ page.dex }} ({% if dex_bonus >= 0 %}+{% endif %}{{ dex_bonus }})</td>
-            <td>{{ page.con }} ({% if con_bonus >= 0 %}+{% endif %}{{ con_bonus }})</td>
-            <td>{{ page.int }} ({% if int_bonus >= 0 %}+{% endif %}{{ int_bonus }})</td>
-            <td>{{ page.wis }} ({% if wis_bonus >= 0 %}+{% endif %}{{ wis_bonus }})</td>
-            <td>{{ page.cha }} ({% if cha_bonus >= 0 %}+{% endif %}{{ cha_bonus }})</td>
-          </tr>
-        </tbody>
-      </table>
+              <dt class="col-md-4 col-lg-3">Speed</dt>
+              <dd class="col-md-8 col-lg-9">
+                {% for speed in page.speeds %}{% if speed.name != 'walk' %}{{ speed.name }}{% endif %} {{ speed.speed }} ft.{% unless forloop.last %}, {% endunless %}{% endfor %}
+              </dd>
+            </dl>
 
-      <dl class="dl-horizontal row" style="margin-bottom: 0;">
-        {% if page.skills %}
-          <dt class="col-md-4 col-lg-3">Skills</dt>
-          <dd class="col-md-8 col-lg-9">{% for skill in page.skills %}{{ skill.name }} {% if skill.bonus >= 0 %}+{% else %}-{% endif %}{{ skill.bonus }}{% unless forloop.last %}, {% endunless %}{% endfor %}</dd>
-        {% endif %}
+            <table class="table table-ability-scores">
+              <thead>
+                <tr>
+                  <td></td>
+                  {% for ability_score in page.ability_scores %}
+                    <th>{{ ability_score[0] | truncate: 3, '' }} <small class="text-muted">({{ ability_score[1] }})</small></th>
+                  {% endfor %}
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Abilities</th>
+                  {% for ability_score in page.ability_scores %}
+                    <td>{{ ability_score[1] | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-'}}</td>
+                  {% endfor %}
+                </tr>
+                <tr>
+                  <th>Saves</th>
+                  {% for ability_score in page.ability_scores %}
+                    <td>
+                      {% if page.saving_throw_proficiencies contains ability_score[0] %}
+                        {{ ability_score[1] | divided_by: 2 | minus: 5 | plus: proficiency_bonus | prepend: '+' | replace_first: '+-', '-' }}
+                      {% else %}
+                        {{ ability_score[1] | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-' }}
+                      {% endif %}
+                    </td>
+                  {% endfor %}
+                </tr>
+              </tbody>
+            </table>
 
-        {% if page.damage_resistances %}
-          <dt class="col-md-4 col-lg-3">Damage Resistances</dt>
-          <dd class="col-md-8 col-lg-9">{{ page.damage_resistances | join: ', ' }}</dd>
-        {% endif %}
+            <dl class="dl-horizontal row" style="margin-bottom: 0;">
+              {% if page.skills %}
+                <dt class="col-md-4 col-lg-3">Skills</dt>
+                <dd class="col-md-8 col-lg-9">{% for skill in page.skills %}{{ skill.name }} {% if skill.bonus >= 0 %}+{% else %}-{% endif %}{{ skill.bonus }}{% unless forloop.last %}, {% endunless %}{% endfor %}</dd>
+              {% endif %}
 
-        {% if page.damage_immunities %}
-          <dt class="col-md-4 col-lg-3">Damage Immunities</dt>
-          <dd class="col-md-8 col-lg-9">{{ page.damage_immunities | join: ', ' }}</dd>
-        {% endif %}
+              {% if page.damage_resistances %}
+                <dt class="col-md-4 col-lg-3">Damage Resistances</dt>
+                <dd class="col-md-8 col-lg-9">{{ page.damage_resistances | array_to_sentence_string }}</dd>
+              {% endif %}
 
-        {% if page.condition_immunities %}
-          <dt class="col-md-4 col-lg-3">Condition Immunities</dt>
-          <dd class="col-md-8 col-lg-9">{{ page.condition_immunities | join: ', ' }}</dd>
-        {% endif %}
+              {% if page.damage_immunities %}
+                <dt class="col-md-4 col-lg-3">Damage Immunities</dt>
+                <dd class="col-md-8 col-lg-9">{{ page.damage_immunities | array_to_sentence_string }}</dd>
+              {% endif %}
 
-        <dt class="col-md-4 col-lg-3">Senses</dt>
-        <dd class="col-md-8 col-lg-9">
-          {% for sense in page.senses %}{{ sense.name }} {{ sense.range }} ft.,{% endfor %}
-          passive Perception {{ page.skills | where: 'name', 'Perception' | map: 'bonus' | plus: 10 }}
-        </dd>
+              {% if page.condition_immunities %}
+                <dt class="col-md-4 col-lg-3">Condition Immunities</dt>
+                <dd class="col-md-8 col-lg-9">{{ page.condition_immunities | array_to_sentence_string }}</dd>
+              {% endif %}
 
-        <dt class="col-md-4 col-lg-3">Languages</dt>
-        <dd class="col-md-8 col-lg-9">{% if page.languages %}{{ page.languages | join: ', ' }}{% else %}&mdash;{% endif %}</dd>
+              <dt class="col-md-4 col-lg-3">Senses</dt>
+              <dd class="col-md-8 col-lg-9">
+                {% for sense in page.senses %}{{ sense.name }} {{ sense.range }} ft.,{% endfor %}
+                passive Perception {{ page.skills | where: 'name', 'Perception' | map: 'bonus' | plus: 10 }}
+              </dd>
 
-        <dt class="col-md-4 col-lg-3">Challenge</dt>
-        <dd class="col-md-8 col-lg-9">
-          {% case page.challenge %}
-            {% when 0.125 %}
-              &#8539;
-            {% when 0.25 %}
-              &frac14;
-            {% when 0.5 %}
-              &frac12;
-            {% else %}
-              {{ page.challenge }}
-          {% endcase %}
+              <dt class="col-md-4 col-lg-3">Languages</dt>
+              <dd class="col-md-8 col-lg-9">{% if page.languages %}{{ page.languages | array_to_sentence_string }}{% else %}&mdash;{% endif %}</dd>
 
-          ({{ site.challenge_xp | where: 'rating', page.challenge | map: 'xp' }} XP)
-        </dd>
-      </dl>
-    </div>
+              <dt class="col-md-4 col-lg-3">Challenge</dt>
+              <dd class="col-md-8 col-lg-9">
+                {% case page.challenge %}
+                  {% when 0.125 %}
+                    &#8539;
+                  {% when 0.25 %}
+                    &frac14;
+                  {% when 0.5 %}
+                    &frac12;
+                  {% else %}
+                    {{ page.challenge }}
+                {% endcase %}
 
-    {% if page.special_traits %}
-      <div class="card-header">Special Traits</div>
-      <div class="card-block">
-        <dl style="margin-bottom: 0;">
-          {% for trait in page.special_traits %}
-            <dt>{{ trait.name }}</dt>
-            <dd>{{ trait.text | markdownify | remove: '<p>' | remove: '</p>' }}</dd>
-          {% endfor %}
-        </dl>
+                ({{ site.data.challenge_xp | where: 'rating', page.challenge | map: 'xp' }} XP)
+              </dd>
+            </dl>
+          </div>
+
+          {% if page.special_traits %}
+            <div class="card-header">Special Traits</div>
+            <div class="card-block">
+              <dl style="margin-bottom: 0;">
+                {% for trait in page.special_traits %}
+                  <dt>{{ trait.name }}</dt>
+                  <dd>{{ trait.text | markdownify }}</dd>
+                {% endfor %}
+              </dl>
+            </div>
+          {% endif %}
+
+          {% if page.actions %}
+            <div class="card-header">Actions</div>
+            <div class="card-block">
+              <dl style="margin-bottom: 0;">
+                {% for action in page.actions %}
+                  <dt>{{ action.name }}</dt>
+                  <dd>{{ action.text | markdownify }}</dd>
+                {% endfor %}
+              </dl>
+            </div>
+          {% endif %}
+
+          {% if page.reactions %}
+            <div class="card-header">Reactions</div>
+            <div class="card-block">
+              <dl style="margin-bottom: 0;">
+                {% for action in page.reactions %}
+                  <dt>{{ action.name }}</dt>
+                  <dd>{{ action.text | markdownify }}</dd>
+                {% endfor %}
+              </dl>
+            </div>
+          {% endif %}
+
+          {% if page.legendary_actions %}
+            <div class="card-header">Legendary Actions</div>
+            <div class="card-block">
+              <dl style="margin-bottom: 0;">
+                {% for action in page.legendary_actions %}
+                  <dt>{{ action.name }}</dt>
+                  <dd>{{ action.text | markdownify }}</dd>
+                {% endfor %}
+              </dl>
+            </div>
+          {% endif %}
+        </div><!-- /.card -->
       </div>
-    {% endif %}
 
-    {% if page.actions %}
-      <div class="card-header">Actions</div>
-      <div class="card-block">
-        <dl style="margin-bottom: 0;">
-          {% for action in page.actions %}
-            <dt>{{ action.name }}</dt>
-            <dd>{{ action.text | markdownify | remove: '<p>' | remove: '</p>' }}</dd>
-          {% endfor %}
-        </dl>
+      <div class="tab-pane" id="stats-standard" role="tabpanel">
+        <div class="card stats-standard">
+          <div class="card-block">
+            <h4 style="font-variant: small-caps;">{{ page.title }}</h4>
+
+            <p class="card-text compact"><i>{{ page.size | capitalize }} {{ page.type | downcase }}{{ page.tags | join: ', ' | prepend: ' (' | append: ')' | remove_first: ' ()' }}, {{ page.alignment | downcase }}</i></p>
+
+            <hr style="margin-top: 0.25rem; margin-bottom: 0.25rem;">
+
+            <p class="card-text compact">
+              <b>Armor Class</b>
+              {{ page.armor_class }}
+              {{ page.armor_class_descriptor | prepend: '(' | append: ')' | remove_first: '()' }}
+            </p>
+
+            <p class="card-text compact">
+              <b>Hit Points</b>
+              {{ page.hp }}
+              ({{ page.hd }}d{{ site.data.hd_sizes | where: 'size', page.size | map: 'hd_size' }}+{{ hp_bonus | prepend: '+' | remove_first: '+-' | replace: '+', ' + ' | replace: '-', ' - ' }})
+            </p>
+
+            <p class="card-text compact">
+              <b>Speed</b>
+              {% for speed in page.speeds %}{% if speed.name != 'walk' %}{{ speed.name }}{% endif %} {{ speed.speed }} ft.{% unless forloop.last %}, {% endunless %}{% endfor %}
+            </p>
+
+            <hr style="margin-top: 0.25rem; margin-bottom: 0.25rem;">
+
+            <table style="width: 100%;">
+              <tbody>
+                <tr>
+                  {% for ability_score in page.ability_scores %}
+                    <th class="text-sm-center">{{ ability_score[0] | upcase | truncate: 3, '' }}</th>
+                  {% endfor %}
+                </tr>
+                <tr>
+                  {% for ability_score in page.ability_scores %}
+                    <td class="text-sm-center">
+                      {{ ability_score[1] }}
+                      ({{ ability_score[1] | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-'}})
+                    </td>
+                  {% endfor %}
+                </tr>
+              </tbody>
+            </table>
+
+            <hr style="margin-top: 0.25rem; margin-bottom: 0.25rem;">
+
+            {% if page.saving_throw_proficiencies %}
+              <p class="card-text compact">
+                <b>Saving Throws</b>
+                {% for save in page.saving_throw_proficiencies %}
+                  {{ save }} {{ page.ability_scores[save] | divided_by: 2 | minus: 5 | plus: proficiency_bonus | prepend: '+' }}{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+              </p>
+            {% endif %}
+
+            {% if page.skills %}
+              <p class="card-text compact">
+                <b>Skills</b>
+                {% for skill in page.skills %}
+                  {{ skill.name }} {{ skill.bonus | prepend: '+' }}{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+              </p>
+            {% endif %}
+
+            {% if page.damage_resistances %}
+              <p class="card-text compact">
+                <b>Damage Resistances</b>
+                {{ page.damage_resistances | array_to_sentence_string }}
+              </p>
+            {% endif %}
+
+            {% if page.damage_immunities %}
+              <p class="card-text compact">
+                <b>Damage Immunities</b>
+                {{ page.damage_immunities | array_to_sentence_string }}
+              </p>
+            {% endif %}
+
+            {% if page.condition_immunities %}
+              <p class="card-text compact">
+                <b>Condition Immunities</b>
+                {{ page.condition_immunities | array_to_sentence_string }}
+              </p>
+            {% endif %}
+
+            <p class="card-text compact">
+              <b>Senses</b>
+              {% for sense in page.senses %}
+                {{ sense.name | downcase }} {{ sense.range }} ft.,
+              {% endfor %}
+              passive Perception {{ page.skills.Perception | plus: 10 }}
+            </p>
+
+            {% if page.languages %}
+              <p class="card-text compact">
+                <b>Languages</b>
+                {{ page.languages | array_to_sentence_string }}
+              </p>
+            {% endif %}
+
+            <p class="card-text compact">
+              <b>Challenge</b>
+              {{ display_challenge }} ({{ site.data.challenge_xp | where: 'rating', page.challenge | map: 'xp' }} XP)
+            </p>
+
+            {% if page.special_traits %}
+              <hr>
+
+              {% for trait in page.special_traits %}
+                <p class="card-text">
+                  <b><i>{{ trait.name }}.</i></b>
+                  {{ trait.text | markdownify | remove_first: '<p>' }}
+                <!-- the missing /p is closed by markdownify -->
+              {% endfor %}
+            {% endif %}
+
+            {% if page.actions %}
+              <h5 style="font-variant: small-caps; margin-top: 1rem;">Actions</h6>
+
+              <hr style="margin-top: 0; margin-bottom: 0.25rem;">
+
+              {% for action in page.actions %}
+                <p class="card-text">
+                  <b><i>{{ action.name }}.</i></b>
+                  {{ action.text | markdownify | remove_first: '<p>' }}
+                <!-- the missing /p is closed by markdownify -->
+              {% endfor %}
+            {% endif %}
+
+            {% if page.reactions %}
+              <h5 style="font-variant: small-caps; margin-top: 1rem;">Reactions</h6>
+
+              <hr style="margin-top: 0; margin-bottom: 0.25rem;">
+
+              {% for action in page.reactions %}
+                <p class="card-text">
+                  <b><i>{{ action.name }}.</i></b>
+                  {{ action.text | markdownify | remove_first: '<p>' }}
+                <!-- the missing /p is closed by markdownify -->
+              {% endfor %}
+            {% endif %}
+
+            {% if page.legendary_actions %}
+              <h5 style="font-variant: small-caps; margin-top: 1rem;">Legendary Actions</h6>
+
+              <hr style="margin-top: 0; margin-bottom: 0.25rem;">
+
+              <p class="card-text">The creature can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The creature regains spent legendary actions at the start of its turn.</p>
+
+              {% for action in page.legendary_actions %}
+                <p class="card-text compact hanging">
+                  <b>{{ action.name }}.</b>
+                  {{ action.text | markdownify | remove_first: '<p>' }}
+                <!-- the missing /p is closed by markdownify -->
+              {% endfor %}
+            {% endif %}
+          </div>
+        </div>
       </div>
-    {% endif %}
+
+      <div class="tab-pane" id="stats-compact" role="tabpanel">
+        <div class="card">
+          <div class="card-block">
+            <p class="card-text">
+              <b>{{ page.title | upcase }}:</b>
+
+              <b>HP</b> {{ page.hp }} ({{ page.hd }}d{{ site.data.hd_sizes | where: 'size', page.size | map: 'hd_size' }}+{{ hp_bonus | prepend: '+' | remove_first: '+-' }});
+
+              <b>AC</b> {{ page.armor_class }};
+
+              <b>Speed</b> {% for speed in page.speeds %}{% if speed.name != 'walk' %}{{ speed.name }}{% endif %} {{ speed.speed }}'{% unless forloop.last %}, {% endunless %}{% endfor %};
+
+              <b>Abilities</b>
+              {% for ability_score in page.ability_scores %}{{ ability_score[0] | truncate: 3, '' }} {{ ability_score[1] | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-'}}{% unless forloop.last %}, {% endunless %}{% endfor %};
+
+              <b>Perception</b> {{ page.skills | where: 'name', 'Perception' | map: 'bonus' | plus: 10 }};
+
+              <b>CR</b> {{ display_challenge }};
+
+              <b>XP</b> {{ site.data.challenge_xp | where: 'rating', page.challenge | map: 'xp' }};
+
+              <b>Special</b>
+              {% for trait in page.special_traits %}{{ trait.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}.
+            </p>
+
+            {% for action in page.actions %}
+              <p class="card-text"><b>{{ action.name }}</b> {{ action.text | markdownify | remove_first: '<p>' }}
+              <!-- /p is closed by markdownify -->
+            {% endfor %}
+
+            {% for action in page.reactions %}
+              <p class="card-text"><b>{{ action.name }} (Reaction)</b> {{ action.text | markdownify | remove_first: '<p>' }}
+              <!-- /p is closed by markdownify -->
+            {% endfor %}
+
+            {% if page.legendary_actions %}
+              <p class="card-text"><b>Legendary Actions (3/turn)</b></p>
+              <ul class="unstyled">
+                {% for action in page.legendary_actions %}
+                  <li><i>{{ action.name }}</i> {{ action.text | markdownify }}</li>
+                  <!-- /p is closed by markdownify -->
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </div>
+        </div><!-- /.card -->
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    {{ content }}
   </div>
 </div>
-
-{{ content }}

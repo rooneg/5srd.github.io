@@ -3,7 +3,7 @@ title: Raven
 size: Tiny
 type: Beast
 alignment: Unaligned
-ac: 12
+armor_class: 12
 hp: 1
 hd: 1
 speeds:
@@ -11,12 +11,13 @@ speeds:
     speed: 10
   - name: fly
     speed: 50
-str: 2
-dex: 14
-con: 8
-int: 2
-wis: 12
-cha: 6
+ability_scores:
+  Strength: 2
+  Dexterity: 14
+  Constitution: 8
+  Intelligence: 2
+  Wisdom: 12
+  Charisma: 6
 skills:
   - name: Perception
     bonus: 3
@@ -26,6 +27,10 @@ special_traits:
     text: The raven can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful DC 10 Wisdom (Insight) check.
 actions:
   - name: Beak
-    text: >
+    text: |
       *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage.
 ---
+
+> **Source:** *Pathfinder Roleplaying Game Bestiary*.
+>
+> The raven is an omnivorous scavenger that eats carrion, insects, food waste, berries, and even small animals.

@@ -3,7 +3,7 @@ title: Spider, Giant, Wolf
 size: Medium
 type: Beast
 alignment: Unaligned
-ac: 13
+armor_class: 13
 hp: 11
 hd: 2
 speeds:
@@ -12,21 +12,22 @@ speeds:
 climb_speeds:
   - name: walk
     speed: 40
-str: 12
-dex: 16
-con: 13
-int: 3
-wis: 12
-cha: 4
+ability_scores:
+  Strength: 12
+  Dexterity: 16
+  Constitution: 13
+  Intelligence: 3
+  Wisdom: 12
+  Charisma: 4
 skills:
   - name: Perception
     bonus: 3
   - name: Stealth
     bonus: 7
 senses:
-  - name: Blindsight
+  - name: blindsight
     range: 10
-  - name: Darkvision
+  - name: darkvision
     range: 60
 challenge: 0.25
 special_traits:
@@ -38,8 +39,6 @@ special_traits:
     text: The spider ignores movement restrictions caused by webbing.
 actions:
   - name: Bite
-    text: >
-      *Melee Weapon Attack:* +3 to hit, reach 5 ft., one creature. *Hit:* 4 (1d6 + 1) piercing damage, and the target must make a DC 11 Constitution saving throw,  taking 7 (2d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
+    text: |
+      *Melee Weapon Attack:* +3 to hit, reach 5 ft., one creature. *Hit:* 4 (1d6 + 1) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 7 (2d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
 ---
-
-Smaller than a [giant spider](/monsters/spider-giant/), a giant wolf spider hunts prey across open ground or hides in a burrow or crevice, or in a hidden cavity beneath debris.

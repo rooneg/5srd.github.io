@@ -3,7 +3,7 @@ title: Lizard
 size: Tiny
 type: Beast
 alignment: Unaligned
-ac: 10
+armor_class: 10
 hp: 2
 hd: 1
 speeds:
@@ -12,18 +12,23 @@ speeds:
 climb_speeds:
   - name: walk
     speed: 20
-str: 2
-dex: 11
-con: 10
-int: 1
-wis: 8
-cha: 3
+ability_scores:
+  Strength: 2
+  Dexterity: 11
+  Constitution: 10
+  Intelligence: 1
+  Wisdom: 8
+  Charisma: 3
 senses:
-  - name: Darkvision
+  - name: darkvision
     range: 30
 challenge: 0
 actions:
   - name: Bite
-    text: >
+    text: |
       *Melee Weapon Attack:* +0 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage.
 ---
+
+> **Source:** *Pathfinder Roleplaying Game Bestiary*.
+>
+> Lizards can be found in any temperate or tropical climate. When confronted with predators, a lizard flees and hides.

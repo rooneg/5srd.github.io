@@ -3,18 +3,19 @@ title: Weasel
 size: Tiny
 type: Beast
 alignment: Unaligned
-ac: 13
+armor_class: 13
 hp: 1
 hd: 1
 speeds:
   - name: walk
     speed: 30
-str: 3
-dex: 16
-con: 8
-int: 2
-wis: 12
-cha: 3
+ability_scores:
+  Strength: 3
+  Dexterity: 16
+  Constitution: 8
+  Intelligence: 2
+  Wisdom: 12
+  Charisma: 3
 skills:
   - name: Perception
     bonus: 3
@@ -26,6 +27,10 @@ special_traits:
     text: The weasel has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 actions:
   - name: Bite
-    text: >
+    text: |
       *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage.
 ---
+
+> **Source:** *Pathfinder Roleplaying Game Bestiary*.
+>
+> Weasels are predators content with raiding chicken coops or attacking pets when they encounter civilization.

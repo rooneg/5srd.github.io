@@ -5,16 +5,20 @@ layout: ogl-notice
 <div class="col-md-3 pull-md-right">
   {% assign class_groups = site.classes | group_by: 'group' %}
   {% for class_group in class_groups %}
-  <table class="table table-sm">
-    <caption>{{ class_group.name | capitalize }} Classes</caption>
-    <tbody>
-    {% for class in class_group.items %}
-      <tr>
-        <td><a href="{{ class.url }}">{{ class.title }}</a></td>
-      </tr>
-    {% endfor %}
-    </tbody>
-  </table>
+    <div class="card">
+      <div class="card-block">
+        <table class="table table-sm">
+          <caption>{{ class_group.name | capitalize }} Classes</caption>
+          <tbody>
+          {% for class in class_group.items %}
+            <tr>
+              <td><a href="{{ class.url }}">{{ class.title }}</a></td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
   {% endfor %}
 </div>
 

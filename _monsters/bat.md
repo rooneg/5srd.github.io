@@ -3,7 +3,7 @@ title: Bat
 size: Tiny
 type: Beast
 alignment: Unaligned
-ac: 12
+armor_class: 12
 hp: 1
 hd: 1
 speeds:
@@ -11,14 +11,15 @@ speeds:
     speed: 5
   - name: fly
     speed: 30
-str: 2
-dex: 15
-con: 8
-int: 2
-wis: 12
-cha: 4
+ability_scores:
+  Strength: 2
+  Dexterity: 15
+  Constitution: 8
+  Intelligence: 2
+  Wisdom: 12
+  Charisma: 4
 senses:
-  - name: Blindsight
+  - name: blindsight
     range: 60
 challenge: 0
 special_traits:
@@ -28,6 +29,10 @@ special_traits:
     text: The bat has advantage on Wisdom (Perception) checks that rely on hearing.
 actions:
   - name: Bite
-    text: >
+    text: |
       *Melee Weapon Attack:* +0 to hit, reach 5 ft., one creature. *Hit:* 1 piercing damage.
 ---
+
+> **Source:** *Pathfinder Roleplaying Game Bestiary*.
+>
+> Most bats are insectivores or fruit-eaters, but at least one species drinks blood.

@@ -3,8 +3,8 @@ title: Shark, Reef
 size: Medium
 type: Beast
 alignment: Unaligned
-ac: 12
-natural_armor: true
+armor_class: 12
+armor_class_descriptor: natural armor
 hp: 22
 hd: 4
 speeds:
@@ -12,17 +12,18 @@ speeds:
     speed: 0
   - name: swim
     speed: 40
-str: 14
-dex: 13
-con: 13
-int: 1
-wis: 10
-cha: 4
+ability_scores:
+  Strength: 14
+  Dexterity: 13
+  Constitution: 13
+  Intelligence: 1
+  Wisdom: 10
+  Charisma: 4
 skills:
   - name: Perception
     bonus: 2
 senses:
-  - name: Blindsight
+  - name: blindsight
     range: 30
 challenge: 0.5
 special_traits:
@@ -32,8 +33,8 @@ special_traits:
     text: The shark can breathe only underwater.
 actions:
   - name: Bite
-    text: >
+    text: |
       *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (1d8 + 2) piercing damage.
 ---
 
-Smaller than giant sharks and hunter sharks, reef sharks inhabit shallow waters and coral reefs,  gathering in small packs to hunt. A full-grown specimen measures 6 to 10 feet long.
+Smaller than giant sharks and hunter sharks, reef sharks inhabit shallow waters and coral reefs, gathering in small packs to hunt. A full-grown specimen measures 6 to 10 feet long.

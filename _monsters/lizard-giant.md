@@ -3,8 +3,8 @@ title: Lizard, Giant
 size: Large
 type: Beast
 alignment: Unaligned
-ac: 12
-natural_armor: true
+armor_class: 12
+armor_class_descriptor: natural armor
 hp: 19
 hd: 3
 speeds:
@@ -13,20 +13,23 @@ speeds:
 climb_speeds:
   - name: walk
     speed: 30
-str: 15
-dex: 12
-con: 13
-int: 2
-wis: 10
-cha: 5
+ability_scores:
+  Strength: 15
+  Dexterity: 12
+  Constitution: 13
+  Intelligence: 2
+  Wisdom: 10
+  Charisma: 5
 senses:
-  - name: Darkvision
+  - name: darkvision
     range: 30
 challenge: 0.25
 actions:
   - name: Bite
-    text: >
+    text: |
       *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (1d8 + 2) piercing damage.
 ---
 
-A giant lizard can be ridden or used as a draft animal. Lizardfolk also keep them as pets, and subterranean giant lizards are used as mounts and pack animals by drow, duergar, and others.
+> **Source:** 5srd adaptation of *Pathfinder Roleplaying Game Bestiary*.
+>
+> This lizard is a true behemoth—an apex predator found in tropical regions. Many species of giant lizard exist

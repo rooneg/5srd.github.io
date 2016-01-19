@@ -11,6 +11,19 @@ layout: ogl-notice
 
   <dt class="col-sm-3">Script</dt>
   <dd class="col-sm-9">{{ page.script }}</dd>
+
+  <dt class="col-sm-3">Spoken By</dt>
+  <dd class="col-sm-9">
+    <ul class="nav nav-inline">
+      {% for monster in site.monsters %}
+        {% if monster.languages contains page.title %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ monster.url }}">{{ monster.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </dd>
 </dl>
 
 {{ content }}

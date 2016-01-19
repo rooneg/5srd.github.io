@@ -3,18 +3,19 @@ title: Awakened Shrub
 size: Small
 type: Plant
 alignment: Unaligned
-ac: 9
+armor_class: 9
 hp: 10
 hd: 3
 speeds:
   - name: walk
     speed: 20
-str: 3
-dex: 8
-con: 11
-int: 10
-wis: 10
-cha: 6
+ability_scores:
+  Strength: 3
+  Dexterity: 8
+  Constitution: 11
+  Intelligence: 10
+  Wisdom: 10
+  Charisma: 6
 damage_vulnerabilities:
   - fire
 damage_resistances:
@@ -24,10 +25,10 @@ languages:
 challenge: 0
 special_traits:
   - name: False Appearance
-    text: While the shrub remains motionless,  it is indistinguishable from a normal shrub.
+    text: While the shrub remains motionless, it is indistinguishable from a normal shrub.
 actions:
   - name: Rake
-    text: >
+    text: |
       *Melee Weapon Attack:* +1 to hit, reach 5 ft., one target. *Hit:* 1 (1d4 − 1) slashing damage.
 ---
 

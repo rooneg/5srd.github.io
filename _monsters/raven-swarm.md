@@ -4,7 +4,7 @@ size: Medium
 swarm_size: Tiny
 type: Beast
 alignment: Unaligned
-ac: 12
+armor_class: 12
 hp: 24
 hd: 7
 speeds:
@@ -12,12 +12,13 @@ speeds:
     speed: 10
   - name: fly
     speed: 50
-str: 6
-dex: 14
-con: 8
-int: 3
-wis: 12
-cha: 6
+ability_scores:
+  Strength: 6
+  Dexterity: 14
+  Constitution: 8
+  Intelligence: 3
+  Wisdom: 12
+  Charisma: 6
 skills:
   - name: Perception
     bonus: 5
@@ -40,6 +41,6 @@ special_traits:
     text: The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a size Tiny raven. The swarm can't regain hit points or gain temporary hit points.
 actions:
   - name: Beaks
-    text: >
+    text: |
       *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target in the swarm's space. *Hit:* 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer.
 ---

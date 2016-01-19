@@ -3,19 +3,20 @@ title: Goat, Giant
 size: Large
 type: Beast
 alignment: Unaligned
-ac: 11
-natural_armor: true
+armor_class: 11
+armor_class_descriptor: natural armor
 hp: 19
 hd: 3
 speeds:
   - name: walk
     speed: 40
-str: 17
-dex: 11
-con: 12
-int: 3
-wis: 12
-cha: 6
+ability_scores:
+  Strength: 17
+  Dexterity: 11
+  Constitution: 12
+  Intelligence: 3
+  Wisdom: 12
+  Charisma: 6
 challenge: 0.5
 special_traits:
   - name: Charge
@@ -24,6 +25,10 @@ special_traits:
     text: The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.
 actions:
   - name: Ram
-    text: >
+    text: |
       *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (2d4 + 3) bludgeoning damage.
 ---
+
+> **Source:** 5srd adaptation of *Tome of Horrors Complete*.
+>
+> Although they are normally wild, domesticated giant goats are not unheard of. They are domesticated for their meat as well as the amounts of milk they can produce.

@@ -5,15 +5,19 @@ layout: ogl-notice
 <div class="col-md-3 pull-md-right">
   {% assign feat_groups = site.feats | group_by: 'group' %}
   {% for feat_group in feat_groups %}
-  <table class="table table-sm">
-    <caption>{{ feat_group.name | capitalize }} Feats</caption>
-    <tbody>
-    {% for feat in feat_group.items %}
-      <tr>
-        <td><a href="{{ feat.url }}">{{ feat.title }}</a></td>
-    {% endfor %}
-    </tbody>
-  </table>
+    <div class="card">
+      <div class="card-block">
+        <table class="table table-sm">
+          <caption>{{ feat_group.name | capitalize }} Feats</caption>
+          <tbody>
+          {% for feat in feat_group.items %}
+            <tr>
+              <td><a href="{{ feat.url }}">{{ feat.title }}</a></td>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
   {% endfor %}
 </div>
 

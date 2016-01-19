@@ -3,24 +3,25 @@ title: Worg
 size: Large
 type: Monstrosity
 alignment: Neutral Evil
-ac: 13
-natural_armor: true
+armor_class: 13
+armor_class_descriptor: natural armor
 hp: 26
 hd: 4
 speeds:
   - name: walk
     speed: 50
-str: 16
-dex: 13
-con: 13
-int: 7
-wis: 11
-cha: 8
+ability_scores:
+  Strength: 16
+  Dexterity: 13
+  Constitution: 13
+  Intelligence: 7
+  Wisdom: 11
+  Charisma: 8
 skills:
   - name: Perception
     bonus: 4
 senses:
-  - name: Darkvision
+  - name: darkvision
     range: 60
 languages:
   - Goblin
@@ -31,8 +32,12 @@ special_traits:
     text: The worg has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 actions:
   - name: Bite
-    text: >
+    text: |
       *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.
 ---
 
-A worg is an evil predator that delights in hunting and devouring creatures weaker than itself. Cunning and malevolent, worgs roam across the remote wilderness or are raised by goblins and hobgoblins. Those creatures use worgs as mounts, but a worg will turn on its rider if it feels mistreated or malnourished. Worgs speak in their own language and Goblin, and a few learn to speak Common as well.
+> **Source:** *Pathfinder Roleplaying Game Bestiary*.
+>
+> Worgs are oversized, evil, intelligent wolves often found dwelling amid goblins or other savage races. A typical worg has gray or black fur, stands 3 feet tall at the shoulder, and weighs 300 pounds.
+>
+> Worgs hunt in packs, running down and surrounding their prey like common wolves, but their intelligence and ability to speak make them better at coordinating their attacks. They sometimes use one packmate as a decoy, pretending to be a humanoid calling for help in order to lure intelligent prey into an ambush. Worgs that travel with [goblins](/monster/goblin/) often allow them to ride on their backs, but in such situations it is usually the worg that is the master, not the rider.

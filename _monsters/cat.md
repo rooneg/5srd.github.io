@@ -3,7 +3,7 @@ title: Cat
 size: Tiny
 type: Beast
 alignment: Unaligned
-ac: 12
+armor_class: 12
 hp: 2
 hd: 1
 speeds:
@@ -12,12 +12,13 @@ speeds:
 climb_speeds:
   - name: walk
     speed: 30
-str: 3
-dex: 15
-con: 10
-int: 3
-wis: 12
-cha: 7
+ability_scores:
+  Strength: 3
+  Dexterity: 15
+  Constitution: 10
+  Intelligence: 3
+  Wisdom: 12
+  Charisma: 7
 skills:
   - name: Perception
     bonus: 3
@@ -29,6 +30,10 @@ special_traits:
     text: The cat has advantage on Wisdom (Perception) checks that rely on smell.
 actions:
   - name: Claws
-    text: >
+    text: |
       *Melee Weapon Attack:* +0 to hit, reach 5 ft., one target. *Hit:* 1 slashing damage.
 ---
+
+> **Source:** *Pathfinder Roleplaying Game Bestiary*.
+>
+> Cats typically weigh 5 to 15 pounds when fully grown.

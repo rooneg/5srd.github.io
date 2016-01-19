@@ -3,8 +3,8 @@ title: Shark, Hunter
 size: Large
 type: Beast
 alignment: Unaligned
-ac: 12
-natural_armor: true
+armor_class: 12
+armor_class_descriptor: natural armor
 hp: 45
 hd: 6
 speeds:
@@ -12,17 +12,18 @@ speeds:
     speed: 0
   - name: swim
     speed: 40
-str: 18
-dex: 13
-con: 15
-int: 1
-wis: 10
-cha: 4
+ability_scores:
+  Strength: 18
+  Dexterity: 13
+  Constitution: 15
+  Intelligence: 1
+  Wisdom: 10
+  Charisma: 4
 skills:
   - name: Perception
     bonus: 2
 senses:
-  - name: Blindsight
+  - name: blindsight
     range: 30
 challenge: 2
 special_traits:
@@ -32,8 +33,12 @@ special_traits:
     text: The shark can breathe only underwater.
 actions:
   - name: Bite
-    text: >
+    text: |
       *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (2d8 + 4) piercing damage.
 ---
 
-Smaller than a [giant shark](/monsters/shark-giant/) but larger and fiercer than a [reef shark](/monsters/shark-reef/), a hunter shark haunts deep waters. It usually hunts alone, but multiple hunter sharks might feed in the same area. A fully grown hunter shark is 15 to 20 feet long.
+> **Source:** *Pathfinder Roleplaying Game Bestiary*.
+>
+> The shark is a relentless eating machine, a creature evolved over the course of eons to do one job perfectly—hunting. Sharks have achieved a special place in the lore of most seafaring races, who view them as devils, monsters, and the wrath of the gods.
+>
+> The shark presented here is a 10-foot-long, 300-pound blue shark. Smaller sharks exist, although these are not as dangerous. The same cannot be said of larger sharks.

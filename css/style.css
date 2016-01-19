@@ -12,6 +12,12 @@ h3 {
   margin-top: 1.5rem;
 }
 
+blockquote {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-left: 0.25rem solid #eceeef;
+}
+
 caption {
   caption-side: top;
   text-align: center;
@@ -27,7 +33,10 @@ table th, table td {
   padding: 0.25rem;
 }
 
-.table-ability-scores thead th, .table-ability-scores tbody td {
+.table-ability-scores thead td,
+.table-ability-scores thead th,
+.table-ability-scores tbody td,
+.table-ability-scores tbody th {
   border: none;
   text-align: center;
   padding: 0.25rem;
@@ -44,4 +53,21 @@ table th, table td {
 
 .navbar .navbar-brand {
   margin-right: 0;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+.stats-standard {
+  font-size: 0.95rem;
+}
+
+.stats-standard .compact {
+  margin-bottom: 0;
+}
+
+.hanging {
+  text-indent: -1rem;
+  margin-left: 1rem;
 }

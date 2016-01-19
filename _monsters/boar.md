@@ -3,19 +3,20 @@ title: Boar
 size: Medium
 type: Beast
 alignment: Unaligned
-ac: 11
-natural_armor: true
+armor_class: 11
+armor_class_descriptor: natural armor
 hp: 11
 hd: 2
 speeds:
   - name: walk
     speed: 40
-str: 13
-dex: 11
-con: 12
-int: 2
-wis: 9
-cha: 5
+ability_scores:
+  Strength: 13
+  Dexterity: 11
+  Constitution: 12
+  Intelligence: 2
+  Wisdom: 9
+  Charisma: 5
 challenge: 0.25
 special_traits:
   - name: Charge
@@ -24,6 +25,14 @@ special_traits:
     text: If the boar takes 7 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead.
 actions:
   - name: Tusk
-    text: >
+    text: |
       *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 4 (1d6 + 1) slashing damage.
 ---
+
+> **Source:** *Pathfinder Roleplaying Game Bestiary*.
+>
+> Much more ill-tempered and dangerous than their domesticated kin, boars are omnivorous creatures common to temperate forests, although they are not unknown in tropical climes. Other variants exist as well, such as the particularly ugly warthogs that dwell in tropical plains and savannahs. Boars are often hunted for their flesh, which is considered delicious by most humanoids. Those who hunt boars often do so with a special spear fitted with a cross beam to prevent an impaled boar from pushing forward along the spear shaft to gore its tormentor.
+>
+> The boar's stubborn nature and habit of eating even bones makes it well suited as a pet for certain folk. Many thieves' guilds keep boars for the disposal of bodies, while [orc](/monsters/orc/) tribes let them run loose in their lairs, where they do a relatively good job at keeping these warrens clean of refuse.
+>
+> A boar is four feet long and weighs 200 pounds.

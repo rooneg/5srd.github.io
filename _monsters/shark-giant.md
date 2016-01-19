@@ -3,8 +3,8 @@ title: Shark, Giant
 size: Huge
 type: Beast
 alignment: Unaligned
-ac: 13
-natural_armor: true
+armor_class: 13
+armor_class_descriptor: natural armor
 hp: 126
 hd: 11
 speeds:
@@ -12,17 +12,18 @@ speeds:
     speed: 0
   - name: swim
     speed: 50
-str: 23
-dex: 11
-con: 21
-int: 1
-wis: 10
-cha: 5
+ability_scores:
+  Strength: 23
+  Dexterity: 11
+  Constitution: 21
+  Intelligence: 1
+  Wisdom: 10
+  Charisma: 5
 skills:
   - name: Perception
     bonus: 3
 senses:
-  - name: Blindsight
+  - name: blindsight
     range: 60
 challenge: 5
 special_traits:
@@ -32,8 +33,12 @@ special_traits:
     text: The shark can breathe only underwater.
 actions:
   - name: Bite
-    text: >
+    text: |
       *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 22 (3d10 + 6) piercing damage.
 ---
 
-A giant shark is 30 feet long and normally found in deep oceans. Utterly fearless, it preys on anything that crosses its path, including whales and ships.
+> **Source:** 5srd adaptation of *Pathfinder Roleplaying Game Bestiary 4*.
+>
+> Among the largest of predatory fish, giant sharks speed through the world's oceans, perpetually hunting.
+>
+> One of the most notorious maneaters of the sea, the truly immense giant shark can reach lengths of more than 20 ft. and weigh up to 5000 lbs. The giant shark is a predator with a well known taste for human flesh.

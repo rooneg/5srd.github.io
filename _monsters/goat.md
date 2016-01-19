@@ -3,18 +3,19 @@ title: Goat
 size: Medium
 type: Beast
 alignment: Unaligned
-ac: 10
+armor_class: 10
 hp: 4
 hd: 1
 speeds:
   - name: walk
     speed: 40
-str: 12
-dex: 10
-con: 11
-int: 2
-wis: 10
-cha: 5
+ability_scores:
+  Strength: 12
+  Dexterity: 10
+  Constitution: 11
+  Intelligence: 2
+  Wisdom: 10
+  Charisma: 5
 challenge: 0
 special_traits:
   - name: Charge
@@ -23,6 +24,10 @@ special_traits:
     text: The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.
 actions:
   - name: Ram
-    text: >
+    text: |
       *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 3 (1d4 + 1) bludgeoning damage.
 ---
+
+> **Source:** *Pathfinder Roleplaying Game Bestiary 3*.
+>
+> Goats are often ill-tempered and stubborn, but they have an uncanny knack for finding food in the strangest of places and can digest almost anything.
