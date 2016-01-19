@@ -105,7 +105,7 @@ layout: ogl-notice
               <dt class="col-md-4 col-lg-3">Senses</dt>
               <dd class="col-md-8 col-lg-9">
                 {% for sense in page.senses %}{{ sense.name }} {{ sense.range }} ft.,{% endfor %}
-                passive Perception {{ page.skills | where: 'name', 'Perception' | map: 'bonus' | plus: 10 }}
+                passive Perception {{ page.skills | where: 'name', 'Perception' | map: 'bonus' | first | plus: 10 }}
               </dd>
 
               <dt class="col-md-4 col-lg-3">Languages</dt>
@@ -124,7 +124,7 @@ layout: ogl-notice
                     {{ page.challenge }}
                 {% endcase %}
 
-                ({{ site.data.challenge_xp | where: 'rating', page.challenge | map: 'xp' }} XP)
+                ({{ site.data.challenge_xp | where: 'rating', page.challenge | map: 'xp' | first }} XP)
               </dd>
             </dl>
           </div>
@@ -197,7 +197,7 @@ layout: ogl-notice
             <p class="card-text compact">
               <b>Hit Points</b>
               {{ page.hp }}
-              ({{ page.hd }}d{{ site.data.hd_sizes | where: 'size', page.size | map: 'hd_size' }}+{{ hp_bonus | prepend: '+' | remove_first: '+-' | replace: '+', ' + ' | replace: '-', ' - ' }})
+              ({{ page.hd }}d{{ site.data.hd_sizes | where: 'size', page.size | map: 'hd_size' | first }}+{{ hp_bonus | prepend: '+' | remove_first: '+-' | replace: '+', ' + ' | replace: '-', ' - ' }})
             </p>
 
             <p class="card-text compact">
@@ -283,7 +283,7 @@ layout: ogl-notice
 
             <p class="card-text compact">
               <b>Challenge</b>
-              {{ display_challenge }} ({{ site.data.challenge_xp | where: 'rating', page.challenge | map: 'xp' }} XP)
+              {{ display_challenge }} ({{ site.data.challenge_xp | where: 'rating', page.challenge | map: 'xp' | first }} XP)
             </p>
 
             {% if page.special_traits %}
@@ -360,14 +360,14 @@ layout: ogl-notice
             </h2>
             <p class="card-text compact">
               {{ page.size | capitalize }} {{ page.type | downcase }}
-              <span class="pull-xs-right">{{ site.data.challenge_xp | where: 'rating', page.challenge | map: 'xp' }} XP</span>
+              <span class="pull-xs-right">{{ site.data.challenge_xp | where: 'rating', page.challenge | map: 'xp' | first}} XP</span>
             </p>
           </div>
           <div class="card-block">
             <p class="card-text compact hanging">
               <strong>Initiative</strong> {{ page.ability_scores.Dexterity | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-'}}
 
-              <span class="pull-xs-right"><strong>Senses</strong> Perception {{ page.skills | where: 'name', 'Perception' | map: 'bonus' | plus: 0 | prepend: '+' | remove_first: '+-' }}{% if page.senses %}; {% endif %}{% for sense in page.senses %}{{ sense.name }} {{ sense.range }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+              <span class="pull-xs-right"><strong>Senses</strong> Perception {{ page.skills | where: 'name', 'Perception' | map: 'bonus' | first | prepend: '+' | remove_first: '+-' }}{% if page.senses %}; {% endif %}{% for sense in page.senses %}{{ sense.name }} {{ sense.range }}{% unless forloop.last %}, {% endunless %}{% endfor %}
             </p>
 
             <p class="card-text compact hanging"><strong>HP</strong> {{ page.hp }}</p>
@@ -503,7 +503,7 @@ layout: ogl-notice
             <p class="card-text">
               <b>{{ page.title | upcase }}:</b>
 
-              <b>HP</b> {{ page.hp }} ({{ page.hd }}d{{ site.data.hd_sizes | where: 'size', page.size | map: 'hd_size' }}+{{ hp_bonus | prepend: '+' | remove_first: '+-' }});
+              <b>HP</b> {{ page.hp }} ({{ page.hd }}d{{ site.data.hd_sizes | where: 'size', page.size | map: 'hd_size' | first }}+{{ hp_bonus | prepend: '+' | remove_first: '+-' }});
 
               <b>AC</b> {{ page.armor_class }};
 
