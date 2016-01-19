@@ -1,5 +1,6 @@
 ---
 title: Monk
+group: Standard
 hit_die: 8
 armor_proficiencies:
 weapon_proficiencies:
