@@ -1,6 +1,7 @@
 ---
 title: Knock
 classes:
+  - Bard
   - Sorcerer
   - Wizard
 level: 2

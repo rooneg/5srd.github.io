@@ -1,5 +1,7 @@
 ---
 title: Detect Magic
+classes:
+  - Bard
 level: 1
 school: Divination
 ritual: true

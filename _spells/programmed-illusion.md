@@ -1,5 +1,7 @@
 ---
 title: Programmed Illusion
+classes:
+  - Bard
 level: 6
 school: Illusion
 casting_time: 1 action

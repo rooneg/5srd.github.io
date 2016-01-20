@@ -2,6 +2,8 @@
 title: Nondetection
 classes:
   - Bard
+classes:
+  - Bard
   - Ranger
   - Wizard
 level: 3

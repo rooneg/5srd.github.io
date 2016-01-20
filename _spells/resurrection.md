@@ -1,5 +1,7 @@
 ---
 title: Resurrection
+classes:
+  - Bard
 level: 7
 school: Necromancy
 casting_time: 1 hour

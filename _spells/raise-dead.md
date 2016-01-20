@@ -1,5 +1,7 @@
 ---
 title: Raise Dead
+classes:
+  - Bard
 level: 5
 school: Necromancy
 casting_time: 1 hour

@@ -1,5 +1,7 @@
 ---
 title: Speak with Animals
+classes:
+  - Bard
 level: 1
 school: Divination
 ritual: true

@@ -1,5 +1,7 @@
 ---
 title: Cure Wounds, Mass
+classes:
+  - Bard
 level: 5
 school: Evocation
 casting_time: 1 action

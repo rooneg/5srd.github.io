@@ -1,5 +1,7 @@
 ---
 title: Guards and Wards
+classes:
+  - Bard
 level: 6
 school: Abjuration
 casting_time: 10 minutes

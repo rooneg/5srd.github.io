@@ -1,6 +1,7 @@
 ---
 title: Animal Messenger
 classes:
+  - Bard
   - Druid
   - Ranger
 level: 2

@@ -1,5 +1,7 @@
 ---
 title: Magic Mouth
+classes:
+  - Bard
 level: 2
 school: Illusion
 ritual: true

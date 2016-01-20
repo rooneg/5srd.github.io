@@ -1,5 +1,7 @@
 ---
 title: Identify
+classes:
+  - Bard
 level: 1
 school: Divination
 ritual: true

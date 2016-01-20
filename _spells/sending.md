@@ -1,5 +1,7 @@
 ---
 title: Sending
+classes:
+  - Bard
 level: 3
 school: Evocation
 casting_time: 1 action

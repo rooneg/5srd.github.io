@@ -1,5 +1,7 @@
 ---
 title: See Invisibility
+classes:
+  - Bard
 level: 2
 school: Divination
 casting_time: 1 action

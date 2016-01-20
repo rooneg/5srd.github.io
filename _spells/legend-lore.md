@@ -1,5 +1,7 @@
 ---
 title: Legend Lore
+classes:
+  - Bard
 level: 5
 school: Divination
 casting_time: 10 minutes

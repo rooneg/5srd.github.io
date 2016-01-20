@@ -1,5 +1,7 @@
 ---
 title: Hold Monster
+classes:
+  - Bard
 level: 5
 school: Enchantment
 casting_time: 1 action

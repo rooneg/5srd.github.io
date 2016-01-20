@@ -1,5 +1,7 @@
 ---
 title: Bestow Curse
+classes:
+  - Bard
 level: 3
 school: Necromancy
 casting_time: 1 action

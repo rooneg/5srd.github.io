@@ -1,5 +1,7 @@
 ---
 title: Comprehend Languages
+classes:
+  - Bard
 level: 1
 school: Divination
 ritual: true

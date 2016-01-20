@@ -1,5 +1,7 @@
 ---
 title: Invisibility
+classes:
+  - Bard
 level: 2
 school: Illusion
 casting_time: 1 action

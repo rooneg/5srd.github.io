@@ -1,5 +1,7 @@
 ---
 title: Confusion
+classes:
+  - Bard
 level: 4
 school: Enchantment
 casting_time: 1 action

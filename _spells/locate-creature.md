@@ -1,5 +1,7 @@
 ---
 title: Locate Creature
+classes:
+  - Bard
 level: 4
 school: Divination
 casting_time: 1 action

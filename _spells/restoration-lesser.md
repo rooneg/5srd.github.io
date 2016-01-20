@@ -1,5 +1,7 @@
 ---
 title: Restoration, Lesser
+classes:
+  - Bard
 level: 2
 school: Abjuration
 casting_time: 1 action

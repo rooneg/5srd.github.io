@@ -1,5 +1,7 @@
 ---
 title: Mirage Arcane
+classes:
+  - Bard
 level: 7
 school: Illusion
 casting_time: 10 minutes

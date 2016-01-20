@@ -1,5 +1,7 @@
 ---
 title: Planar Binding
+classes:
+  - Bard
 level: 5
 school: Abjuration
 casting_time: 1 hour

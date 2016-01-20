@@ -1,5 +1,7 @@
 ---
 title: Locate Animals or Plants
+classes:
+  - Bard
 level: 2
 school: Divination
 ritual: true

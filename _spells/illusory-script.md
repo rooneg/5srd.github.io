@@ -1,5 +1,7 @@
 ---
 title: Illusory Script
+classes:
+  - Bard
 level: 1
 school: Illusion
 ritual: true

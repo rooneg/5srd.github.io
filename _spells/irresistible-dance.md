@@ -1,5 +1,7 @@
 ---
 title: Irresistible Dance
+classes:
+  - Bard
 level: 6
 school: Enchantment
 casting_time: 1 action

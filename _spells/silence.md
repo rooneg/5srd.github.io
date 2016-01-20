@@ -1,5 +1,7 @@
 ---
 title: Silence
+classes:
+  - Bard
 level: 2
 school: Illusion
 ritual: true

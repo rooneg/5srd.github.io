@@ -1,5 +1,7 @@
 ---
 title: Symbol
+classes:
+  - Bard
 level: 7
 school: Abjuration
 casting_time: 1 minute

@@ -1,5 +1,7 @@
 ---
 title: Clairvoyance
+classes:
+  - Bard
 level: 3
 school: Divination
 casting_time: 10 minutes

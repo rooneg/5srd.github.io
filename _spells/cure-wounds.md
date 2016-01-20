@@ -1,5 +1,7 @@
 ---
 title: Cure Wounds
+classes:
+  - Bard
 level: 1
 school: Evocation
 casting_time: 1 action

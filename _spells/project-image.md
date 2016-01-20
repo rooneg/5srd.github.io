@@ -1,5 +1,7 @@
 ---
 title: Project Image
+classes:
+  - Bard
 level: 7
 school: Illusion
 casting_time: 1 action
