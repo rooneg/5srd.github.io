@@ -9,6 +9,7 @@ material_components:
   - fur or a feather from a beast
 duration: Concentration, up to 1 hour.
 saving_throw: None
+at_higher_levels: true
 ---
 
 You touch a creature and bestow upon it a magical enhancement. Choose one of the following effects; the target gains that effect until the spell ends.

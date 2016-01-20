@@ -8,6 +8,7 @@ target: One creature, plus one creature per spell slot level above 2nd
 components: V
 duration: 1 minute or until successful save
 saving_throw: Constitution negates
+at_higher_levels: true
 ---
 
 You can blind or deafen a foe. Choose one creature that you can see within range to make a Constitution saving throw. If it fails, the target is either blinded or deafened (your choice) for the duration. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends.

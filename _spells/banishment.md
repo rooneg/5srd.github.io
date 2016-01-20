@@ -9,6 +9,7 @@ material_components:
   - an item distasteful to the target
 duration: Concentration, up to 1 minute
 saving_throw: Charisma negates
+at_higher_levels: true
 ---
 
 You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a Charisma saving throw or be banished.

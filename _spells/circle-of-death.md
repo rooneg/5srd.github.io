@@ -9,6 +9,7 @@ material_components:
   - the powder of a crushed black pearl worth at least 500 gp
 duration: Instantaneous
 saving_throw: Constitution half
+at_higher_levels: true
 ---
 
 A sphere of negative energy ripples out in a 60-foot-radius sphere from a point within range. Each creature in that area must make a Constitution saving throw. A target takes 8d6 necrotic damage on a failed save, or half as much damage on a successful one.

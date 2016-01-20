@@ -14,6 +14,7 @@ material_components:
   - a pinch of bone dust
 duration: Instantaneous
 saving_throw: None
+at_higher_levels: true
 ---
 
 This spell creates an undead servant. Choose a pile of bones or a corpse of a Medium or Small humanoid within range. Your spell imbues the target with a foul mimicry of life, raising it as an undead creature. The target becomes a skeleton if you chose bones or a zombie if you chose a corpse.

@@ -11,6 +11,7 @@ material_components:
   - one 150 gp black onyx stone for each corpse
 duration: Instantaneous
 saving_throw: None
+at_higher_levels: true
 ---
 
 You can cast this spell only at night. Choose up to three corpses of Medium or Small humanoids within range. Each corpse becomes a [ghoul](/monsters/ghoul/) under your control.

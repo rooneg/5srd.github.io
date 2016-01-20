@@ -7,6 +7,7 @@ range: 60 feet
 components: V, S
 duration: Concentration, up to 1 hour
 saving_throw:
+at_higher_levels: true
 ---
 
 You summon fey spirits that take the form of beasts and appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:

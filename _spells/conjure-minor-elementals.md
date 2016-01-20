@@ -7,6 +7,7 @@ range: 90 feet
 components: V, S
 duration: Concentration, up to 1 hour
 saving_throw: None
+at_higher_levels: true
 ---
 
 You summon elementals that appear in unoccupied spaces that you can see within range. You choose one the following options for what appears:

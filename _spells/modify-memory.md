@@ -7,6 +7,7 @@ range: 30 feet
 components: V, S
 duration: Concentration, up to 1 minute
 saving_throw: Wisdom negates
+at_higher_levels: true
 ---
 
 You attempt to reshape another creature's memories. One creature that you can see must make a Wisdom saving throw. If you are fighting the creature, it has advantage on the saving throw. On a failed save, the target becomes charmed by you for the duration. The charmed target is incapacitated and unaware of its surroundings, though it can still hear you. If it takes any damage or is targeted by another spell, this spell ends, and none of the target's memories are modified.

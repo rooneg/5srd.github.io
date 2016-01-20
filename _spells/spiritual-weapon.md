@@ -7,6 +7,7 @@ range: 60 feet
 components: V, S
 duration: 1 minute
 saving_throw: None
+at_higher_levels: true
 ---
 
 You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the weapon. On a hit, the target takes force damage equal to 1d8 + your spellcasting ability modifier.

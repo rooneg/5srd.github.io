@@ -9,6 +9,7 @@ material_components:
   - a holy symbol
 duration: Concentration, up to 10 minutes
 saving_throw: Wisdom half
+at_higher_levels: true
 ---
 
 You call forth spirits to protect you. They flit around you to a distance of 15 feet for the duration. If you are good or neutral, their spectral form appears angelic or fey (your choice). If you are evil, they appear fiendish.

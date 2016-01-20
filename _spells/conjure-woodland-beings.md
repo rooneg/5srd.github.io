@@ -9,6 +9,7 @@ material_components:
   - one holly berry per creature summoned
 duration: Concentration, up to 1 hour
 saving_throw:
+at_higher_levels: true
 ---
 
 You summon fey creatures that appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:

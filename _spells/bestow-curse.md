@@ -7,6 +7,7 @@ range: Touch
 Components: V, S
 duration: Concentration, up to 1 minute
 saving_throw: Wisdom negates
+at_higher_levels: true
 ---
 
 You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options:

@@ -7,6 +7,7 @@ range: 120 feet
 components: V, S
 duration: Concentration, up to 1 hour
 saving_throw: None
+at_higher_levels: true
 ---
 
 You create a 20-foot-radius sphere of fog centered on a point within range. The sphere spreads around corners, and its area is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.

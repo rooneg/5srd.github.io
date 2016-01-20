@@ -9,6 +9,7 @@ material_components:
   - three nut shells
 duration: Concentration, up to 1 minute
 saving_throw: Wisdom negates
+at_higher_levels: true
 ---
 
 This spell assaults and twists creatures' minds, spawning delusions and provoking uncontrolled action. Each creature in a 10-foot-radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or be affected by it.

@@ -9,6 +9,7 @@ material_components:
   - a thin sheet of lead, a piece of opaque glass, a wad of cotton or cloth, and powdered chrysolite
 duration: 24 hours
 saving_throw: None
+at_higher_levels: true
 ---
 
 You make an area within range magically secure. The area is a cube that can be as small as 5 feet to as large as 100 feet on each side. The spell lasts for the duration or until you use an action to dismiss it.

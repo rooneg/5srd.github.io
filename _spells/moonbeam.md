@@ -10,6 +10,7 @@ material_components:
   - a piece of opalescent feldspar
 duration: Concentration, up to 1 minute
 saving_throw: Constitution half
+at_higher_levels: true
 ---
 
 A silvery beam of pale light shines down in a 5-foot- radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder.

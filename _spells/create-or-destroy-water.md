@@ -9,6 +9,7 @@ material_components:
   - a drop of water if creating water or a few grains of sand if destroying it
 duration: Instantaneous
 saving_throw: None
+at_higher_levels: true
 ---
 
 You either create or destroy water.

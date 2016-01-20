@@ -7,6 +7,7 @@ range: Touch
 components: V, S
 duration: Concentration, up to 1 hour
 saving_throw: None
+at_higher_levels: true
 ---
 
 You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.

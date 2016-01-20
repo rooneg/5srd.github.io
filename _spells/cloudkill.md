@@ -7,6 +7,7 @@ range: 120 feet
 components: V, S
 duration: Concentration, up to 10 minutes
 saving_throw: Constitution half
+at_higher_levels: true
 ---
 
 You create a 20-foot-radius sphere of poisonous, yellow-green fog centered on a point you choose within range. The fog spreads around corners. It lasts for the duration or until strong wind disperses the fog, ending the spell. Its area is heavily obscured.  When a creature enters the spell's area for the first time on a turn or starts its turn there, that creature must make a Constitution saving throw. The creature takes 5d8 poison damage on a failed save, or half as much damage on a successful one. Creatures are affected even if they hold their breath or don't need to breathe.

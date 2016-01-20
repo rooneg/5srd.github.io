@@ -9,6 +9,7 @@ material_components:
   - a small, straight piece of iron
 duration: Concentration, up to 1 minute
 saving_throw: Wisdom negates
+at_higher_levels: true
 ---
 
 Choose a creature that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. This spell has no effect on undead. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.

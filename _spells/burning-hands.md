@@ -7,6 +7,7 @@ range: Self (15-foot cone)
 components: V, S
 duration: Instantaneous
 saving_throw: Dexterity half
+at_higher_levels: true
 ---
 
 As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.

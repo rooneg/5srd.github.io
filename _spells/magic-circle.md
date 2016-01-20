@@ -9,6 +9,7 @@ material_components:
   - holy water or powdered silver and iron worth at least 100 gp, which the spell consumes
 duration: 1 hour
 saving_throw: None
+at_higher_levels: true
 ---
 
 You create a 10-foot-radius, 20-foot-tall cylinder of magical energy centered on a point on the ground that you can see within range. Glowing runes appear wherever the cylinder intersects with the floor or other surface.

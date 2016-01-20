@@ -10,6 +10,7 @@ material_components:
   - a rod of amber, crystal, or glass
 duration: Instantaneous
 saving_throw: Dexterity half
+at_higher_levels: true
 ---
 
 A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.

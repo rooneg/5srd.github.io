@@ -7,6 +7,7 @@ range: Touch
 components: V, S
 duration: Instantaneous
 saving_throw: None
+at_higher_levels: true
 ---
 
 A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.

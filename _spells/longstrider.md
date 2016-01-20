@@ -9,6 +9,7 @@ material_components:
   - a pinch of dirt
 duration: 1 hour
 saving_throw: None
+at_higher_levels: true
 ---
 
 You touch a creature. The target's speed increases by 10 feet until the spell ends.

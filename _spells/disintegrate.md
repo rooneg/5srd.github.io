@@ -9,6 +9,7 @@ material_components:
   - a lodestone and a pinch of dust
 duration: Instantaneous
 saving_throw: Dexterity negates
+at_higher_levels: true
 ---
 
 A thin green ray springs from your pointing finger to a target that you can see within range. The target can be a creature, an object, or a creation of magical force, such as the wall created by *[wall of force](/spells/wall-of-force/)*.

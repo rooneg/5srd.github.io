@@ -7,6 +7,7 @@ range: 90 feet
 components: V, S
 duration: Concentration, up to 1 hour
 saving_throw: None
+at_higher_levels: true
 ---
 
 You summon a celestial of challenge rating 4 or lower, which appears in an unoccupied space that you can see within range. The celestial disappears when it drops to 0 hit points or when the spell ends.

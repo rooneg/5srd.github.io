@@ -7,6 +7,7 @@ range: 120 feet
 components: V, S
 duration: Instantaneous
 saving_throw: None
+at_higher_levels: true
 ---
 
 You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several.

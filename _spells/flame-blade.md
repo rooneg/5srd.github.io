@@ -9,6 +9,7 @@ material_components:
   - leaf of sumac
 duration: Concentration, up to 10 minutes
 saving_throw: None
+at_higher_levels: true
 ---
 
 You evoke a fiery blade in your free hand. The blade is similar in size and shape to a scimitar, and it lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action.

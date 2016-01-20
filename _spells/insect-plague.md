@@ -11,6 +11,7 @@ material_components:
   - a smear of fat
 duration: Concentration, up to 10 minutes
 saving_throw: Constitution half (recurring)
+at_higher_levels: true
 ---
 
 Swarming, biting locusts fill a 20-foot-radius sphere centered on a point you choose within range. The sphere spreads around corners. The sphere remains for the duration, and its area is lightly obscured. The sphere's area is difficult terrain.

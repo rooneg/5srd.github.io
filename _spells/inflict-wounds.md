@@ -7,6 +7,7 @@ range: Touch
 components: V, S
 duration: Instantaneous
 saving_throw: None
+at_higher_levels: true
 ---
 
 Make a melee spell attack against a creature you can reach. On a hit, the target takes 3d10 necrotic damage.

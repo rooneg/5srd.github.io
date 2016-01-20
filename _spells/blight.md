@@ -7,6 +7,7 @@ range: 30 feet
 components: V, S
 duration: Instantaneous
 saving_throw: Constitution half, or none (object)
+at_higher_levels: true
 ---
 
 Necromantic energy washes over a creature of your choice that you can see within range, draining moisture and vitality from it. The target must make a Constitution saving throw. The target takes 8d8 necrotic damage on a failed save, or half as much damage on a successful one. This spell has no effect on undead or constructs.

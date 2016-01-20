@@ -9,6 +9,7 @@ material_components:
   - a pinch of dust and a few drops of water
 duration: Instantaneous
 saving_throw: Dexterity half
+at_higher_levels: true
 ---
 
 A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes 2d8 bludgeoning damage and 4d6 cold damage on a failed save, or half as much damage on a successful one.

@@ -7,6 +7,7 @@ range: 90 feet
 components: V, S
 duration: Concentration, up to 1 hour
 saving_throw: None
+at_higher_levels: true
 ---
 
 You summon a fey creature of challenge rating 6 or lower, or a fey spirit that takes the form of a beast of challenge rating 6 or lower. It appears in an unoccupied space that you can see within range. The fey creature disappears when it drops to 0 hit points or when the spell ends.

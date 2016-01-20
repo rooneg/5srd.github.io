@@ -9,6 +9,7 @@ material_components:
   - a sprinkling of holy water
 duration: Concentration, up to 1 minute
 saving_throw: None
+at_higher_levels: true
 ---
 
 You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw.

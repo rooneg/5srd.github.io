@@ -9,6 +9,7 @@ material_components:
   - a wing feather from any bird
 duration: Concentration, up to 10 minutes
 saving_throw: None
+at_higher_levels: true
 ---
 
 You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall.
