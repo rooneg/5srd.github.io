@@ -13,7 +13,7 @@ components: S, M
 material_components:
   - a bit of fleece
 duration: 1 minute
-saving_throw: Intelligence (Investigation) negates
+saving_throw: Intelligence (Investigation) disbelief
 ---
 
 You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again.

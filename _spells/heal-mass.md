@@ -1,5 +1,5 @@
 ---
-title: Mass Heal
+title: Heal, Mass
 classes:
   - Cleric
 level: 9

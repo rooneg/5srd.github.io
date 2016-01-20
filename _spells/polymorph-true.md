@@ -1,5 +1,5 @@
 ---
-title: True Polymorph
+title: Polymorph, True
 classes:
   - Bard
   - Warlock

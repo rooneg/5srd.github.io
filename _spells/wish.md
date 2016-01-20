@@ -9,7 +9,7 @@ casting_time: 1 action
 range: Self
 components: V
 duration: Instantaneous
-saving_throw: Special (see text)
+saving_throw: Varies
 ---
 
 *Wish* is the mightiest spell a mortal creature can cast. By simply speaking aloud, you can alter the very foundations of reality in accord with your desires.

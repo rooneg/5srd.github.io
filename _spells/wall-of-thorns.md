@@ -10,7 +10,7 @@ components: V, S, M
 material_components:
   - a handful of thorns
 duration: Concentration, up to 10 minutes
-saving_throw: Dexterity half (see text)
+saving_throw: Dexterity half (recurring)
 ---
 
 You create a wall of tough, pliable, tangled brush bristling with needle sharp thorns. The wall appears within range on a solid surface and lasts for the duration. You choose to make the wall up to 60 feet long, 10 feet high, and 5 feet thick or a circle that has a 20 foot diameter and is up to 20 feet high and 5 feet thick. The wall blocks line of sight.

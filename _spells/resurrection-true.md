@@ -1,5 +1,5 @@
 ---
-title: True Resurrection
+title: Resurrection, True
 classes:
   - Cleric
   - Druid

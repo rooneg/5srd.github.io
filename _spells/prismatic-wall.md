@@ -8,7 +8,7 @@ casting_time: 1 action
 range: 60 feet
 components: V, S
 duration: 10 minutes
-saving_throw: Special (see text)
+saving_throw: Varies
 ---
 
 A shimmering, multicolored plane of light forms a vertical opaque wall---up to 90 feet long, 30 feet high, and 1 inch thick---centered on a point you can see within range. Alternatively, you can shape the wall into a sphere up to 30 feet in diameter centered on a point you choose within range. The wall remains in place for the duration. If you position the wall so that it passes through a space occupied by a creature, the spell fails, and your action and the spell slot are wasted.
