@@ -2,6 +2,8 @@
 title: Speak with Plants
 classes:
   - Bard
+  - Druid
+  - Ranger
 level: 3
 school: Transmutation
 casting_time: 1 action

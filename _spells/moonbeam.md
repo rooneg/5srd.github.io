@@ -1,5 +1,7 @@
 ---
 title: Moonbeam
+classes:
+  - Druid
 level: 2
 school: Evocation
 casting_time: 1 action

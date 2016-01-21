@@ -1,5 +1,7 @@
 ---
 title: Conjure Fey
+classes:
+  - Druid
 level: 6
 school: Conjuration
 casting_time: 1 minute

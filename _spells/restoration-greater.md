@@ -3,6 +3,7 @@ title: Restoration, Greater
 classes:
   - Bard
   - Cleric
+  - Druid
 level: 5
 school: Abjuration
 casting_time: 1 action

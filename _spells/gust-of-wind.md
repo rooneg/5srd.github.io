@@ -1,5 +1,7 @@
 ---
 title: Gust of Wind
+classes:
+  - Druid
 level: 2
 school: Evocation
 casting_time: 1 action

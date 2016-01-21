@@ -2,6 +2,7 @@
 title: Heat Metal
 classes:
   - Bard
+  - Druid
 level: 2
 school: Transmutation
 casting_time: 1 action

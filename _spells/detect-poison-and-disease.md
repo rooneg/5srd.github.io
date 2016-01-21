@@ -2,6 +2,9 @@
 title: Detect Poison and Disease
 classes:
   - Cleric
+  - Druid
+  - Paladin
+  - Ranger
 level: 1
 school: Divination
 ritual: true

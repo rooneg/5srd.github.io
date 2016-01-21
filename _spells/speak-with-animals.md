@@ -2,6 +2,8 @@
 title: Speak with Animals
 classes:
   - Bard
+  - Druid
+  - Ranger
 level: 1
 school: Divination
 ritual: true

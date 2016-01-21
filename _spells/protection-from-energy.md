@@ -2,6 +2,8 @@
 title: Protection from Energy
 classes:
   - Cleric
+  - Druid
+  - Ranger
 level: 3
 school: Abjuration
 casting_time: 1 action

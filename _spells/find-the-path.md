@@ -3,6 +3,7 @@ title: Find the Path
 classes:
   - Bard
   - Cleric
+  - Druid
 level: 6
 school: Divination
 casting_time: 1 minute

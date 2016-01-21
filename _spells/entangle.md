@@ -1,5 +1,7 @@
 ---
 title: Entangle
+classes:
+  - Druid
 level: 1
 school: Conjuration
 casting_time: 1 action

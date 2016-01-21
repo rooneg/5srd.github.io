@@ -1,5 +1,8 @@
 ---
 title: Pass without Trace
+classes:
+  - Druid
+  - Ranger
 level: 2
 school: Abjuration
 casting_time: 1 action

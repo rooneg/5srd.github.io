@@ -3,6 +3,7 @@ title: Regenerate
 classes:
   - Bard
   - Cleric
+  - Druid
 level: 7
 school: Transmutation
 casting_time: 1 minute

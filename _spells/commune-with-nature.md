@@ -1,5 +1,8 @@
 ---
 title: Commune with Nature
+classes:
+  - Druid
+  - Ranger
 level: 5
 school: Divination
 ritual: true

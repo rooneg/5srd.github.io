@@ -1,5 +1,7 @@
 ---
 title: Reverse Gravity
+classes:
+  - Druid
 level: 7
 school: Transmutation
 casting_time: 1 action

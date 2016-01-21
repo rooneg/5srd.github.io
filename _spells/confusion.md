@@ -2,6 +2,7 @@
 title: Confusion
 classes:
   - Bard
+  - Druid
 level: 4
 school: Enchantment
 casting_time: 1 action

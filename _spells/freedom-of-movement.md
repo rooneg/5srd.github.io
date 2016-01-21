@@ -3,6 +3,8 @@ title: Freedom of Movement
 classes:
   - Bard
   - Cleric
+  - Druid
+  - Ranger
 level: 4
 school: Abjuration
 casting_time: 1 action

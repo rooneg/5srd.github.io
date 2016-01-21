@@ -1,5 +1,7 @@
 ---
 title: Blight
+classes:
+  - Druid
 level: 4
 school: Necromancy
 casting_time: 1 action

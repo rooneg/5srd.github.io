@@ -1,5 +1,7 @@
 ---
 title: Find Steed
+classes:
+  - Paladin
 level: 2
 school: Conjuration
 casting_time: 10 minutes

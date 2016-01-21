@@ -2,6 +2,7 @@
 title: Meld into Stone
 classes:
   - Cleric
+  - Druid
 level: 3
 school: Transmutation
 ritual: true

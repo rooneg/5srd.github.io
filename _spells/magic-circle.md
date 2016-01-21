@@ -2,6 +2,7 @@
 title: Magic Circle
 classes:
   - Cleric
+  - Paladin
 level: 3
 school: Abjuration
 casting_time: 1 minute

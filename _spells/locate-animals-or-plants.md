@@ -2,6 +2,8 @@
 title: Locate Animals or Plants
 classes:
   - Bard
+  - Druid
+  - Ranger
 level: 2
 school: Divination
 ritual: true

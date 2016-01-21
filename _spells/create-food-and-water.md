@@ -2,6 +2,7 @@
 title: Create Food and Water
 classes:
   - Cleric
+  - Paladin
 level: 3
 school: Conjuration
 casting_time: 1 action

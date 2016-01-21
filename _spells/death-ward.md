@@ -2,6 +2,7 @@
 title: Death Ward
 classes:
   - Cleric
+  - Paladin
 level: 4
 school: Abjuration
 casting_time: 1 action

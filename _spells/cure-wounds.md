@@ -3,6 +3,9 @@ title: Cure Wounds
 classes:
   - Bard
   - Cleric
+  - Druid
+  - Paladin
+  - Ranger
 level: 1
 school: Evocation
 casting_time: 1 action

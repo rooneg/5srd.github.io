@@ -1,5 +1,7 @@
 ---
 title: Move Earth
+classes:
+  - Druid
 level: 6
 school: Transmutation
 casting_time: 1 action

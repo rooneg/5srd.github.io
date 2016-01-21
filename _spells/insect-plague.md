@@ -2,6 +2,7 @@
 title: Insect Plague
 classes:
   - Cleric
+  - Druid
 level: 5
 school: Conjuration
 casting_time: 1 action

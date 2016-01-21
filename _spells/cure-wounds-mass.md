@@ -3,6 +3,7 @@ title: Cure Wounds, Mass
 classes:
   - Bard
   - Cleric
+  - Druid
 level: 5
 school: Evocation
 casting_time: 1 action

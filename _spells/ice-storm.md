@@ -1,5 +1,7 @@
 ---
 title: Ice Storm
+classes:
+  - Druid
 level: 4
 school: Evocation
 casting_time: 1 action

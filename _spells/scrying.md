@@ -3,6 +3,7 @@ title: Scrying
 classes:
   - Bard
   - Cleric
+  - Druid
 level: 5
 school: Divination
 casting_time: 10 minutes

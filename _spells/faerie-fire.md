@@ -2,6 +2,7 @@
 title: Faerie Fire
 classes:
   - Bard
+  - Druid
 level: 1
 school: Evocation
 casting_time: 1 action

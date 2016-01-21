@@ -2,6 +2,7 @@
 title: Polymorph
 classes:
   - Bard
+  - Druid
 level: 4
 school: Transmutation
 casting_time: 1 action

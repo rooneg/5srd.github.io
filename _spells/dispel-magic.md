@@ -3,6 +3,8 @@ title: Dispel Magic
 classes:
   - Bard
   - Cleric
+  - Druid
+  - Paladin
 level: 3
 school: Abjuration
 casting_time: 1 action

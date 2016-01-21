@@ -1,5 +1,7 @@
 ---
 title: Reincarnate
+classes:
+  - Druid
 level: 5
 school: Transmutation
 casting_time: 1 hour
@@ -27,8 +29,8 @@ The magic fashions a new body for the creature to inhabit, which likely causes t
 | 35--42 | Elf, wood           |
 | 43--46 | Gnome, forest       |
 | 47--52 | Gnome, rock         |
-| 53--56 | Halfbelf            |
-| 57--60 | Halfborc            |
+| 53--56 | Half-elf            |
+| 57--60 | Half-orc            |
 | 61--68 | Halfling, lightfoot |
 | 69--76 | Halfling, stout     |
 | 77--96 | Human               |

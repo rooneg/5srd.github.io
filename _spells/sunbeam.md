@@ -1,5 +1,7 @@
 ---
 title: Sunbeam
+classes:
+  - Druid
 level: 6
 school: Evocation
 casting_time: 1 action

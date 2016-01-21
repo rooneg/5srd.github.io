@@ -3,6 +3,9 @@ title: Detect Magic
 classes:
   - Bard
   - Cleric
+  - Druid
+  - Paladin
+  - Ranger
 level: 1
 school: Divination
 ritual: true

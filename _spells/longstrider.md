@@ -2,6 +2,8 @@
 title: Longstrider
 classes:
   - Bard
+  - Druid
+  - Ranger
 level: 1
 school: Transmutation
 casting_time: 1 action

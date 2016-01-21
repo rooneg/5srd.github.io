@@ -3,6 +3,8 @@ title: Geas
 classes:
   - Bard
   - Cleric
+  - Druid
+  - Paladin
 level: 5
 school: Enchantment
 casting_time: 1 minute

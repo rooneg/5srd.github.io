@@ -2,6 +2,8 @@
 title: Find Traps
 classes:
   - Cleric
+  - Druid
+  - Ranger
 level: 2
 school: Divination
 casting_time: 1 action

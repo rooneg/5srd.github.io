@@ -3,6 +3,9 @@ title: Locate Creature
 classes:
   - Bard
   - Cleric
+  - Druid
+  - Paladin
+  - Ranger
 level: 4
 school: Divination
 casting_time: 1 action

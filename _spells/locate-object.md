@@ -3,6 +3,9 @@ title: Locate Object
 classes:
   - Bard
   - Cleric
+  - Druid
+  - Paladin
+  - Ranger
 level: 2
 school: Divination
 casting_time: 1 action

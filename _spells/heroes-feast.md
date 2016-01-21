@@ -2,6 +2,7 @@
 title: Heroes' Feast
 classes:
   - Cleric
+  - Druid
 level: 6
 school: Conjuration
 casting_time: 10 minutes

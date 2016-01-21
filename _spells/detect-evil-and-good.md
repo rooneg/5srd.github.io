@@ -2,6 +2,7 @@
 title: Detect Evil and Good
 classes:
   - Cleric
+  - Paladin
 level: 1
 school: Divination
 casting_time: 1 action

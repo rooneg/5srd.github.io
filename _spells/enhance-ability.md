@@ -3,6 +3,7 @@ title: Enhance Ability
 classes:
   - Bard
   - Cleric
+  - Druid
 level: 2
 school: Transmutation
 casting_time: 1 action

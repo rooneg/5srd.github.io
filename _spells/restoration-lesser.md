@@ -3,6 +3,9 @@ title: Restoration, Lesser
 classes:
   - Bard
   - Cleric
+  - Druid
+  - Paladin
+  - Ranger
 level: 2
 school: Abjuration
 casting_time: 1 action

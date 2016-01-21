@@ -1,6 +1,8 @@
 ---
 title: Water Breathing
 classes:
+  - Druid
+  - Ranger
   - Sorcerer
   - Wizard
 level: 3

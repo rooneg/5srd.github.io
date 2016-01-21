@@ -2,6 +2,7 @@
 title: Wind Walk
 classes:
   - Druid
+  - Ranger
 level: 6
 school: Transmutation
 casting_time: 1 minute

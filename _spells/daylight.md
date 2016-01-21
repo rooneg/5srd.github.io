@@ -2,6 +2,9 @@
 title: Daylight
 classes:
   - Cleric
+  - Druid
+  - Paladin
+  - Ranger
 level: 3
 school: Evocation
 casting_time: 1 action
