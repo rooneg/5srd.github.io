@@ -9,7 +9,7 @@ casting_time: 1 action
 range: 60 feet
 components: V, S
 duration: Concentration, up to 1 hour
-saving_throw:
+saving_throw: None
 at_higher_levels: true
 ---
 

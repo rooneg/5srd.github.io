@@ -12,7 +12,7 @@ components: V, S, M
 material_components:
   - diamond dust worth at least 100 gp, which the spell consumes
 duration: Instantaneous
-saving_throw:
+saving_throw: None
 ---
 
 You imbue a creature you touch with positive energy to undo a debilitating effect. You can reduce the target's exhaustion level by one, or end one of the following effects on the target:

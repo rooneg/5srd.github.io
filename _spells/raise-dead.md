@@ -12,7 +12,7 @@ components: V, S, M
 material_components:
   - a diamond worth at least 500 gp, which the spell consumes
 duration: Instantaneous
-saving_throw:
+saving_throw: None
 ---
 
 You return a dead creature you touch to life, provided that it has been dead no longer than 10 days. If the creature's soul is both willing and at liberty to rejoin the body, the creature returns to life with 1 hit point.

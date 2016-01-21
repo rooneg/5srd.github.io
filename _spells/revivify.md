@@ -11,7 +11,7 @@ components: V, S, M
 material_components:
   - diamonds worth 300 gp, which the spell consumes
 duration: Instantaneous
-saving_throw:
+saving_throw: None
 ---
 
 You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts.

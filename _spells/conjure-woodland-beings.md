@@ -11,7 +11,7 @@ components: V, S, M
 material_components:
   - one holly berry per creature summoned
 duration: Concentration, up to 1 hour
-saving_throw:
+saving_throw: None
 at_higher_levels: true
 ---
 
