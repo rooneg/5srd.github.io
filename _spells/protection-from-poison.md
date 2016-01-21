@@ -1,5 +1,7 @@
 ---
 title: Protection from Poison
+classes:
+  - Cleric
 level: 2
 school: Abjuration
 casting_time: 1 action

@@ -1,5 +1,7 @@
 ---
 title: Divination
+classes:
+  - Cleric
 level: 4
 school: Divination
 ritual: true

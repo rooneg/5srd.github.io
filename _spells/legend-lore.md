@@ -2,6 +2,7 @@
 title: Legend Lore
 classes:
   - Bard
+  - Cleric
 level: 5
 school: Divination
 casting_time: 10 minutes

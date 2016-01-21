@@ -1,5 +1,7 @@
 ---
 title: Create Food and Water
+classes:
+  - Cleric
 level: 3
 school: Conjuration
 casting_time: 1 action

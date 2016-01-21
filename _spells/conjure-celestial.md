@@ -1,5 +1,7 @@
 ---
 title: Conjure Celestial
+classes:
+  - Cleric
 level: 7
 school: Conjuration
 casting_time: 1 minute

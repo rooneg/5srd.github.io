@@ -2,6 +2,7 @@
 title: Detect Magic
 classes:
   - Bard
+  - Cleric
 level: 1
 school: Divination
 ritual: true

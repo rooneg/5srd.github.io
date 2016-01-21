@@ -1,5 +1,7 @@
 ---
 title: Forbiddance
+classes:
+  - Cleric
 level: 6
 school: Abjuration
 ritual: true

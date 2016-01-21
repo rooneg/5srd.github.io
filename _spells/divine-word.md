@@ -1,5 +1,7 @@
 ---
 title: Divine Word
+classes:
+  - Cleric
 level: 7
 school: Evocation
 casting_time: 1 bonus action

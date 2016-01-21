@@ -1,5 +1,7 @@
 ---
 title: Guiding Bolt
+classes:
+  - Cleric
 level: 1
 school: Evocation
 casting_time: 1 action

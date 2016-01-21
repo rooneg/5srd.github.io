@@ -2,6 +2,7 @@
 title: Silence
 classes:
   - Bard
+  - Cleric
 level: 2
 school: Illusion
 ritual: true

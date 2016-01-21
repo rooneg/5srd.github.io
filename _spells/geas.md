@@ -2,6 +2,7 @@
 title: Geas
 classes:
   - Bard
+  - Cleric
 level: 5
 school: Enchantment
 casting_time: 1 minute

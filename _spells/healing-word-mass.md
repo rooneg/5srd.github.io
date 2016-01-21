@@ -1,5 +1,7 @@
 ---
 title: Healing Word, Mass
+classes:
+  - Cleric
 level: 3
 school: Evocation
 casting_time: 1 bonus action

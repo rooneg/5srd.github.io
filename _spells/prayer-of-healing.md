@@ -1,5 +1,7 @@
 ---
 title: Prayer of Healing
+classes:
+  - Cleric
 level: 2
 school: Evocation
 casting_time: 10 minutes

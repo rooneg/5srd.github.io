@@ -1,5 +1,7 @@
 ---
 title: Continual Flame
+classes:
+  - Cleric
 level: 2
 school: Evocation
 casting_time: 1 action

@@ -2,6 +2,7 @@
 title: Speak with Dead
 classes:
   - Bard
+  - Cleric
 level: 3
 school: Necromancy
 casting_time: 1 action

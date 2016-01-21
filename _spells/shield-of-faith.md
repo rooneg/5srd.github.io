@@ -1,5 +1,7 @@
 ---
 title: Shield of Faith
+classes:
+  - Cleric
 level: 1
 school: Abjuration
 casting_time: 1 bonus action

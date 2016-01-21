@@ -1,5 +1,7 @@
 ---
 title: Detect Poison and Disease
+classes:
+  - Cleric
 level: 1
 school: Divination
 ritual: true

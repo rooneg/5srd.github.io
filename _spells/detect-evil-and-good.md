@@ -1,5 +1,7 @@
 ---
 title: Detect Evil and Good
+classes:
+  - Cleric
 level: 1
 school: Divination
 casting_time: 1 action

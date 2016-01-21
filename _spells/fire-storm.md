@@ -1,5 +1,7 @@
 ---
 title: Fire Storm
+classes:
+  - Cleric
 level: 7
 school: Evocation
 casting_time: 1 action

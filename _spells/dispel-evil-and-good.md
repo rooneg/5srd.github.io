@@ -1,5 +1,7 @@
 ---
 title: Dispel Evil and Good
+classes:
+  - Cleric
 level: 5
 school: Abjuration
 casting_time: 1 action

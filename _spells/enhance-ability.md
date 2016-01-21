@@ -2,6 +2,7 @@
 title: Enhance Ability
 classes:
   - Bard
+  - Cleric
 level: 2
 school: Transmutation
 casting_time: 1 action

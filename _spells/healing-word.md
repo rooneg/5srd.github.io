@@ -2,6 +2,7 @@
 title: Healing Word
 classes:
   - Bard
+  - Cleric
 level: 1
 school: Evocation
 casting_time: 1 bonus action

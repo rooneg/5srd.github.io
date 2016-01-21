@@ -1,5 +1,7 @@
 ---
 title: Contagion
+classes:
+  - Cleric
 level: 5
 school: Necromancy
 casting_time: 1 action

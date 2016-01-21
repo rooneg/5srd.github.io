@@ -2,6 +2,7 @@
 title: Etherealness
 classes:
   - Bard
+  - Cleric
 level: 7
 school: Transmutation
 casting_time: 1 action

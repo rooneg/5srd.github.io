@@ -1,5 +1,7 @@
 ---
 title: Remove Curse
+classes:
+  - Cleric
 level: 3
 school: Abjuration
 casting_time: 1 action

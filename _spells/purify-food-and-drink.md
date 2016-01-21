@@ -1,5 +1,7 @@
 ---
 title: Purify Food and Drink
+classes:
+  - Cleric
 level: 1
 school: Transmutation
 ritual: true

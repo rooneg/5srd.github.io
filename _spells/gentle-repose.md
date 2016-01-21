@@ -1,5 +1,7 @@
 ---
 title: Gentle Repose
+classes:
+  - Cleric
 level: 2
 school: Necromancy
 ritual: true

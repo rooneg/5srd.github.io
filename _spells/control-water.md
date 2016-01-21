@@ -1,5 +1,7 @@
 ---
 title: Control Water
+classes:
+  - Cleric
 level: 4
 school: Transmutation
 casting_time: 1 action

@@ -1,5 +1,7 @@
 ---
 title: Flame Strike
+classes:
+  - Cleric
 level: 5
 school: Evocation
 casting_time: 1 action

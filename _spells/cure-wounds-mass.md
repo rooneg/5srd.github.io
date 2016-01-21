@@ -2,6 +2,7 @@
 title: Cure Wounds, Mass
 classes:
   - Bard
+  - Cleric
 level: 5
 school: Evocation
 casting_time: 1 action

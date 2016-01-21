@@ -1,5 +1,7 @@
 ---
 title: Heal
+classes:
+  - Cleric
 level: 6
 school: Evocation
 casting_time: 1 action

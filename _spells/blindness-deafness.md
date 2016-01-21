@@ -2,6 +2,7 @@
 title: Blindness/Deafness
 classes:
   - Bard
+  - Cleric
 level: 2
 school: Necromancy
 casting_time: 1 action

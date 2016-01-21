@@ -1,5 +1,7 @@
 ---
 title: Revivify
+classes:
+  - Cleric
 level: 3
 school: Necromancy
 casting_time: 1 action

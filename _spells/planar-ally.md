@@ -1,5 +1,7 @@
 ---
 title: Planar Ally
+classes:
+  - Cleric
 level: 6
 school: Conjuration
 casting_time: 10 minutes

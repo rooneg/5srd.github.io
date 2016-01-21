@@ -2,6 +2,7 @@
 title: Calm Emotions
 classes:
   - Bard
+  - Cleric
 level: 2
 school: Enchantment
 casting_time: 1 action
