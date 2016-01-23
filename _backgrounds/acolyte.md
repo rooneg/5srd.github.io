@@ -25,7 +25,7 @@ Acolytes are shaped by their experience in temples or other religious communitie
 
 | d8 | Personality Trait                                                                                                  |
 |:--:|:-------------------------------------------------------------------------------------------------------------------|
-| 1  | I idolize a particular hero of my faith, and constantly refer to that person’s deeds and example.                  |
+| 1  | I idolize a particular hero of my faith, and constantly refer to that person's deeds and example.                  |
 | 2  | I can find common ground between the fiercest enemies, empathizing with them and always working toward peace.      |
 | 3  | I see omens in every event and action. The gods try to speak to us, we just need to listen                         |
 | 4  | Nothing can shake my optimistic attitude.                                                                          |
