@@ -66,12 +66,12 @@ An Earthling could come from any one of a number of cultures and countries, but 
 
 | d6 | Bond                                                                          |
 |:--:|:------------------------------------------------------------------------------|
-|    | I think a wizard in a distant city can help me.                               |
-|    | I brought a pet with me.                                                      |
-|    | I am blood brother (or sister) of a warrior in this place.                    |
-|    | There is someone here that I dreamed of every night before I was transported. |
-|    | I owe my life to the first person who I met here.                             |
-|    | The first person I met here stole something that I need to get back home.     |
+| 1  | I think a wizard in a distant city can help me.                               |
+| 2  | I brought a pet with me.                                                      |
+| 3  | I am blood brother (or sister) of a warrior in this place.                    |
+| 4  | There is someone here that I dreamed of every night before I was transported. |
+| 5  | I owe my life to the first person who I met here.                             |
+| 6  | The first person I met here stole something that I need to get back home.     |
 
 | d6 | Flaw                                                                               |
 |:--:|:-----------------------------------------------------------------------------------|
