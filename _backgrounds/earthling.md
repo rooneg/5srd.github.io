@@ -1,5 +1,7 @@
 ---
 title: Earthling
+source: |
+  ["Earthling", Chris Sakkas](https://grimportents.wordpress.com/2014/08/12/5e-earthling-background/)
 group: Third Party
 ---
 
@@ -23,16 +25,16 @@ The Future Device has the functionality of two tools. Examples include: penknife
 
 ## How Did You Get Here?
 
-| d8 | Method |
-|:--:|:--:|
-| 1 | Astrally projected |
-| 2 | Awoke from a dream |
-| 3 | Launched an experimental spacecraft |
-| 4 | Touched a black monolith |
-| 5 | Was cursed by a fortune teller |
-| 6 | Read a verse from a book with a skull on the cover |
-| 7 | Said “let’s get out of here” while polishing a lamp |
-| 8 | Stumbled out of a stasis chamber |
+| d8 |                       Method                        |
+|:--:|:---------------------------------------------------:|
+| 1  |                 Astrally projected                  |
+| 2  |                 Awoke from a dream                  |
+| 3  |         Launched an experimental spacecraft         |
+| 4  |              Touched a black monolith               |
+| 5  |           Was cursed by a fortune teller            |
+| 6  | Read a verse from a book with a skull on the cover  |
+| 7  | Said “let’s get out of here” while polishing a lamp |
+| 8  |          Stumbled out of a stasis chamber           |
 
 ## Feature: Man (or Woman) out of Time
 
@@ -42,43 +44,43 @@ Your foreignness means that your gaffs and breaches of social norms are laughed 
 
 An Earthling could come from any one of a number of cultures and countries, but most are in a state of culture shock – at least until they settle in.
 
-| d8 | Personality Trait                                                                                                  |
-|:--:|:-------------------------------------------------------------------------------------------------------------------|
-| 1  | I make pop culture references that no one else understands.                  |
-| 2  | I am melancholic and distracted.      |
-| 3  | I am excited by the scientific possibilities this planet presents.                         |
-| 4  | I am convinced that this is all a dream.                                                                          |
-| 5  | I wish that I had magic powers.                                         |
-| 6  | I put on a faux medieval accent.                  |
-| 7  | I try to display the manners and courtesy of my home state.                |
+| d8 | Personality Trait                                                      |
+|:--:|:-----------------------------------------------------------------------|
+| 1  | I make pop culture references that no one else understands.            |
+| 2  | I am melancholic and distracted.                                       |
+| 3  | I am excited by the scientific possibilities this planet presents.     |
+| 4  | I am convinced that this is all a dream.                               |
+| 5  | I wish that I had magic powers.                                        |
+| 6  | I put on a faux medieval accent.                                       |
+| 7  | I try to display the manners and courtesy of my home state.            |
 | 8  | I enthusiastically compare everything to the fiction I read back home. |
 
-| d6 | Ideal                                                                                                                  |
-|:--:|:-----------------------------------------------------------------------------------------------------------------------|
-| 1  | Honour. Bravery and gentility are universal virtues, as true here as anywhere. (Lawful)                      |
-| 2  | Faith. This is a land like none other, but I will honour my God and continue to obey His will. (Any)                                  |
-| 3  | Knowledge. I must learn everything that I can about this extraordinary place. (Neutral)                   |
-| 4  | Adventure. I am going to have a thrilling time of it. (Chaotic)                                   |
-| 5  | Second Chances. I will do better this time, and afford others the same chance. (Good)    |
-| 6  | Progress. There is much that could be done to make this place better. (Good) |
+| d6 | Ideal                                                                                                |
+|:--:|:-----------------------------------------------------------------------------------------------------|
+| 1  | Honour. Bravery and gentility are universal virtues, as true here as anywhere. (Lawful)              |
+| 2  | Faith. This is a land like none other, but I will honour my God and continue to obey His will. (Any) |
+| 3  | Knowledge. I must learn everything that I can about this extraordinary place. (Neutral)              |
+| 4  | Adventure. I am going to have a thrilling time of it. (Chaotic)                                      |
+| 5  | Second Chances. I will do better this time, and afford others the same chance. (Good)                |
+| 6  | Progress. There is much that could be done to make this place better. (Good)                         |
 
-| d6 | Bond |
-|:--:|:----------------------------------------------------------------------------------------------|
-|  | I think a wizard in a distant city can help me.
-|  | I brought a pet with me.
-|  | I am blood brother (or sister) of a warrior in this place.
-|  | There is someone here that I dreamed of every night before I was transported.
-|  | I owe my life to the first person who I met here.
-|  | The first person I met here stole something that I need to get back home.
+| d6 | Bond                                                                          |
+|:--:|:------------------------------------------------------------------------------|
+|    | I think a wizard in a distant city can help me.                               |
+|    | I brought a pet with me.                                                      |
+|    | I am blood brother (or sister) of a warrior in this place.                    |
+|    | There is someone here that I dreamed of every night before I was transported. |
+|    | I owe my life to the first person who I met here.                             |
+|    | The first person I met here stole something that I need to get back home.     |
 
-| d6 | Flaw                                                                                          |
-|:--:|:----------------------------------------------------------------------------------------------|
-| 1  | I pine for home and unfavourably compare everyone to friends and family back home.                                        |
-| 2  | Those I meet are savages in need of civilising.                   |
-| 3  | I am obsessed with getting back home.              |
-| 4  | I look at everything here through rose-coloured glasses.                                                               |
-| 5  | I am convinced that all the magic I see is sufficiently-advanced technology.                                    |
-| 6  | I am scared of everything here. |
+| d6 | Flaw                                                                               |
+|:--:|:-----------------------------------------------------------------------------------|
+| 1  | I pine for home and unfavourably compare everyone to friends and family back home. |
+| 2  | Those I meet are savages in need of civilising.                                    |
+| 3  | I am obsessed with getting back home.                                              |
+| 4  | I look at everything here through rose-coloured glasses.                           |
+| 5  | I am convinced that all the magic I see is sufficiently-advanced technology.       |
+| 6  | I am scared of everything here.                                                    |
 
 ## Section 15
 * [Earthling](https://grimportents.wordpress.com/2014/08/12/5e-earthling-background/), Chris Sakkas 2015.
