@@ -5,6 +5,7 @@ classes:
   - Cleric
   - Druid
   - Warlock
+  - Wizard
 level: 5
 school: Divination
 casting_time: 10 minutes

@@ -1,5 +1,7 @@
 ---
 title: Black Tentacles
+classes:
+  - Wizard
 level: 4
 school: Conjuration
 casting_time: 1 action

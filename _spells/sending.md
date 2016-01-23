@@ -3,6 +3,7 @@ title: Sending
 classes:
   - Bard
   - Cleric
+  - Wizard
 level: 3
 school: Evocation
 casting_time: 1 action

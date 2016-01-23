@@ -2,6 +2,7 @@
 title: Scorching Ray
 classes:
   - Sorcerer
+  - Wizard
 level: 2
 school: Evocation
 casting_time: 1 action

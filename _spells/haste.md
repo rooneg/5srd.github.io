@@ -2,6 +2,7 @@
 title: Haste
 classes:
   - Sorcerer
+  - Wizard
 level: 3
 school: Transmutation
 casting_time: 1 action

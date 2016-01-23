@@ -2,6 +2,7 @@
 title: Flesh to Stone
 classes:
   - Warlock
+  - Wizard
 level: 6
 school: Transmutation
 casting_time: 1 action

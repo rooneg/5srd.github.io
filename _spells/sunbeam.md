@@ -3,6 +3,7 @@ title: Sunbeam
 classes:
   - Druid
   - Sorcerer
+  - Wizard
 level: 6
 school: Evocation
 casting_time: 1 action

@@ -3,6 +3,7 @@ title: Move Earth
 classes:
   - Druid
   - Sorcerer
+  - Wizard
 level: 6
 school: Transmutation
 casting_time: 1 action

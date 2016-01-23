@@ -6,6 +6,7 @@ classes:
   - Druid
   - Paladin
   - Ranger
+  - Wizard
 level: 4
 school: Divination
 casting_time: 1 action

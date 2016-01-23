@@ -1,12 +1,17 @@
 ---
 title: Private Sanctum
+classes:
+  - Wizard
 level: 4
 school: Abjuration
 casting_time: 10 minutes
 range: 120 feet
 components: V, S, M
 material_components:
-  - a thin sheet of lead, a piece of opaque glass, a wad of cotton or cloth, and powdered chrysolite
+  - a thin sheet of lead
+  - a piece of opaque glass
+  - a wad of cotton or cloth
+  - powdered chrysolite
 duration: 24 hours
 saving_throw: None
 at_higher_levels: true

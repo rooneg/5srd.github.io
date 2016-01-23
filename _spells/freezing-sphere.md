@@ -1,5 +1,7 @@
 ---
 title: Freezing Sphere
+classes:
+  - Wizard
 level: 6
 school: Evocation
 casting_time: 1 action

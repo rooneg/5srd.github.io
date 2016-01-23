@@ -2,6 +2,7 @@
 title: Conjure Elemental
 classes:
   - Druid
+  - Wizard
 level: 5
 school: Conjuration
 casting_time: 1 minute

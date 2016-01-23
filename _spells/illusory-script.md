@@ -3,6 +3,7 @@ title: Illusory Script
 classes:
   - Bard
   - Warlock
+  - Wizard
 level: 1
 school: Illusion
 ritual: true

@@ -4,6 +4,7 @@ classes:
   - Druid
   - Sorcerer
   - Warlock
+  - Wizard
 level: 4
 school: Necromancy
 casting_time: 1 action

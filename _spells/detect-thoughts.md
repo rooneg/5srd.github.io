@@ -3,6 +3,7 @@ title: Detect Thoughts
 classes:
   - Bard
   - Sorcerer
+  - Wizard
 level: 2
 school: Divination
 casting_time: 1 action

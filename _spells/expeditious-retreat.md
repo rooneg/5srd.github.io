@@ -3,6 +3,7 @@ title: Expeditious Retreat
 classes:
   - Sorcerer
   - Warlock
+  - Wizard
 level: 1
 school: Transmutation
 casting_time: 1 bonus action

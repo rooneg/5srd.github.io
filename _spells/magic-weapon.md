@@ -2,6 +2,7 @@
 title: Magic Weapon
 classes:
   - Paladin
+  - Wizard
 level: 2
 school: Transmutation
 casting_time: 1 bonus action

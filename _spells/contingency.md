@@ -1,5 +1,7 @@
 ---
 title: Contingency
+classses:
+  - Wizard
 level: 6
 school: Evocation
 casting_time: 10 minutes

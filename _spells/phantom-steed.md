@@ -1,5 +1,7 @@
 ---
 title: Phantom Steed
+classes:
+  - Wizard
 level: 3
 school: Illusion
 ritual: true

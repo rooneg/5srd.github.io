@@ -3,6 +3,7 @@ title: Bestow Curse
 classes:
   - Bard
   - Cleric
+  - Wizard
 level: 3
 school: Necromancy
 casting_time: 1 action

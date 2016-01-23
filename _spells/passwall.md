@@ -1,5 +1,7 @@
 ---
 title: Passwall
+classes:
+  - Wizard
 level: 5
 school: Transmutation
 casting_time: 1 action

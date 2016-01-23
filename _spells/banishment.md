@@ -5,6 +5,7 @@ classes:
   - Paladin
   - Sorcerer
   - Warlock
+  - Wizard
 level: 4
 school: Abjuration
 casting_time: 1 action

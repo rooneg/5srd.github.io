@@ -4,6 +4,7 @@ classes:
   - Bard
   - Sorcerer
   - Warlock
+  - Wizard
 level: 5
 school: Enchantment
 casting_time: 1 action

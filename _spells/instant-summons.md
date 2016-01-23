@@ -1,5 +1,7 @@
 ---
 title: Instant Summons
+classes:
+  - Wizard
 level: 6
 school: Conjuration
 ritual: true

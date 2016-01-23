@@ -3,6 +3,7 @@ title: Sleet Storm
 classes:
   - Druid
   - Sorcerer
+  - Wizard
 level: 3
 school: Conjuration
 casting_time: 1 action

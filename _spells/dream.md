@@ -3,6 +3,7 @@ title: Dream
 classes:
   - Bard
   - Warlock
+  - Wizard
 level: 5
 school: Illusion
 casting_time: 1 minute

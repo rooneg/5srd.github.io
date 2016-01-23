@@ -1,5 +1,7 @@
 ---
 title: Fabricate
+classes:
+  - Wizard
 level: 4
 school: Transmutation
 casting_time: 10 minutes

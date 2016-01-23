@@ -3,6 +3,7 @@ title: Finger of Death
 classes:
   - Sorcerer
   - Warlock
+  - Wizard
 level: 7
 school: Necromancy
 casting_time: 1 action

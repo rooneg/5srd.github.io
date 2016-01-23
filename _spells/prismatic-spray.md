@@ -2,6 +2,7 @@
 title: Prismatic Spray
 classes:
   - Sorcerer
+  - Wizard
 level: 7
 school: Evocation
 casting_time: 1 action

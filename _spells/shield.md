@@ -2,6 +2,7 @@
 title: Shield
 classes:
   - Sorcerer
+  - Wizard
 level: 1
 school: Abjuration
 casting_time: 1 reaction, which you take when you are hit by an attack or targeted by the magic missile spell

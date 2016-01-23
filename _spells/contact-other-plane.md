@@ -2,6 +2,7 @@
 title: Contact Other Plane
 classes:
   - Warlock
+  - Wizard
 level: 5
 school: Divination
 ritual: true

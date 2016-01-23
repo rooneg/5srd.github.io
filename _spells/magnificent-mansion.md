@@ -2,6 +2,7 @@
 title: Magnificent Mansion
 classes:
   - Bard
+  - Wizard
 level: 7
 school: Conjuration
 casting_time: 1 minute

@@ -2,6 +2,7 @@
 title: Gentle Repose
 classes:
   - Cleric
+  - Wizard
 level: 2
 school: Necromancy
 ritual: true

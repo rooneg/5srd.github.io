@@ -4,6 +4,7 @@ classes:
   - Bard
   - Sorcerer
   - Warlock
+  - Wizard
 level: 1
 school: Divination
 ritual: true

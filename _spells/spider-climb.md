@@ -3,6 +3,7 @@ title: Spider Climb
 classes:
   - Sorcerer
   - Warlock
+  - Wizard
 level: 2
 school: Transmutation
 casting_time: 1 action

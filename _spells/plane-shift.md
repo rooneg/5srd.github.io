@@ -5,6 +5,7 @@ classes:
   - Druid
   - Sorcerer
   - Warlock
+  - Wizard
 level: 7
 school: Conjuration
 casting_time: 1 action

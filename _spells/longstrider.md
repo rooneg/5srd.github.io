@@ -4,6 +4,7 @@ classes:
   - Bard
   - Druid
   - Ranger
+  - Wizard
 level: 1
 school: Transmutation
 casting_time: 1 action

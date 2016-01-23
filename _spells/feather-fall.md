@@ -3,6 +3,7 @@ title: Feather Fall
 classes:
   - Bard
   - Sorcerer
+  - Wizard
 level: 1
 school: Transmutation
 casting_time: 1 reaction, which you take when you or a creature within 60 feet of you falls

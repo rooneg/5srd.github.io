@@ -3,6 +3,7 @@ title: Glyph of Warding
 classes:
   - Bard
   - Cleric
+  - Wizard
 level: 3
 school: Abjuration
 casting_time: 1 hour

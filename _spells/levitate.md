@@ -2,6 +2,7 @@
 title: Levitate
 classes:
   - Sorcerer
+  - Wizard
 level: 2
 school: Transmutation
 casting_time: 1 action

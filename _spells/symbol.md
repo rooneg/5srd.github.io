@@ -3,6 +3,7 @@ title: Symbol
 classes:
   - Bard
   - Cleric
+  - Wizard
 level: 7
 school: Abjuration
 casting_time: 1 minute

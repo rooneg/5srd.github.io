@@ -3,6 +3,7 @@ title: Disguise Self
 classes:
   - Bard
   - Sorcerer
+  - Wizard
 level: 1
 school: Illusion
 casting_time: 1 action

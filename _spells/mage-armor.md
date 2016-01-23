@@ -2,6 +2,7 @@
 title: Mage Armor
 classes:
   - Sorcerer
+  - Wizard
 level: 1
 school: Abjuration
 casting_time: 1 action

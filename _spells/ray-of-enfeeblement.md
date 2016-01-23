@@ -2,6 +2,7 @@
 title: Ray of Enfeeblement
 classes:
   - Warlock
+  - Wizard
 level: 2
 school: Necromancy
 casting_time: 1 action

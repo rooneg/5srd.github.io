@@ -3,6 +3,7 @@ title: Gaseous Form
 classes:
   - Sorcerer
   - Warlock
+  - Wizard
 level: 3
 school: Transmutation
 casting_time: 1 action

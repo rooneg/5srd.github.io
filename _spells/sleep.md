@@ -3,6 +3,7 @@ title: Sleep
 classes:
   - Bard
   - Sorcerer
+  - Wizard
 level: 1
 school: Enchantment
 casting_time: 1 action

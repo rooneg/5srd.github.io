@@ -7,6 +7,7 @@ classes:
   - Paladin
   - Ranger
   - Sorcerer
+  - Wizard
 level: 1
 school: Divination
 ritual: true

@@ -3,6 +3,7 @@ title: Create Undead
 classes:
   - Cleric
   - Warlock
+  - Wizard
 level: 6
 school: Necromancy
 casting_time: 1 minute

@@ -2,6 +2,7 @@
 title: False Life
 classes:
   - Sorcerer
+  - Wizard
 level: 1
 school: Necromancy
 casting_time: 1 action

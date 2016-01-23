@@ -3,6 +3,7 @@ title: Circle of Death
 classes:
   - Sorcerer
   - Warlock
+  - Wizard
 level: 6
 school: Necromancy
 casting_time: 1 action

@@ -2,6 +2,7 @@
 title: Programmed Illusion
 classes:
   - Bard
+  - Wizard
 level: 6
 school: Illusion
 casting_time: 1 action

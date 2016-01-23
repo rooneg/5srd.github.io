@@ -3,6 +3,7 @@ title: Dominate Person
 classes:
   - Bard
   - Sorcerer
+  - Wizard
 level: 5
 school: Enchantment
 casting_time: 1 action

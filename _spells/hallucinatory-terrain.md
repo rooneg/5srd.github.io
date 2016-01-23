@@ -4,6 +4,7 @@ classes:
   - Bard
   - Druid
   - Warlock
+  - Wizard
 level: 4
 school: Illusion
 casting_time: 10 minutes

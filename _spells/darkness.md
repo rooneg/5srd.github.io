@@ -3,6 +3,7 @@ title: Darkness
 classes:
   - Sorcerer
   - Warlock
+  - Wizard
 level: 2
 school: Evocation
 casting_time: 1 action

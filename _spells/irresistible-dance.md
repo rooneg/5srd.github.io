@@ -2,13 +2,14 @@
 title: Irresistible Dance
 classes:
   - Bard
+  - Wizard
 level: 6
 school: Enchantment
 casting_time: 1 action
 range: 30 feet
 components: V
 duration: Concentration, up to 1 minute
-saving_throw: Special
+saving_throw: Wisdom negates (action)
 ---
 
 Choose one creature that you can see within range. The target begins a comic dance in place: shuffling, tapping its feet, and capering for the duration. Creatures that can't be charmed are immune to this spell.

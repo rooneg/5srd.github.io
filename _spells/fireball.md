@@ -2,6 +2,7 @@
 title: Fireball
 classes:
   - Sorcerer
+  - Wizard
 level: 3
 school: Evocation
 casting_time: 1 action

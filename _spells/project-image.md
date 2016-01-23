@@ -2,6 +2,7 @@
 title: Project Image
 classes:
   - Bard
+  - Wizard
 level: 7
 school: Illusion
 casting_time: 1 action

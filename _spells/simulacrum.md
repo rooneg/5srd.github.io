@@ -1,5 +1,7 @@
 ---
 title: Simulacrum
+classes:
+  - Wizard
 level: 7
 school: Illusion
 casting_time: 12 hours

@@ -3,6 +3,7 @@ title: Control Water
 classes:
   - Cleric
   - Druid
+  - Wizard
 level: 4
 school: Transmutation
 casting_time: 1 action

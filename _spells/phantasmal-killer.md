@@ -1,5 +1,7 @@
 ---
 title: Phantasmal Killer
+classes:
+  - Wizard
 level: 4
 school: Illusion
 casting_time: 1 action

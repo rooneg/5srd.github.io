@@ -2,6 +2,7 @@
 title: Identify
 classes:
   - Bard
+  - Wizard
 level: 1
 school: Divination
 ritual: true

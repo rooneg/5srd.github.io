@@ -2,6 +2,7 @@
 title: Flaming Sphere
 classes:
   - Druid
+  - Wizard
 level: 2
 school: Conjuration
 casting_time: 1 action

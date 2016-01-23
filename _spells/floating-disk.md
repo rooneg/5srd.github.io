@@ -1,5 +1,7 @@
 ---
 title: Floating Disk
+classes:
+  - Wizard
 level: 1
 school: Conjuration
 ritual: true

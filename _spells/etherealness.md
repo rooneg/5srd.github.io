@@ -5,6 +5,7 @@ classes:
   - Cleric
   - Sorcerer
   - Warlock
+  - Wizard
 level: 7
 school: Transmutation
 casting_time: 1 action

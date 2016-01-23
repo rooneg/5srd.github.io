@@ -1,5 +1,7 @@
 ---
 title: Grease
+classes:
+  - Wizard
 level: 1
 school: Conjuration
 casting_time: 1 action

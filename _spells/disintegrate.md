@@ -2,6 +2,7 @@
 title: Disintegrate
 classes:
   - Sorcerer
+  - Wizard
 level: 6
 school: Transmutation
 casting_time: 1 action

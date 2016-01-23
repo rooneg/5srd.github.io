@@ -1,5 +1,7 @@
 ---
 title: Fire Shield
+classes:
+  - Wizard
 level: 4
 school: Evocation
 casting_time: 1 action
