@@ -81,4 +81,4 @@ An Earthling could come from any one of a number of cultures and countries, but 
 | 6  | I am scared of everything here. |
 
 ## Section 15
-* Earthling, Chris Sakkas 2015.
+* [Earthling](https://grimportents.wordpress.com/2014/08/12/5e-earthling-background/), Chris Sakkas 2015.
