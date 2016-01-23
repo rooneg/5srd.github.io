@@ -209,6 +209,7 @@ Open Game License v 1.0a Copyright 2000, Wizards of the Coast, Inc.
 - Zombie, Juju from the *Tome of Horrors, Revised*, Copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.
 - *Forgotten Foes*, Copyright 2010, Tricky Owlbear Publishing, Inc.; Authors Mark Gedak and Stefen Styrsky.
 - *System Reference Document 5.0*, Copyright 2016, Wizards of the Coast, Inc.; Authors Mike Mearls, Jeremy Crawford, Chris Perkins, Rodney Thompson, Peter Lee, James Wyatt, Robert J. Schwalb, Bruce R. Cordell, Chris Sims, and Steve Townshend, based on original material by E. Gary Gygax and Dave Arneson.
+- "[Earthling](https://grimportents.wordpress.com/2014/08/12/5e-earthling-background/)", Copyright 2015, Chris Sakkas.
 - *5srd*, Copyright 2016, Drumanagh Wilpole.
 
 END OF LICENSE

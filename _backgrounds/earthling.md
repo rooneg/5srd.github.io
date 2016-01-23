@@ -81,6 +81,3 @@ An Earthling could come from any one of a number of cultures and countries, but 
 | 4  | I look at everything here through rose-coloured glasses.                           |
 | 5  | I am convinced that all the magic I see is sufficiently-advanced technology.       |
 | 6  | I am scared of everything here.                                                    |
-
-## Section 15
-* [Earthling](https://grimportents.wordpress.com/2014/08/12/5e-earthling-background/), Chris Sakkas 2015.
