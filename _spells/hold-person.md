@@ -5,6 +5,7 @@ classes:
   - Cleric
   - Druid
   - Sorcerer
+  - Warlock
 level: 2
 school: Enchantment
 casting_time: 1 action

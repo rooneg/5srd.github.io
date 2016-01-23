@@ -4,6 +4,7 @@ classes:
   - Cleric
   - Druid
   - Sorcerer
+  - Warlock
 level: 7
 school: Conjuration
 casting_time: 1 action

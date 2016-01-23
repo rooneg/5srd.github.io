@@ -3,6 +3,7 @@ title: Hold Monster
 classes:
   - Bard
   - Sorcerer
+  - Warlock
 level: 5
 school: Enchantment
 casting_time: 1 action

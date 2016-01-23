@@ -1,5 +1,7 @@
 ---
 title: Ray of Enfeeblement
+classes:
+  - Warlock
 level: 2
 school: Necromancy
 casting_time: 1 action

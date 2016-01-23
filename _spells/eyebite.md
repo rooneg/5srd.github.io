@@ -3,6 +3,7 @@ title: Eyebite
 classes:
   - Bard
   - Sorcerer
+  - Warlock
 level: 6
 school: Necromancy
 casting_time: 1 action

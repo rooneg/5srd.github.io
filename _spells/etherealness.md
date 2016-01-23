@@ -4,6 +4,7 @@ classes:
   - Bard
   - Cleric
   - Sorcerer
+  - Warlock
 level: 7
 school: Transmutation
 casting_time: 1 action

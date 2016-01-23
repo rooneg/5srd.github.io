@@ -3,6 +3,7 @@ title: Protection from Evil and Good
 classes:
   - Cleric
   - Paladin
+  - Warlock
 level: 1
 school: Abjuration
 casting_time: 1 action

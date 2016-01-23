@@ -2,6 +2,7 @@
 title: Misty Step
 classes:
   - Sorcerer
+  - Warlock
 level: 2
 school: Conjuration
 casting_time: 1 bonus action

@@ -2,6 +2,7 @@
 title: Fly
 classes:
   - Sorcerer
+  - Warlock
 level: 3
 school: Transmutation
 casting_time: 1 action

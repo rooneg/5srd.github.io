@@ -3,6 +3,7 @@ title: Hallucinatory Terrain
 classes:
   - Bard
   - Druid
+  - Warlock
 level: 4
 school: Illusion
 casting_time: 10 minutes

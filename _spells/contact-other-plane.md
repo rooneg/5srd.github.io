@@ -1,5 +1,7 @@
 ---
 title: Contact Other Plane
+classes:
+  - Warlock
 level: 5
 school: Divination
 ritual: true

@@ -3,6 +3,7 @@ title: Mass Suggestion
 classes:
   - Bard
   - Sorcerer
+  - Warlock
 level: 6
 school: Enchantment
 casting_time: 1 action

@@ -3,6 +3,7 @@ title: Comprehend Languages
 classes:
   - Bard
   - Sorcerer
+  - Warlock
 level: 1
 school: Divination
 ritual: true

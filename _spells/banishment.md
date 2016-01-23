@@ -4,6 +4,7 @@ classes:
   - Cleric
   - Paladin
   - Sorcerer
+  - Warlock
 level: 4
 school: Abjuration
 casting_time: 1 action

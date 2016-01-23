@@ -2,6 +2,7 @@
 title: Forcecage
 classes:
   - Bard
+  - Warlock
 level: 7
 school: Evocation
 casting_time: 1 action

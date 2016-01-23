@@ -3,6 +3,7 @@ title: Remove Curse
 classes:
   - Cleric
   - Paladin
+  - Warlock
 level: 3
 school: Abjuration
 casting_time: 1 action

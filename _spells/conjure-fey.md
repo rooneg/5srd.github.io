@@ -2,6 +2,7 @@
 title: Conjure Fey
 classes:
   - Druid
+  - Warlock
 level: 6
 school: Conjuration
 casting_time: 1 minute
