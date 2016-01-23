@@ -2,6 +2,7 @@
 title: Reverse Gravity
 classes:
   - Druid
+  - Sorcerer
 level: 7
 school: Transmutation
 casting_time: 1 action

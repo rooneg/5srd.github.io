@@ -1,5 +1,7 @@
 ---
 title: Levitate
+classes:
+  - Sorcerer
 level: 2
 school: Transmutation
 casting_time: 1 action

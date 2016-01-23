@@ -1,5 +1,7 @@
 ---
 title: Cone of Cold
+classes:
+  - Sorcerer
 level: 5
 school: Evocation
 casting_time: 1 action

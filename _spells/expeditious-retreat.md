@@ -1,5 +1,7 @@
 ---
 title: Expeditious Retreat
+classes:
+  - Sorcerer
 level: 1
 school: Transmutation
 casting_time: 1 bonus action

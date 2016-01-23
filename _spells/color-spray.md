@@ -1,5 +1,7 @@
 ---
 title: Color Spray
+classes:
+  - Sorcerer
 level: 1
 school: Illusion
 casting_time: 1 action

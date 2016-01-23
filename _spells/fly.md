@@ -1,5 +1,7 @@
 ---
 title: Fly
+classes:
+  - Sorcerer
 level: 3
 school: Transmutation
 casting_time: 1 action

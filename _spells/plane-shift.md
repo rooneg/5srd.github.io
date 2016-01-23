@@ -3,6 +3,7 @@ title: Plane Shift
 classes:
   - Cleric
   - Druid
+  - Sorcerer
 level: 7
 school: Conjuration
 casting_time: 1 action

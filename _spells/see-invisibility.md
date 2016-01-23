@@ -2,6 +2,7 @@
 title: See Invisibility
 classes:
   - Bard
+  - Sorcerer
 level: 2
 school: Divination
 casting_time: 1 action

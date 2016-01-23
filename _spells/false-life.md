@@ -1,5 +1,7 @@
 ---
 title: False Life
+classes:
+  - Sorcerer
 level: 1
 school: Necromancy
 casting_time: 1 action

@@ -2,6 +2,7 @@
 title: Mass Suggestion
 classes:
   - Bard
+  - Sorcerer
 level: 6
 school: Enchantment
 casting_time: 1 action

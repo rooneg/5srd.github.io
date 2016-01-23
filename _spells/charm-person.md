@@ -3,6 +3,7 @@ title: Charm Person
 classes:
   - Bard
   - Druid
+  - Sorcerer
 level: 1
 school: Enchantment
 casting_time: 1 action

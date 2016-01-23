@@ -2,6 +2,7 @@
 title: Gust of Wind
 classes:
   - Druid
+  - Sorcerer
 level: 2
 school: Evocation
 casting_time: 1 action

@@ -1,5 +1,7 @@
 ---
 title: Finger of Death
+classes:
+  - Sorcerer
 level: 7
 school: Necromancy
 casting_time: 1 action

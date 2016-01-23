@@ -2,6 +2,7 @@
 title: Shatter
 classes:
   - Bard
+  - Sorcerer
 level: 2
 school: Evocation
 casting_time: 1 action

@@ -2,6 +2,7 @@
 title: Major Image
 classes:
   - Bard
+  - Sorcerer
 level: 3
 school: Illusion
 casting_time: 1 action

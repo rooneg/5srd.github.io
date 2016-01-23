@@ -4,6 +4,7 @@ classes:
   - Cleric
   - Druid
   - Ranger
+  - Sorcerer
 level: 3
 school: Abjuration
 casting_time: 1 action

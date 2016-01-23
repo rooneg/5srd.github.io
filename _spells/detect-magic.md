@@ -6,6 +6,7 @@ classes:
   - Druid
   - Paladin
   - Ranger
+  - Sorcerer
 level: 1
 school: Divination
 ritual: true

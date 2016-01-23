@@ -2,6 +2,7 @@
 title: Suggestion
 classes:
   - Bard
+  - Sorcerer
 level: 2
 school: Enchantment
 casting_time: 1 action

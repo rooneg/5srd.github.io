@@ -3,6 +3,7 @@ title: Stoneskin
 classes:
   - Druid
   - Ranger
+  - Sorcerer
 level: 4
 school: Abjuration
 casting_time: 1 action

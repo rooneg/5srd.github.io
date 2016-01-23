@@ -1,5 +1,7 @@
 ---
 title: Magic Missile
+classes:
+  - Sorcerer
 level: 1
 school: Evocation
 casting_time: 1 action

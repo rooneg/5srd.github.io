@@ -2,6 +2,7 @@
 title: Ice Storm
 classes:
   - Druid
+  - Sorcerer
 level: 4
 school: Evocation
 casting_time: 1 action

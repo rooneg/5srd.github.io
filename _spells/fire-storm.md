@@ -3,6 +3,7 @@ title: Fire Storm
 classes:
   - Cleric
   - Druid
+  - Sorcerer
 level: 7
 school: Evocation
 casting_time: 1 action

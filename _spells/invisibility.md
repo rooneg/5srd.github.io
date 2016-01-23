@@ -2,6 +2,7 @@
 title: Invisibility
 classes:
   - Bard
+  - Sorcerer
 level: 2
 school: Illusion
 casting_time: 1 action

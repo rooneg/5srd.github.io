@@ -1,5 +1,7 @@
 ---
 title: Chain Lightning
+classes:
+  - Sorcerer
 level: 6
 school: Evocation
 casting_time: 1 action

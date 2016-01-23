@@ -1,5 +1,7 @@
 ---
 title: Disintegrate
+classes:
+  - Sorcerer
 level: 6
 school: Transmutation
 casting_time: 1 action

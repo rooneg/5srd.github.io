@@ -2,6 +2,7 @@
 title: Blight
 classes:
   - Druid
+  - Sorcerer
 level: 4
 school: Necromancy
 casting_time: 1 action

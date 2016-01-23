@@ -5,6 +5,7 @@ classes:
   - Druid
   - Paladin
   - Ranger
+  - Sorcerer
 level: 3
 school: Evocation
 casting_time: 1 action

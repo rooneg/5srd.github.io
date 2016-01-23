@@ -1,5 +1,7 @@
 ---
 title: Fireball, Delayed Blast
+classes:
+  - Sorcerer
 level: 7
 school: Evocation
 casting_time: 1 action
