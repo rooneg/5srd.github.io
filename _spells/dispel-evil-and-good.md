@@ -1,5 +1,7 @@
 ---
 title: Dispel Evil and Good
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 classes:
   - Cleric
   - Paladin

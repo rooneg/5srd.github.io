@@ -1,5 +1,7 @@
 ---
 title: Black Pudding
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 size: Large
 type: ooze
 alignment: unaligned
@@ -56,5 +58,5 @@ reactions:
 > **Source:** 5srd adaptation of *Pathfinder Roleplaying Game Bestiary*.
 >
 > Black puddings are the scavengers of the underworld, constantly on the lookout for a meal. They can sense organic or metallic objects within 60 feet and mindlessly attack such items or beings until they are dissolved or the ooze is killed. A black pudding reproduces by breaking off a piece of its body and forming a new, smaller black pudding, which grows to full size in 1 month's time. Some of the more intelligent creatures in the underworld use black puddings as natural garbage disposals, creating stone pits to house the pudding and throwing organic refuse or foes in as needed.
-> 
+>
 > Larger specimens of black puddings have been encountered in the deepest parts of the world, with individuals of up to Gargantuan size. Other colored puddings are rumored to exist, with white ones living in the arctic, brown ones living in swamps, and tan ones living in deserts.

@@ -1,5 +1,7 @@
 ---
 title: Transport via Plants
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 classes:
   - Druid
 level: 6

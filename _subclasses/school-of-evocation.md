@@ -1,5 +1,7 @@
 ---
 title: School of Evocation
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 class: Wizard
 features:
   - name: Evocation Savant
@@ -17,7 +19,7 @@ features:
   - name: Empowered Evocation
     level: 10
     text: Beginning at 10th level, you can add your Intelligence modifier to one damage roll of any wizard evocation spell you cast.
-    
+
   - name: Overchannel
     level: 14
     text: |

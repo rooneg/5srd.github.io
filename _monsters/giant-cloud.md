@@ -1,5 +1,7 @@
 ---
 title: Giant, Cloud
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 size: Huge
 type: giant
 alignment: neutral good (50%) or neutral evil (50%)

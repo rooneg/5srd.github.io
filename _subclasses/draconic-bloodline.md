@@ -1,5 +1,7 @@
 ---
 title: Draconic Bloodline
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 class: Sorcerer
 features:
   - name: Dragon Ancestor

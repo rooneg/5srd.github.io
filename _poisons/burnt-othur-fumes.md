@@ -1,5 +1,7 @@
 ---
 title: Burnt Othur Fumes
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 type: Inhaled
 price_per_dose: 500 gp
 saving_throw: Constitution partial

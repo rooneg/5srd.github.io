@@ -1,5 +1,7 @@
 ---
 title: Dragon, Chromatic, White, Ancient
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 size: Gargantuan
 type: dragon
 alignment: chaotic evil
@@ -46,7 +48,8 @@ languages:
 challenge: 20
 special_traits:
   - title: Ice Walk
-    text: The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment.
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)    text: The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment.
   - name: Legendary Resistance (3/Day)
     text: If the dragon fails a saving throw, it can choose to succeed instead.
 actions:

@@ -1,5 +1,7 @@
 ---
 title: Specter
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 size: Medium
 type: undead
 alignment: chaotic evil

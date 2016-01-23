@@ -1,5 +1,7 @@
 ---
 title: Spider, Swarm
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 size: Medium
 swarm_size: Tiny
 type: Beast

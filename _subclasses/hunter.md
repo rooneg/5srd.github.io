@@ -1,5 +1,7 @@
 ---
 title: Hunter
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 class: Ranger
 features:
   - name: Hunter’s Prey
@@ -27,7 +29,7 @@ features:
 
       - *Volley.* You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon’s range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.
       - *Whirlwind Attack.* You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target.
-      
+
   - name: Superior Hunter’s Defense
     level: 15
     text: |

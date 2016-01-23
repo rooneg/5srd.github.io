@@ -1,5 +1,7 @@
 ---
 title: Oil of Taggit
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 type: Contact
 price_per_dose: 400 gp
 saving_throw: Constitution negates

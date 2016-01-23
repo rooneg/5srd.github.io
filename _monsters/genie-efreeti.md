@@ -1,5 +1,7 @@
 ---
 title: Genie, Efreeti
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 size: Large
 type: elemental
 alignment: lawful evil

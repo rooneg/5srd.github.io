@@ -1,5 +1,7 @@
 ---
 title: Life Domain
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 class: Cleric
 features:
   - name: Life Domain Spells
@@ -35,7 +37,7 @@ features:
   - name: Blessed Healer
     level: 6
     text: Beginning at 6th level, the healing spells you cast on others heal you as well. When you cast a spell of 1st level or higher that restores hit points to a creature other than you, you regain hit points equal to 2 + the spell’s level.
-    
+
   - name: Divine Strike
     level: 8
     text: At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8.

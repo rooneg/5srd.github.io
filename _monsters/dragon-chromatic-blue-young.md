@@ -1,5 +1,7 @@
 ---
 title: Dragon, Chromatic, Blue, Young
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 size: Large
 type: dragon
 alignment: lawful evil

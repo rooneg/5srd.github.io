@@ -1,5 +1,7 @@
 ---
 title: Midnight Tears
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 type: Ingested
 price_per_dose: 1,500 gp
 saving_throw: Constitution half

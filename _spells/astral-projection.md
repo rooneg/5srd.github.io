@@ -1,5 +1,7 @@
 ---
 title: Astral Projection
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 level: 9
 classes:
   - Cleric

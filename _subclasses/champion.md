@@ -1,11 +1,13 @@
 ---
 title: Champion
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 class: Fighter
 features:
   - name: Improved Critical
     level: 3
     text: Beginning when you choose this archetype at 3rd level, your weapon attacks score a critical hit on a roll of 19 or 20.
-    
+
   - name: Remarkable Athlete
     level: 7
     text: |

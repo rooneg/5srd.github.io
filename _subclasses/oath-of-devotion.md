@@ -1,5 +1,7 @@
 ---
 title: Oath of Devotion
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 class: Paladin
 features:
   - name: Oath Spells

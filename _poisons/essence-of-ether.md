@@ -1,5 +1,7 @@
 ---
 title: Essence of Ether
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 type: Inhaled
 price_per_dose: 300 gp
 saving_throw: Constitution negates

@@ -1,5 +1,7 @@
 ---
 title: Animated Object, Rug of Smothering
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 size: Large
 type: construct
 alignment: unaligned

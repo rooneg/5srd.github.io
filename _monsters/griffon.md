@@ -1,5 +1,7 @@
 ---
 title: Griffon
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 size: Large
 type: monstrosity
 alignment: unaligned

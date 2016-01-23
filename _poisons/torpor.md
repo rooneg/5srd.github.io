@@ -1,5 +1,7 @@
 ---
 title: Torpor
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 type: Ingested
 price_per_dose: 600 gp
 saving_throw: Constitution negates

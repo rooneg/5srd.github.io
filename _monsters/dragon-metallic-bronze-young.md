@@ -1,5 +1,7 @@
 ---
 title: Dragon, Metallic, Bronze, Young
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 size: Large
 type: dragon
 alignment: lawful good
@@ -68,4 +70,4 @@ actions:
 
 > **Source:** *Pathfinder Roleplaying Game Bestiary*.
 >
-> Bronze dragons have been known to ally with travelers and adventurers if the cause and reward is right and just. 
+> Bronze dragons have been known to ally with travelers and adventurers if the cause and reward is right and just.

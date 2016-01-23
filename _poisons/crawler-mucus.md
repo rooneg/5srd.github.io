@@ -1,5 +1,7 @@
 ---
 title: Crawler Mucus
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 type: Contact
 price_per_dose: 200 gp
 saving_throw: Constitution negates

@@ -1,5 +1,7 @@
 ---
 title: Druid
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 group: Standard
 hit_die: 8
 armor_proficiencies:
@@ -41,7 +43,7 @@ Similarly, a druid uses such woods to make other objects, such as weapons and sh
 
 Druids from regions that lack the plants described here have chosen other plants to take on similar uses. For instance, a druid of a desert region might value the yucca tree and cactus plants.
 
-**Druids and the Gods.** Some druids venerate the forces of nature themselves, but most druids are devoted to one of the many nature deities worshiped in the multiverse. The worship of these deities is often considered a more ancient tradition than the faiths of clerics and urbanized peoples.  
+**Druids and the Gods.** Some druids venerate the forces of nature themselves, but most druids are devoted to one of the many nature deities worshiped in the multiverse. The worship of these deities is often considered a more ancient tradition than the faiths of clerics and urbanized peoples.
 
 | Level | Proficiency Bonus | Features                                          | Cantrips Known | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
 |:-----:|:-----------------:|:--------------------------------------------------|:--------------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|

@@ -1,5 +1,7 @@
 ---
 title: Dragon, Metallic, Bronze, Ancient
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 size: Gargantuan
 type: dragon
 alignment: lawful good
@@ -87,4 +89,4 @@ legendary_actions:
 
 > **Source:** *Pathfinder Roleplaying Game Bestiary*.
 >
-> Bronze dragons have been known to ally with travelers and adventurers if the cause and reward is right and just. 
+> Bronze dragons have been known to ally with travelers and adventurers if the cause and reward is right and just.

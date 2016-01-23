@@ -1,5 +1,7 @@
 ---
 title: Purple Worm Poison
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 type: Injury
 price_per_dose: 2,000 gp
 saving_throw: Constitution half

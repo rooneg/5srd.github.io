@@ -1,5 +1,7 @@
 ---
 title: Ranger
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 group: Standard
 hit_die: 10
 armor_proficiencies:

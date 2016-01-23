@@ -1,5 +1,7 @@
 ---
 title: Golem, Iron
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 size: Large
 type: construct
 alignment: unaligned
@@ -47,7 +49,7 @@ special_traits:
 actions:
   - name: Multiattack
     text: The golem makes two melee attacks.
-  - name: Slam  
+  - name: Slam
     text: |
       *Melee Weapon Attack:* +13 to hit, reach 5 ft., one target. *Hit:* 20 (3d8 + 7) bludgeoning damage.
   - name: Sword
