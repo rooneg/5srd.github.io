@@ -18,7 +18,12 @@ layout: ogl-notice
           <tbody>
           {% for poison in poison_type.items %}
             <tr>
-              <td><a href="{{ poison.url }}">{{ poison.title }}</a></td>
+              <td>
+                <a href="{{ poison.url }}">{{ poison.title }}</a>
+                {% unless site.data.first_party_sources contains poison.source %}
+                  <span class="label label-info">Third-Party</span>
+                {% endunless %}
+              </td>
               <td>{{ poison.saving_throw_dc }}</t>
             </tr>
           {% endfor %}

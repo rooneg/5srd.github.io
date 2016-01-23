@@ -44,7 +44,15 @@
 
     <div class="container">
       {% if page.title %}
-        <h1 class="display-4 m-b-1">{{ page.title }} {% if page.subtitle %}<small>{{ page.subtitle }}</small>{% endif %}</h1>
+        <h1 class="display-4 m-b-1">
+          {{ page.title }}
+          {% if page.subtitle %}<small>{{ page.subtitle }}</small>{% endif %}
+          {% if page.source %}
+            {% unless site.data.first_party_sources contains page.source %}
+              <span class="label label-info">Third-Party</span>
+            {% endunless %}
+          {% endif %}
+        </h1>
       {% endif %}
 
       <div id="toc"></div>

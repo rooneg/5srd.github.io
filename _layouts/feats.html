@@ -12,7 +12,12 @@ layout: ogl-notice
           <tbody>
           {% for feat in feat_group.items %}
             <tr>
-              <td><a href="{{ feat.url }}">{{ feat.title }}</a></td>
+              <td>
+                <a href="{{ feat.url }}">{{ feat.title }}</a>
+                {% unless site.data.first_party_sources contains feat.source %}
+                  <span class="label label-info">Third-Party</span>
+                {% endunless %}
+              </td>
           {% endfor %}
           </tbody>
         </table>

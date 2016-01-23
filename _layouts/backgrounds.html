@@ -12,7 +12,12 @@ layout: ogl-notice
           <tbody>
           {% for background in background_group.items %}
             <tr>
-              <td><a href="{{ background.url }}">{{ background.title }}</a></td>
+              <td>
+                <a href="{{ background.url }}">{{ background.title }}</a>
+                {% unless site.data.first_party_sources contains background.source %}
+                  <span class="label label-info">Third-Party</span>
+                {% endunless %}
+              </td>
           {% endfor %}
           </tbody>
         </table>

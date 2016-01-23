@@ -12,7 +12,12 @@ layout: ogl-notice
           <tbody>
           {% for subclass in subclass_group.items %}
             <tr>
-              <td><a href="{{ subclass.url }}">{{ subclass.title }}</a></td>
+              <td>
+                <a href="{{ subclass.url }}">{{ subclass.title }}</a>
+                {% unless site.data.first_party_sources contains subclass.source %}
+                  <span class="label label-info">Third-Party</span>
+                {% endunless %}
+              </td>
             </tr>
           {% endfor %}
           </tbody>

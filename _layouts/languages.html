@@ -19,7 +19,12 @@ layout: ogl-notice
           <tbody>
           {% for language in language_group.items %}
             <tr>
-              <td><a href="{{ language.url }}">{{ language.title }}</a></td>
+              <td>
+                <a href="{{ language.url }}">{{ language.title }}</a>
+                {% unless site.data.first_party_sources contains language.source %}
+                  <span class="label label-info">Third-Party</span>
+                {% endunless %}
+              </td>
               <td>{{ language.typical_speakers | array_to_sentence_string }}</td>
               <td>{{ language.script }}</td>
             </tr>

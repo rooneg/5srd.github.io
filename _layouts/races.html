@@ -12,7 +12,12 @@ layout: ogl-notice
           <tbody>
           {% for race in race_group.items %}
             <tr>
-              <td><a href="{{ race.url }}">{{ race.title }}</a></td>
+              <td>
+                <a href="{{ race.url }}">{{ race.title }}</a>
+                {% unless site.data.first_party_sources contains race.source %}
+                  <span class="label label-info">Third-Party</span>
+                {% endunless %}
+              </td>
             </tr>
           {% endfor %}
           </tbody>

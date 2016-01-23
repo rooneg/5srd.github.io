@@ -18,7 +18,12 @@ layout: ogl-notice
           <tbody>
           {% for monster in monster_type.items %}
             <tr>
-              <td><a href="{{ monster.url }}">{{ monster.title }}</a></td>
+              <td>
+                <a href="{{ monster.url }}">{{ monster.title }}</a>
+                {% unless site.data.first_party_sources contains monster.source %}
+                  <span class="label label-info">Third-Party</span>
+                {% endunless %}
+              </td>
               <td class="text-sm-center">
                 {% case monster.challenge %}
                   {% when 0.125 %}
