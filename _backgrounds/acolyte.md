@@ -45,6 +45,15 @@ Acolytes are shaped by their experience in temples or other religious communitie
 | 5  | Faith. I trust that my deity will guide my actions. I have faith that if I work hard, things will go well. (Lawful)    |
 | 6  | Aspiration. I seek to prove myself worthy of my god's favor by matching my actions against his or her teachings. (Any) |
 
+| d6 | Bond                                                                                                                  |
+|:--:|:-----------------------------------------------------------------------------------------------------------------------|
+| 1  | I would die to recover an ancient relic of my faith that was lost long ago. |
+| 2  | I will someday get revenge on the corrupt temple hierarchy who branded me a heretic. |
+| 3  | I owe my life to the priest who took me in when my parents died. |
+| 4  | Everything I do is for the common people. |
+| 5  | I will do anything to protect the temple where I served. |
+| 6  | I seek to preserve a sacred text that my enemies consider heretical and seek to destroy. |
+
 | d6 | Flaw                                                                                          |
 |:--:|:----------------------------------------------------------------------------------------------|
 | 1  | I judge others harshly, and myself even more severely.                                        |
