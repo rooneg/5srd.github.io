@@ -2,7 +2,7 @@
 title: Earthling
 source: |
   ["Earthling", Chris Sakkas](https://grimportents.wordpress.com/2014/08/12/5e-earthling-background/)
-group: Third Party
+group: Unusual
 ---
 
 You are a stranger in a strange land, met with much that is peculiar but some that is familiar.

@@ -55,6 +55,14 @@
         </h1>
       {% endif %}
 
+      {% if page.source %}
+        <div class="card">
+          <div class="card-header">
+            <strong>Source:</strong> {{ page.source | markdownify | remove: '<p>' | remove: '</p>' }}
+          </div>
+        </div>
+      {% endif %}
+
       <div id="toc"></div>
 
       {{ content }}
