@@ -15,8 +15,10 @@ redcarpet:
 
 exclude:
   - CNAME
-  - README.md
   - CONTRIBUTING.md
+  - Gemfile
+  - Gemfile.lock
+  - README.md
   - vendor/bootstrap/docs
 
 keep_files:
