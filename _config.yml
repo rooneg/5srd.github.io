@@ -41,6 +41,11 @@ defaults:
       layout: language
   - scope:
       path: ""
+      type: magic-items
+    values:
+      layout: magic-item
+  - scope:
+      path: ""
       type: monsters
     values:
       layout: monster

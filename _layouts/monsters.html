@@ -26,6 +26,8 @@ layout: ogl-notice
               </td>
               <td class="text-sm-center">
                 {% case monster.challenge %}
+                  {% when '---' %}
+                    &mdash;
                   {% when 0.125 %}
                     &#8539;
                   {% when 0.25 %}

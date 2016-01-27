@@ -10,7 +10,9 @@ layout: ogl-notice
 {% assign cha_bonus = page.cha | divided_by: 2 | minus: 5 %}
 {% assign hp_bonus = con_bonus | times: page.hd %}
 {% assign proficiency_bonus = page.challenge | round | minus: 1 | divided_by: 4 | plus: 2 %}
-{% capture display_challenge %}{% case page.challenge %}{% when 0.125 %}&#8539;{% when 0.25 %}{% when 0.5 %}&frac12;{% else %}{{ page.challenge }}{% endcase %}{% endcapture %}
+{% capture display_challenge %}{% case page.challenge %}{% when '---' %}&mdash;{% when 0.125 %}&#8539;{% when 0.25 %}{% when 0.5 %}&frac12;{% else %}{{ page.challenge }}{% endcase %}{% endcapture %}
+{% assign xp = site.data.challenge_xp | where: 'rating', page.challenge | map: 'xp' | first %}
+{% assign hd_size = site.data.hd_sizes | where: 'size', page.size | map: 'hd_size' %}
 
 <div class="row">
   <div class="col-md-6">
@@ -42,7 +44,12 @@ layout: ogl-notice
               <dd class="col-md-8 col-lg-9">{{ page.armor_class }} {% if page.armor_class_descriptor %}({{ page.armor_class_descriptor }}){% endif %}</dd>
 
               <dt class="col-md-4 col-lg-3">Hit Points</dt>
-              <dd class="col-md-8 col-lg-9">{{ page.hp }} ({{ page.hd }}d{{ site.data.hd_sizes | where: 'size', page.size | map: 'hd_size' }}+{{ hp_bonus | prepend: '+' | remove_first: '+-' }})</dd>
+              <dd class="col-md-8 col-lg-9">
+                {{ page.hp }}
+                {% if page.hd %}
+                  ({{ page.hd }}d{{ hd_size }}+{{ hp_bonus | prepend: '+' | remove_first: '+-' }})
+                {% endif %}
+              </dd>
 
               <dt class="col-md-4 col-lg-3">Speed</dt>
               <dd class="col-md-8 col-lg-9">
@@ -113,18 +120,9 @@ layout: ogl-notice
 
               <dt class="col-md-4 col-lg-3">Challenge</dt>
               <dd class="col-md-8 col-lg-9">
-                {% case page.challenge %}
-                  {% when 0.125 %}
-                    &#8539;
-                  {% when 0.25 %}
-                    &frac14;
-                  {% when 0.5 %}
-                    &frac12;
-                  {% else %}
-                    {{ page.challenge }}
-                {% endcase %}
+                {{ display_challenge }}
 
-                ({{ site.data.challenge_xp | where: 'rating', page.challenge | map: 'xp' | first }} XP)
+                ({{ xp }} XP)
               </dd>
             </dl>
           </div>
@@ -197,7 +195,9 @@ layout: ogl-notice
             <p class="card-text compact">
               <b>Hit Points</b>
               {{ page.hp }}
-              ({{ page.hd }}d{{ site.data.hd_sizes | where: 'size', page.size | map: 'hd_size' | first }}+{{ hp_bonus | prepend: '+' | remove_first: '+-' | replace: '+', ' + ' | replace: '-', ' - ' }})
+              {% if page.hd %}
+                ({{ page.hd }}d{{ hd_size }}+{{ hp_bonus | prepend: '+' | remove_first: '+-' | replace: '+', ' + ' | replace: '-', ' - ' }})
+              {% endif %}
             </p>
 
             <p class="card-text compact">
@@ -283,7 +283,7 @@ layout: ogl-notice
 
             <p class="card-text compact">
               <b>Challenge</b>
-              {{ display_challenge }} ({{ site.data.challenge_xp | where: 'rating', page.challenge | map: 'xp' | first }} XP)
+              {{ display_challenge }} ({{ xp }} XP)
             </p>
 
             {% if page.special_traits %}
@@ -346,21 +346,12 @@ layout: ogl-notice
           <div class="card-header p-y-half">
             <p class="card-text compact">
               <strong>{{ page.title }}</strong>
-              <span class="pull-xs-right"><strong>Level {% case page.challenge %}
-                {% when 0.125 %}
-                  &#8539;
-                {% when 0.25 %}
-                  &frac14;
-                {% when 0.5 %}
-                  &frac12;
-                {% else %}
-                  {{ page.challenge }}
-              {% endcase %}
+              <span class="pull-xs-right"><strong>Level {{ display_challenge }}
               {% if page.legendary_actions %}Legendary{% endif %}</strong></span>
             </p>
             <p class="card-text compact">
               {{ page.size | capitalize }} {{ page.type | downcase }}
-              <span class="pull-xs-right">XP {{ site.data.challenge_xp | where: 'rating', page.challenge | map: 'xp' | first}}</span>
+              <span class="pull-xs-right">XP {{ xp }}</span>
             </p>
           </div>
           <div class="card-block p-y-half">
@@ -502,7 +493,7 @@ layout: ogl-notice
             <p class="card-text">
               <b>{{ page.title | upcase }}:</b>
 
-              <b>HP</b> {{ page.hp }} ({{ page.hd }}d{{ site.data.hd_sizes | where: 'size', page.size | map: 'hd_size' | first }}+{{ hp_bonus | prepend: '+' | remove_first: '+-' }});
+              <b>HP</b> {{ page.hp }}{% if page.hd %} ({{ page.hd }}d{{ hd_size }}+{{ hp_bonus | prepend: '+' | remove_first: '+-' }}){% endif %};
 
               <b>AC</b> {{ page.armor_class }};
 
@@ -515,7 +506,7 @@ layout: ogl-notice
 
               <b>CR</b> {{ display_challenge }};
 
-              <b>XP</b> {{ site.data.challenge_xp | where: 'rating', page.challenge | map: 'xp' }};
+              <b>XP</b> {{ xp }};
 
               <b>Special</b>
               {% for trait in page.special_traits %}{{ trait.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}.

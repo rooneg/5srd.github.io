@@ -3,7 +3,7 @@ title: Awakened Shrub
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 size: Small
-type: Plant
+type: plant
 alignment: Unaligned
 armor_class: 9
 hp: 10

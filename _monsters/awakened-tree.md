@@ -3,7 +3,7 @@ title: Awakened Tree
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 size: Huge
-type: Plant
+type: plant
 alignment: Unaligned
 armor_class: 13
 armor_class_descriptor: natural armor
