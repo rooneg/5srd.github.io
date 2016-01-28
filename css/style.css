@@ -168,7 +168,8 @@ Table of Contents
 }
 
 .toc > ol {
-  margin-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /*
@@ -211,9 +212,11 @@ section > .marginnote-listing {
   .marginnote,
   .sidenote,
   article > .marginnote,
-  article > .sidenote {
+  article > .sidenote,
+  section > .marginnote,
+  section > .sidenote {
     display: block;
     width: 90%;
-    margin: 1rem 10% 1rem 22.5%;
+    margin: 0 10% 2rem 22.5%;
   }
 }
