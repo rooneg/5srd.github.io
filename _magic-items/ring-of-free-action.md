@@ -1,5 +1,5 @@
 ---
-title: Ring of Free Action
+title: ring of free action
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Ring

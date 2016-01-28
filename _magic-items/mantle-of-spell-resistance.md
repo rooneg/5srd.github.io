@@ -1,5 +1,5 @@
 ---
-title:  Mantle of Spell Resistance
+title: mantle of spell resistance
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

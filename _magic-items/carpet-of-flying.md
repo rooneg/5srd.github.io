@@ -1,5 +1,5 @@
 ---
-title: Carpet of Flying
+title: carpet of flying
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

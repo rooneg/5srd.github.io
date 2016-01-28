@@ -21,7 +21,7 @@ layout: ogl-notice
     {% for spell in sorted_spells %}
       <tr>
         <td>
-          <i><a href="{{ spell.url }}">{{ spell.title | downcase }}</a></i>
+          <i><a href="{{ spell.url }}">{{ spell.title }}</a></i>
           {% unless site.data.first_party_sources contains spell.source %}
             <small>(Third-Party)</small>
           {% endunless %}

@@ -1,5 +1,5 @@
 ---
-title: Boots of Elvenkind
+title: boots of elvenkind
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

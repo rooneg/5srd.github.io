@@ -1,5 +1,5 @@
 ---
-title: Staff of Power
+title: staff of power
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Staff

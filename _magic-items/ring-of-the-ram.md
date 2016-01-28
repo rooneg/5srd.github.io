@@ -1,5 +1,5 @@
 ---
-title: Ring of the Ram
+title: ring of the ram
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Ring

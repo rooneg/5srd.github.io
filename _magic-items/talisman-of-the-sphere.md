@@ -1,5 +1,5 @@
 ---
-title: Talisman of the Sphere
+title: talisman of the sphere
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

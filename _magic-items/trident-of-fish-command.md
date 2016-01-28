@@ -1,5 +1,5 @@
 ---
-title: Trident of Fish Command
+title: trident of fish command
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Weapon

@@ -1,5 +1,5 @@
 ---
-title:  Wand of Fear
+title: wand of fear
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wand

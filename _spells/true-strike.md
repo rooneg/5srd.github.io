@@ -1,5 +1,5 @@
 ---
-title: True Strike
+title: true strike
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 classes:

@@ -1,5 +1,5 @@
 ---
-title: Gauntlets of Ogre Power
+title: gauntlets of ogre power
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

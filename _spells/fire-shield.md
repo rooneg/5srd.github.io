@@ -1,5 +1,5 @@
 ---
-title: Fire Shield
+title: fire shield
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 classes:

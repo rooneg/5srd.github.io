@@ -1,5 +1,5 @@
 ---
-title: Wand of the War Mage, +1, +2, or +3
+title: wand of the war mage, +1, +2, or +3
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wand

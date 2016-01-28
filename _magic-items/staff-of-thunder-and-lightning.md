@@ -1,5 +1,5 @@
 ---
-title: Staff of Thunder and Lightning
+title: staff of thunder and lightning
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Staff

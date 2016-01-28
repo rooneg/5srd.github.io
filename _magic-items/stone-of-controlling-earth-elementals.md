@@ -1,5 +1,5 @@
 ---
-title: Stone of Controlling Earth Elementals
+title: stone of controlling earth elementals
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

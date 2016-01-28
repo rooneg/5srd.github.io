@@ -1,5 +1,5 @@
 ---
-title: Manual of Gainful Exercise
+title: manual of gainful exercise
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

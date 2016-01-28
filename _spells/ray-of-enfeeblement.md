@@ -1,5 +1,5 @@
 ---
-title: Ray of Enfeeblement
+title: ray of enfeeblement
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 classes:

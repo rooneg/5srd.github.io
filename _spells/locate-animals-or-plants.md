@@ -1,5 +1,5 @@
 ---
-title: Locate Animals or Plants
+title: locate animals or plants
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 classes:

@@ -1,5 +1,5 @@
 ---
-title: Figurine of Wondrous Power
+title: figurine of wondrous power
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

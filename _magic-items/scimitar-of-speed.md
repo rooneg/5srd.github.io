@@ -1,5 +1,5 @@
 ---
-title: Scimitar of Speed
+title: scimitar of speed
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Weapon

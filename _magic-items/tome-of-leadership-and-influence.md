@@ -1,5 +1,5 @@
 ---
-title: Tome of Leadership and Influence
+title: tome of leadership and influence
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

@@ -1,5 +1,5 @@
 ---
-title: Weapon, +1, +2, or +3
+title: weapon, +1, +2, or +3
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Weapon

@@ -1,5 +1,5 @@
 ---
-title: Belt of Giant Strength
+title: belt of giant strength
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

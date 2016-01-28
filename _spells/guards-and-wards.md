@@ -1,5 +1,5 @@
 ---
-title: Guards and Wards
+title: guards and wards
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 classes:

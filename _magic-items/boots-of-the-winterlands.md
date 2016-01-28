@@ -1,5 +1,5 @@
 ---
-title: Boots of the Winterlands
+title: boots of the winterlands
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

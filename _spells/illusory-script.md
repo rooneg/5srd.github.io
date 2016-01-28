@@ -1,5 +1,5 @@
 ---
-title: Illusory Script
+title: illusory script
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 classes:

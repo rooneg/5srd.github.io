@@ -1,5 +1,5 @@
 ---
-title: Gloves of Missile Snaring
+title: gloves of missile snaring
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

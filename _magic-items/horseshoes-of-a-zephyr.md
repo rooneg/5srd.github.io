@@ -1,5 +1,5 @@
 ---
-title: Horseshoes of a Zephyr
+title: horseshoes of a zephyr
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

@@ -1,5 +1,5 @@
 ---
-title: Medallion of Thoughts
+title: medallion of thoughts
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

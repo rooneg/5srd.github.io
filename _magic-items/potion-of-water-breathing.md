@@ -1,5 +1,5 @@
 ---
-title: Potion of Water Breathing
+title: potion of water breathing
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Potion

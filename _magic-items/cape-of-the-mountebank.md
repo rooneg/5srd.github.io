@@ -1,5 +1,5 @@
 ---
-title: Cape of the Mountebank
+title: cape of the mountebank
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

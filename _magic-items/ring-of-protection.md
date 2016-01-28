@@ -1,5 +1,5 @@
 ---
-title: Ring of Protection
+title: ring of protection
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Ring

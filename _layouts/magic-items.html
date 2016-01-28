@@ -17,7 +17,7 @@ layout: ogl-notice
       {% for magic_item in sorted_items %}
         <tr>
           <td>
-            <a href="{{ magic_item.url }}"><i>{{ magic_item.title | downcase }}</i></a>
+            <a href="{{ magic_item.url }}"><i>{{ magic_item.title }}</i></a>
             {% if magic_item.requires_attunement %}
               <sup>T</sup>
             {% endif %}

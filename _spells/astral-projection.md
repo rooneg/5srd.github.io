@@ -1,5 +1,5 @@
 ---
-title: Astral Projection
+title: astral projection
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 level: 9

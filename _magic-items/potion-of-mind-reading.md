@@ -1,5 +1,5 @@
 ---
-title: Potion of Mind Reading
+title: potion of mind reading
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Potion

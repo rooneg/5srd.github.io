@@ -1,5 +1,5 @@
 ---
-title: Potion of Diminution
+title: potion of diminution
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Potion

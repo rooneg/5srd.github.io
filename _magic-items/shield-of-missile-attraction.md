@@ -1,5 +1,5 @@
 ---
-title: Shield of Missile Attraction
+title: shield of missile attraction
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Armor

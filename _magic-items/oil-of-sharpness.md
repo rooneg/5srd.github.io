@@ -1,5 +1,5 @@
 ---
-title: Oil of Sharpness
+title: oil of sharpness
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Potion

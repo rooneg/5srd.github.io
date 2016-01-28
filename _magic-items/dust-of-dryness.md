@@ -1,5 +1,5 @@
 ---
-title: Dust of Dryness
+title: dust of dryness
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

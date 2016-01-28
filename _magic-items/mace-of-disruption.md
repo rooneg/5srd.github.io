@@ -1,5 +1,5 @@
 ---
-title: Mace of Disruption
+title: mace of disruption
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Weapon

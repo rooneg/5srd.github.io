@@ -1,5 +1,5 @@
 ---
-title: Rod of Security
+title: rod of security
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Rod

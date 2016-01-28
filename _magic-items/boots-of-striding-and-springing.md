@@ -1,5 +1,5 @@
 ---
-title: Boots of Striding and Springing
+title: boots of striding and springing
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

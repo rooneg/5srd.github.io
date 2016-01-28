@@ -1,5 +1,5 @@
 ---
-title: Wall of Force
+title: wall of force
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 classes:

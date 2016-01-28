@@ -1,5 +1,5 @@
 ---
-title: Robe of Useful Items
+title: robe of useful items
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

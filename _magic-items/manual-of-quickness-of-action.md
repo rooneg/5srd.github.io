@@ -1,5 +1,5 @@
 ---
-title:  Manual of Quickness of Action
+title: manual of quickness of action
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

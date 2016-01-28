@@ -1,5 +1,5 @@
 ---
-title: Lantern of Revealing
+title: lantern of revealing
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

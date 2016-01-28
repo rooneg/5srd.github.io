@@ -1,5 +1,5 @@
 ---
-title: Censer of Controlling Air Elementals
+title: censer of controlling air elementals
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

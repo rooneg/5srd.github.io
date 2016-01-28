@@ -1,5 +1,5 @@
 ---
-title: Storm of Vengeance
+title: storm of vengeance
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 classes:

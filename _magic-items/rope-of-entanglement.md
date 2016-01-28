@@ -1,5 +1,5 @@
 ---
-title: Rope of Entanglement
+title: rope of entanglement
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

@@ -1,5 +1,5 @@
 ---
-title: Pipes of Haunting
+title: pipes of haunting
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

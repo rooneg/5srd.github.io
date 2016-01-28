@@ -1,5 +1,5 @@
 ---
-title: Potion of Flying
+title: potion of flying
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Potion

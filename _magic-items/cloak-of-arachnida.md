@@ -1,5 +1,5 @@
 ---
-title: Cloak of Arachnida
+title: cloak of arachnida
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

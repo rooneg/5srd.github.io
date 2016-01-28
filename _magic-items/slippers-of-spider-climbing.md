@@ -1,5 +1,5 @@
 ---
-title:  Slippers of Spider Climbing
+title: slippers of spider climbing
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

@@ -1,5 +1,5 @@
 ---
-title: Rod of Rulership
+title: rod of rulership
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Rod

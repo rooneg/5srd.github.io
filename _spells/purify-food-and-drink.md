@@ -1,5 +1,5 @@
 ---
-title: Purify Food and Drink
+title: purify food and drink
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 classes:

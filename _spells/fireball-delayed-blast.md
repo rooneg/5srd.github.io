@@ -1,5 +1,5 @@
 ---
-title: Fireball, Delayed Blast
+title: fireball, delayed blast
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 classes:

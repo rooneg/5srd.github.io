@@ -1,5 +1,5 @@
 ---
-title:  Decanter of Endless Water
+title: decanter of endless water
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

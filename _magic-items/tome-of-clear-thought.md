@@ -1,5 +1,5 @@
 ---
-title: Tome of Clear Thought
+title: tome of clear thought
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

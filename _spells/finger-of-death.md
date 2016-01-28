@@ -1,5 +1,5 @@
 ---
-title: Finger of Death
+title: finger of death
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 classes:

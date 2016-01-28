@@ -1,5 +1,5 @@
 ---
-title: Well of Many Worlds
+title: well of many worlds
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

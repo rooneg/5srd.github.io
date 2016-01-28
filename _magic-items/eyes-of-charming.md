@@ -1,5 +1,5 @@
 ---
-title: Eyes of Charming
+title: eyes of charming
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

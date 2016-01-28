@@ -1,5 +1,5 @@
 ---
-title: Protection from Evil and Good
+title: protection from evil and good
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 classes:

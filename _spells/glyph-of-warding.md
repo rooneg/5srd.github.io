@@ -1,5 +1,5 @@
 ---
-title: Glyph of Warding
+title: glyph of warding
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 classes:

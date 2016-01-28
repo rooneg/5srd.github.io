@@ -1,5 +1,5 @@
 ---
-title: Speak with Plants
+title: speak with plants
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 classes:

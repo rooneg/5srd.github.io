@@ -1,5 +1,5 @@
 ---
-title: Gloves of Swimming and Climbing
+title: gloves of swimming and climbing
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

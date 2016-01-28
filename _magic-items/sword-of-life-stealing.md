@@ -1,5 +1,5 @@
 ---
-title: Sword of Life Stealing
+title: sword of life stealing
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Weapon

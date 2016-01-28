@@ -1,5 +1,5 @@
 ---
-title: Bag of Devouring
+title: bag of devouring
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

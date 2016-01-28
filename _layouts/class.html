@@ -112,7 +112,7 @@ layout: ogl-notice
         {% assign classes_size = spell.classes | size %}
         {% if spell.classes contains page.title and classes_size == 1 %}
           <tr>
-            <td><i><a href="{{ spell.url }}">{{ spell.title | downcase }}</a></i></td>
+            <td><i><a href="{{ spell.url }}">{{ spell.title }}</a></i></td>
             <td class="text-sm-center">{{ spell.level }}</td>
             <td>{{ spell.school }}</td>
             <td>{{ spell.casting_time }}</td>

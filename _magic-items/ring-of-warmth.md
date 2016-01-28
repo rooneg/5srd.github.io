@@ -1,5 +1,5 @@
 ---
-title: Ring of Warmth
+title: ring of warmth
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Ring

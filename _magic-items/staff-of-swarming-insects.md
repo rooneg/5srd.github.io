@@ -1,5 +1,5 @@
 ---
-title: Staff of Swarming Insects
+title: staff of swarming insects
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Staff

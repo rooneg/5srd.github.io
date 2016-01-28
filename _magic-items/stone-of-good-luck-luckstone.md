@@ -1,5 +1,5 @@
 ---
-title: Stone of Good Luck (Luckstone)
+title: stone of good luck (luckstone)
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous

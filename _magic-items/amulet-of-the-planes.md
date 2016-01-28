@@ -1,5 +1,5 @@
 ---
-title: Amulet of the Planes
+title: amulet of the planes
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 category: Wondrous
