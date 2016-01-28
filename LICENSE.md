@@ -60,7 +60,6 @@ Open Game License v 1.0a Copyright 2000, Wizards of the Coast, Inc.
 
 - *System Reference Document*, Copyright 2000-2003, Wizards of the Coast, Inc.; Authors Jonathan Tweet, Monte Cook, Skip Williams, Rich Baker, Andy Collins, David Noonan, Rich Redman, Bruce R. Cordell, John D. Rateliff, Thomas Reid, James Wyatt, based on original material by E. Gary Gygax and Dave Arneson.
 - *The Hypertext d20 SRD*, Copyright 2004, Jans W Carton.
-- *System Reference Document*, Copyright 2000, Wizards of the Coast, Inc.; Authors Jonathan Tweet, Monte Cook, Skip Williams, based on material by E. Gary Gygax and Dave Arneson.
 - *Pathfinder Roleplaying Game Reference Document*, Copyright 2011, Paizo Publishing, LLC; Author: Paizo Publishing, LLC;
 - *Pathfinder Roleplaying Game Core Rulebook*, Copyright 2009, Paizo Publishing, LLC; Author: Jason Bulmahn, based on material by Jonathan Tweet, Monte Cook, and Skip Williams.
 - *Pathfinder Roleplaying Game Bestiary*, Copyright 2009, Paizo Publishing, LLC; Author: Jason Bulmahn, based on material by Jonathan Tweet, Monte Cook, and Skip Williams.
@@ -208,8 +207,13 @@ Open Game License v 1.0a Copyright 2000, Wizards of the Coast, Inc.
 - Yeti from the *Tome of Horrors*, Copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.
 - Zombie, Juju from the *Tome of Horrors, Revised*, Copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.
 - *Forgotten Foes*, Copyright 2010, Tricky Owlbear Publishing, Inc.; Authors Mark Gedak and Stefen Styrsky.
+
 - *System Reference Document 5.0*, Copyright 2016, Wizards of the Coast, Inc.; Authors Mike Mearls, Jeremy Crawford, Chris Perkins, Rodney Thompson, Peter Lee, James Wyatt, Robert J. Schwalb, Bruce R. Cordell, Chris Sims, and Steve Townshend, based on original material by E. Gary Gygax and Dave Arneson.
 - "[Earthling](https://grimportents.wordpress.com/2014/08/12/5e-earthling-background/)", Copyright 2015, Chris Sakkas.
+- *Relics & Rituals*, Copyright 2001, Clark Peterson.
+- *Wilderness & Wastelands: Scarred Lands Encounters*, Copyright 2002, White Wolf Publishing, Inc.
+- *Gauntlet of Spiragos*, Copyright 2014, Onyx Path and Nocturnal Publishing, LLC.
+
 - *5srd*, Copyright 2016, Drumanagh Wilpole.
 
 END OF LICENSE

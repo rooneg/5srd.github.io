@@ -24,7 +24,9 @@ layout: ogl-notice
   <p class="compact hanging">
     <strong>Armor Class</strong>
     {{ page.armor_class }}
-    {{ page.armor_class_descriptor | prepend: '(' | append: ')' | remove_first: '()' }}
+    {% if page.armor_class_descriptor %}
+      ({{ page.armor_class_descriptor | markdownify | remove: '<p>' | remove: '</p>' }})
+    {% endif %}
   </p>
 
   <p class="compact hanging">
