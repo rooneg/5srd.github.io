@@ -9,9 +9,13 @@ layout: ogl-notice
 
 ## Time
 
-In situations where keeping track of the passage of time is important, the GM determines the time a task requires. The GM might use a different time scale depending on the context of the situation at hand. In a dungeon environment, the adventurers' movement happens on a scale of minutes. It takes them about a minute to creep down a long hallway, another minute to check for traps on the door at the end of the hall, and a good ten minutes to search the chamber beyond for anything interesting or valuable. In a city or wilderness, a scale of hours is often more appropriate. Adventurers eager to reach the lonely tower at the heart of the forest hurry across those fifteen miles in just under four hours' time. For long journeys, a scale of days works best. Following the road between cities, the adventurers spend four uneventful days before a goblin ambush interrupts their journey.
+In situations where keeping track of the passage of time is important, the GM determines the time a task requires. The GM might use a different time scale depending on the context of the situation at hand. In a dungeon environment, the adventurers' movement happens on a scale of **minutes**. It takes them about a minute to creep down a long hallway, another minute to check for traps on the door at the end of the hall, and a good ten minutes to search the chamber beyond for anything interesting or valuable.
 
-In combat and other fast-paced situations, the game relies on rounds, a 6-second span of time.
+In a city or wilderness, a scale of **hours** is often more appropriate. Adventurers eager to reach the lonely tower at the heart of the forest hurry across those fifteen miles in just under four hours' time.
+
+For long journeys, a scale of **days** works best. Following the road between cities, the adventurers spend four uneventful days before a goblin ambush interrupts their journey.
+
+In combat and other fast-paced situations, the game relies on **rounds**, a 6-second span of time.
 
 ## Movement
 
@@ -95,17 +99,17 @@ For example, a creature with a Constitution of 14 can hold its breath for 3 minu
 
 The most fundamental tasks of adventuring----noticing danger, finding hidden objects, hitting an enemy in combat, and targeting a spell, to name just a few---rely heavily on a character's ability to see. Darkness and other effects that obscure vision can prove a significant hindrance.
 
-A given area might be lightly or heavily obscured. In a lightly obscured area, such as dim light, patchy fog, or moderate foliage, creatures have disadvantage on Wisdom (Perception) checks that rely on sight.
+A given area might be lightly or heavily obscured. In a **lightly obscured** area, such as dim light, patchy fog, or moderate foliage, creatures have disadvantage on Wisdom (Perception) checks that rely on sight.
 
-A heavily obscured area---such as darkness, opaque fog, or dense foliage---blocks vision entirely. A creature effectively suffers from the blinded condition when trying to see something in that area.
+A **heavily obscured** area---such as darkness, opaque fog, or dense foliage---blocks vision entirely. A creature effectively suffers from the blinded condition when trying to see something in that area.
 
 The presence or absence of light in an environment creates three categories of illumination: bright light, dim light, and darkness.
 
-Bright light lets most creatures see normally. Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius.
+**Bright light** lets most creatures see normally. Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius.
 
-Dim light, also called shadows, creates a lightly obscured area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.
+**Dim light**, also called shadows, creates a lightly obscured area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.
 
-Darkness creates a heavily obscured area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.
+**Darkness** creates a heavily obscured area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.
 
 #### Blindsight
 
