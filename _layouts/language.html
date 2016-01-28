@@ -2,13 +2,12 @@
 layout: ogl-notice
 ---
 
-{% capture monster_list %}
-  {% for monster in site.monsters %}
-    {% if monster.languages contains page.title %}
-      <a href="{{ monster.url }}">{{ monster.title }}</a>,
-    {% endif %}
-  {% endfor %}
-{% endcapture %}
+{% assign spoken_by = '' %}
+{% for monster in site.monsters %}
+  {% if monster.languages contains page.title %}
+    {% capture spoken_by %}{{ spoken_by }}|<a href="{{ monster.url }}">{{ monster.title }}{% endcapture %}
+  {% endif %}
+{% endfor %}
 
 <p><strong>Group:</strong> {{ page.group }}</p>
 
@@ -16,6 +15,6 @@ layout: ogl-notice
 
 <p><strong>Script:</strong> {{ page.script }}</p>
 
-<p><strong>Spoken By:</strong> {{ monster_list | append: 'EOL' | remove_first: ', EOL' }}</p>
+<p><strong>Spoken By:</strong> {{ spoken_by | remove_first: '|' | split: '|' | join: ', ' }}</p>
 
 {{ content }}

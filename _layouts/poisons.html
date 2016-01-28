@@ -4,12 +4,12 @@ layout: ogl-notice
 
 {% assign poison_types = site.poisons | group_by: 'type' | sort: 'name' %}
 {% for poison_type in poison_types %}
-  <div class="marginnote">
+  <div class="marginnote marginnote-listing">
     <table class="fullwidth">
       <thead>
         <tr>
           <th>{{ poison_type.name | capitalize }} Poison</th>
-          <th>DC</th>
+          <th style="text-align: center;">DC</th>
         </tr>
       </thead>
       <tbody>
@@ -21,7 +21,7 @@ layout: ogl-notice
               <small>(Third-Party)</small>
             {% endunless %}
           </td>
-          <td>{{ poison.saving_throw_dc }}</t>
+          <td style="text-align: center;">{{ poison.saving_throw_dc }}</t>
         </tr>
       {% endfor %}
       </tbody>
