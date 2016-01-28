@@ -5,7 +5,7 @@
   <li>
     <a href="{{ subclass.url }}">{{ subclass.title }}</a>
     {% unless site.data.first_party_sources contains subclass.source %}
-      <small><span class="label label-info">Third-Party</span></small>
+      <small>(Third-Party)</small>
     {% endunless %}
   </li>
   {% endfor %}

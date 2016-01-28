@@ -1,5 +1,7 @@
 ---
 title: Magic Items
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 permalink: /magic-items/
 nav: true
 layout: magic-items

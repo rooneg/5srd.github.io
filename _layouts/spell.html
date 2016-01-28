@@ -3,89 +3,62 @@ layout: ogl-notice
 ---
 
 {% unless page.classes %}
-  <div class="alert alert-warning" role="alert">
-    This spell is missing classes.
-  </div>
+  <p><i>This spell is missing classes.</i></p>
 {% endunless %}
 
 {% unless page.level %}
-  <div class="alert alert-warning" role="alert">
-    This spell is missing a level.
-  </div>
+  <p><i>This spell is missing a level.</i></p>
 {% endunless %}
 
 {% unless page.school %}
-  <div class="alert alert-warning" role="alert">
-    This spell is missing a school.
-  </div>
+  <p><i>This spell is missing a school.</i></p>
 {% endunless %}
 
 {% unless page.casting_time %}
-  <div class="alert alert-warning" role="alert">
-    This spell is missing a casting time.
-  </div>
+  <p><i>This spell is missing a casting time.</i></p>
 {% endunless %}
 
 {% unless page.range %}
-  <div class="alert alert-warning" role="alert">
-    This spell is missing a range.
-  </div>
+  <p><i>This spell is missing a range.</i></p>
 {% endunless %}
 
 {% unless page.components %}
-  <div class="alert alert-warning" role="alert">
-    This spell is missing components.
-  </div>
+  <p><i>This spell is missing components.</i></p>
 {% endunless %}
 
 {% unless page.duration %}
-  <div class="alert alert-warning" role="alert">
-    This spell is missing a duration.
-  </div>
+  <p><i>This spell is missing a duration.</i></p>
 {% endunless %}
 
 {% unless page.saving_throw %}
-  <div class="alert alert-warning" role="alert">
-    This spell is missing a saving throw.
-  </div>
+  <p><i>This spell is missing a saving throw.</i></p>
 {% endunless %}
 
+<p><strong>Classes:</strong> {{ page.classes | join: ', ' }}</p>
 
-<dl class="dl-horizontal row">
-    <dt class="col-sm-3 col-md-2">Classes</dt>
-    <dd class="col-sm-9 col-md-10">
-      {{ page.classes | join: ', ' }}
-    </dd>
+<p>
+  <strong>Classification:</strong>
+  {{ page.level }}{% if page.level %}{% case page.level %}{% when 1 %}st{% when 2 %}nd{% when 3 %}rd{% else %}th{% endcase %}-level{% endif %} {{ page.school }} {% if page.ritual %}(ritual){% endif %}
+</p>
 
-  <dt class="col-sm-3 col-md-2">Classification</dt>
-  <dd class="col-sm-9 col-md-10">
-    {{ page.level }}{% if page.level %}{% case page.level %}{% when 1 %}st{% when 2 %}nd{% when 3 %}rd{% else %}th{% endcase %}-level{% endif %} {{ page.school }} {% if page.ritual %}(ritual){% endif %}
-  </dd>
+{% if page.casting_time %}
+  <p><strong>Casting Time:</strong> {{ page.casting_time }}</p>
+{% endif %}
 
-  {% if page.casting_time %}
-    <dt class="col-sm-3 col-md-2">Casting Time</dt>
-    <dd class="col-sm-9 col-md-10">{{ page.casting_time }}</dd>
-  {% endif %}
+{% if page.range %}
+  <p><strong>Range:</strong> {{ page.range }}</p>
+{% endif %}
 
-  {% if page.range %}
-    <dt class="col-sm-3 col-md-2">Range</dt>
-    <dd class="col-sm-9 col-md-10">{{ page.range }}</dd>
-  {% endif %}
+{% if page.components %}
+  <p><strong>Components:</strong> {{ page.components }} {% if page.material_components %}({{ page.material_components | array_to_sentence_string }}){% endif %}</p>
+{% endif %}
 
-  {% if page.components %}
-    <dt class="col-sm-3 col-md-2">Components</dt>
-    <dd class="col-sm-9 col-md-10">{{ page.components }} {% if page.material_components %}({{ page.material_components | array_to_sentence_string }}){% endif %}</dd>
-  {% endif %}
+{% if page.duration %}
+  <p><strong>Duration:</strong> {{ page.duration }}</p>
+{% endif %}
 
-  {% if page.duration %}
-    <dt class="col-sm-3 col-md-2">Duration</dt>
-    <dd class="col-sm-9 col-md-10">{{ page.duration }}</dd>
-  {% endif %}
-
-  {% if page.saving_throw %}
-    <dt class="col-sm-3 col-md-2">Saving Throw</dt>
-    <dd class="col-sm-9 col-md-10">{{ page.saving_throw }}</dd>
-  {% endif %}
-</dl>
+{% if page.saving_throw %}
+  <p><strong>Saving Throw:</strong> {{ page.saving_throw }}</p>
+{% endif %}
 
 {{ content }}

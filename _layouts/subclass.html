@@ -5,8 +5,10 @@ layout: ogl-notice
 {% assign classes = site.classes | where: 'title', page.class %}
 <p>
 {% for class in classes %}
-  <a class="btn btn-secondary" href="{{ class.url }}"><span class="octicon octicon-chevron-left"></span>
- {{ class.title }}</a>
+  <a href="{{ class.url }}">
+    &laquo;
+    {{ class.title }}
+  </a>
 {% endfor %}
 </p>
 

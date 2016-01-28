@@ -2,28 +2,20 @@
 layout: ogl-notice
 ---
 
-<dl class="dl-horizontal row">
-  <dt class="col-sm-3">Group</dt>
-  <dd class="col-sm-9">{{ page.group }}</dd>
+{% capture monster_list %}
+  {% for monster in site.monsters %}
+    {% if monster.languages contains page.title %}
+      <a href="{{ monster.url }}">{{ monster.title }}</a>,
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
 
-  <dt class="col-sm-3">Typical Speakers</dt>
-  <dd class="col-sm-9">{{ page.typical_speakers | array_to_sentence_string }}</dd>
+<p><strong>Group:</strong> {{ page.group }}</p>
 
-  <dt class="col-sm-3">Script</dt>
-  <dd class="col-sm-9">{{ page.script }}</dd>
+<p><strong>Typical Speakers:</strong> {{ page.typical_speakers | array_to_sentence_string }}</p>
 
-  <dt class="col-sm-3">Spoken By</dt>
-  <dd class="col-sm-9">
-    <ul class="nav nav-inline">
-      {% for monster in site.monsters %}
-        {% if monster.languages contains page.title %}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ monster.url }}">{{ monster.title }}</a>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </dd>
-</dl>
+<p><strong>Script:</strong> {{ page.script }}</p>
+
+<p><strong>Spoken By:</strong> {{ monster_list | append: 'EOL' | remove_first: ', EOL' }}</p>
 
 {{ content }}

@@ -14,530 +14,168 @@ layout: ogl-notice
 {% assign xp = site.data.challenge_xp | where: 'rating', page.challenge | map: 'xp' | first %}
 {% assign hd_size = site.data.hd_sizes | where: 'size', page.size | map: 'hd_size' %}
 
-<div class="row">
-  <div class="col-md-6">
-    <ul class="nav nav-tabs" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" data-toggle="tab" href="#stats-5srd" role="tab">5srd</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#stats-5th" role="tab">5th Era</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#stats-4th" role="tab">4th Era</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#stats-1st" role="tab">1st Era</a>
-      </li>
-    </ul>
-
-    <div class="tab-content">
-      <div class="tab-pane active" id="stats-5srd" role="tabpanel">
-        <div class="card">
-          <div class="card-header">
-            <p class="h5 card-text m-b-half"><strong>{{ page.title }}</strong></p>
-            <p class="card-text compact">{{ page.size | capitalize }} {{ page.type | downcase }}, {{ page.alignment | downcase }}</p>
-          </div>
-          <div class="card-block">
-            <dl class="dl-horizontal row" style="margin-bottom: 0;">
-              <dt class="col-md-4 col-lg-3">Armor Class</dt>
-              <dd class="col-md-8 col-lg-9">{{ page.armor_class }} {% if page.armor_class_descriptor %}({{ page.armor_class_descriptor }}){% endif %}</dd>
-
-              <dt class="col-md-4 col-lg-3">Hit Points</dt>
-              <dd class="col-md-8 col-lg-9">
-                {{ page.hp }}
-                {% if page.hd %}
-                  ({{ page.hd }}d{{ hd_size }}+{{ hp_bonus | prepend: '+' | remove_first: '+-' }})
-                {% endif %}
-              </dd>
-
-              <dt class="col-md-4 col-lg-3">Speed</dt>
-              <dd class="col-md-8 col-lg-9">
-                {% for speed in page.speeds %}{% if speed.name != 'walk' %}{{ speed.name }}{% endif %} {{ speed.speed }} ft.{% unless forloop.last %}, {% endunless %}{% endfor %}
-              </dd>
-            </dl>
-
-            <table class="table table-ability-scores">
-              <thead>
-                <tr>
-                  <td></td>
-                  {% for ability_score in page.ability_scores %}
-                    <th>{{ ability_score[0] | truncate: 3, '' }} <small class="text-muted">({{ ability_score[1] }})</small></th>
-                  {% endfor %}
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>Abilities</th>
-                  {% for ability_score in page.ability_scores %}
-                    <td>{{ ability_score[1] | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-'}}</td>
-                  {% endfor %}
-                </tr>
-                <tr>
-                  <th>Saves</th>
-                  {% for ability_score in page.ability_scores %}
-                    <td>
-                      {% if page.saving_throw_proficiencies contains ability_score[0] %}
-                        {{ ability_score[1] | divided_by: 2 | minus: 5 | plus: proficiency_bonus | prepend: '+' | replace_first: '+-', '-' }}
-                      {% else %}
-                        {{ ability_score[1] | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-' }}
-                      {% endif %}
-                    </td>
-                  {% endfor %}
-                </tr>
-              </tbody>
-            </table>
-
-            <dl class="dl-horizontal row" style="margin-bottom: 0;">
-              {% if page.skills %}
-                <dt class="col-md-4 col-lg-3">Skills</dt>
-                <dd class="col-md-8 col-lg-9">{% for skill in page.skills %}{{ skill.name }} {% if skill.bonus >= 0 %}+{% else %}-{% endif %}{{ skill.bonus }}{% unless forloop.last %}, {% endunless %}{% endfor %}</dd>
-              {% endif %}
-
-              {% if page.damage_resistances %}
-                <dt class="col-md-4 col-lg-3">Damage Resistances</dt>
-                <dd class="col-md-8 col-lg-9">{{ page.damage_resistances | array_to_sentence_string }}</dd>
-              {% endif %}
-
-              {% if page.damage_immunities %}
-                <dt class="col-md-4 col-lg-3">Damage Immunities</dt>
-                <dd class="col-md-8 col-lg-9">{{ page.damage_immunities | array_to_sentence_string }}</dd>
-              {% endif %}
-
-              {% if page.condition_immunities %}
-                <dt class="col-md-4 col-lg-3">Condition Immunities</dt>
-                <dd class="col-md-8 col-lg-9">{{ page.condition_immunities | array_to_sentence_string }}</dd>
-              {% endif %}
-
-              <dt class="col-md-4 col-lg-3">Senses</dt>
-              <dd class="col-md-8 col-lg-9">
-                {% for sense in page.senses %}{{ sense.name }} {{ sense.range }} ft.,{% endfor %}
-                passive Perception {{ page.skills | where: 'name', 'Perception' | map: 'bonus' | first | plus: 10 }}
-              </dd>
-
-              <dt class="col-md-4 col-lg-3">Languages</dt>
-              <dd class="col-md-8 col-lg-9">{% if page.languages %}{{ page.languages | array_to_sentence_string }}{% else %}&mdash;{% endif %}</dd>
-
-              <dt class="col-md-4 col-lg-3">Challenge</dt>
-              <dd class="col-md-8 col-lg-9">
-                {{ display_challenge }}
-
-                ({{ xp }} XP)
-              </dd>
-            </dl>
-          </div>
-
-          {% if page.special_traits %}
-            <div class="card-header">Special Traits</div>
-            <div class="card-block">
-              <dl style="margin-bottom: 0;">
-                {% for trait in page.special_traits %}
-                  <dt>{{ trait.name }}</dt>
-                  <dd>{{ trait.text | append: '' | markdownify }}</dd>
-                {% endfor %}
-              </dl>
-            </div>
-          {% endif %}
-
-          {% if page.actions %}
-            <div class="card-header">Actions</div>
-            <div class="card-block">
-              <dl style="margin-bottom: 0;">
-                {% for action in page.actions %}
-                  <dt>{{ action.name }}</dt>
-                  <dd>{{ action.text | append: '' | markdownify }}</dd>
-                {% endfor %}
-              </dl>
-            </div>
-          {% endif %}
-
-          {% if page.reactions %}
-            <div class="card-header">Reactions</div>
-            <div class="card-block">
-              <dl style="margin-bottom: 0;">
-                {% for action in page.reactions %}
-                  <dt>{{ action.name }}</dt>
-                  <dd>{{ action.text | append: '' | markdownify }}</dd>
-                {% endfor %}
-              </dl>
-            </div>
-          {% endif %}
-
-          {% if page.legendary_actions %}
-            <div class="card-header">Legendary Actions</div>
-            <div class="card-block">
-              <dl style="margin-bottom: 0;">
-                {% for action in page.legendary_actions %}
-                  <dt>{{ action.name }}</dt>
-                  <dd>{{ action.text | append: '' | markdownify }}</dd>
-                {% endfor %}
-              </dl>
-            </div>
-          {% endif %}
-        </div><!-- /.card -->
-      </div>
-
-      <div class="tab-pane" id="stats-5th" role="tabpanel">
-        <div class="card stats-standard">
-          <div class="card-block">
-            <p class="h5 card-text compact font-smallcaps m-b-half">{{ page.title }}</p>
-
-            <p class="card-text compact"><i>{{ page.size | capitalize }} {{ page.type | downcase }}{{ page.tags | join: ', ' | prepend: ' (' | append: ')' | remove_first: ' ()' }}, {{ page.alignment | downcase }}</i></p>
-
-            <hr class="m-y-half">
-
-            <p class="card-text compact">
-              <b>Armor Class</b>
-              {{ page.armor_class }}
-              {{ page.armor_class_descriptor | prepend: '(' | append: ')' | remove_first: '()' }}
-            </p>
-
-            <p class="card-text compact">
-              <b>Hit Points</b>
-              {{ page.hp }}
-              {% if page.hd %}
-                ({{ page.hd }}d{{ hd_size }}+{{ hp_bonus | prepend: '+' | remove_first: '+-' | replace: '+', ' + ' | replace: '-', ' - ' }})
-              {% endif %}
-            </p>
-
-            <p class="card-text compact">
-              <b>Speed</b>
-              {% for speed in page.speeds %}{% if speed.name != 'walk' %}{{ speed.name }}{% endif %} {{ speed.speed }} ft.{% unless forloop.last %}, {% endunless %}{% endfor %}
-            </p>
-
-            <hr class="m-y-half">
-
-            <table style="width: 100%;">
-              <tbody>
-                <tr>
-                  {% for ability_score in page.ability_scores %}
-                    <th class="text-sm-center">{{ ability_score[0] | upcase | truncate: 3, '' }}</th>
-                  {% endfor %}
-                </tr>
-                <tr>
-                  {% for ability_score in page.ability_scores %}
-                    <td class="text-sm-center">
-                      {{ ability_score[1] }}
-                      ({{ ability_score[1] | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-'}})
-                    </td>
-                  {% endfor %}
-                </tr>
-              </tbody>
-            </table>
-
-            <hr class="m-y-half">
-
-            {% if page.saving_throw_proficiencies %}
-              <p class="card-text compact">
-                <b>Saving Throws</b>
-                {% for save in page.saving_throw_proficiencies %}
-                  {{ save }} {{ page.ability_scores[save] | divided_by: 2 | minus: 5 | plus: proficiency_bonus | prepend: '+' }}{% unless forloop.last %},{% endunless %}
-                {% endfor %}
-              </p>
-            {% endif %}
-
-            {% if page.skills %}
-              <p class="card-text compact">
-                <b>Skills</b>
-                {% for skill in page.skills %}
-                  {{ skill.name }} {{ skill.bonus | prepend: '+' }}{% unless forloop.last %},{% endunless %}
-                {% endfor %}
-              </p>
-            {% endif %}
-
-            {% if page.damage_resistances %}
-              <p class="card-text compact">
-                <b>Damage Resistances</b>
-                {{ page.damage_resistances | array_to_sentence_string }}
-              </p>
-            {% endif %}
-
-            {% if page.damage_immunities %}
-              <p class="card-text compact">
-                <b>Damage Immunities</b>
-                {{ page.damage_immunities | array_to_sentence_string }}
-              </p>
-            {% endif %}
-
-            {% if page.condition_immunities %}
-              <p class="card-text compact">
-                <b>Condition Immunities</b>
-                {{ page.condition_immunities | array_to_sentence_string }}
-              </p>
-            {% endif %}
-
-            <p class="card-text compact">
-              <b>Senses</b>
-              {% for sense in page.senses %}
-                {{ sense.name | downcase }} {{ sense.range }} ft.,
-              {% endfor %}
-              passive Perception {{ page.skills.Perception | plus: 10 }}
-            </p>
-
-            {% if page.languages %}
-              <p class="card-text compact">
-                <b>Languages</b>
-                {{ page.languages | array_to_sentence_string }}
-              </p>
-            {% endif %}
-
-            <p class="card-text compact">
-              <b>Challenge</b>
-              {{ display_challenge }} ({{ xp }} XP)
-            </p>
-
-            {% if page.special_traits %}
-              <hr class="m-y-half">
-
-              {% for trait in page.special_traits %}
-                <p class="card-text">
-                  <b><i>{{ trait.name }}.</i></b>
-                  {{ trait.text | append: '' | markdownify | remove_first: '<p>' }}
-                <!-- the missing /p is closed by markdownify -->
-              {% endfor %}
-            {% endif %}
-
-            {% if page.actions %}
-              <p class="h5 m-y-half font-smallcaps">Actions</p>
-
-              <hr class="m-t-0 m-b-half">
-
-              {% for action in page.actions %}
-                <p class="card-text">
-                  <b><i>{{ action.name }}.</i></b>
-                  {{ action.text | append: '' | markdownify | remove_first: '<p>' }}
-                <!-- the missing /p is closed by markdownify -->
-              {% endfor %}
-            {% endif %}
-
-            {% if page.reactions %}
-              <p class="h5 m-t-1 font-smallcaps">Reactions</p>
-
-              <hr class="m-t-0 m-b-1">
-
-              {% for action in page.reactions %}
-                <p class="card-text">
-                  <b><i>{{ action.name }}.</i></b>
-                  {{ action.text | append: '' | markdownify | remove_first: '<p>' }}
-                <!-- the missing /p is closed by markdownify -->
-              {% endfor %}
-            {% endif %}
-
-            {% if page.legendary_actions %}
-              <p class="h5 m-t-1 font-smallcaps">Legendary Actions</p>
-
-              <hr class="m-t-0 m-b-1">
-
-              <p class="card-text">The creature can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The creature regains spent legendary actions at the start of its turn.</p>
-
-              {% for action in page.legendary_actions %}
-                <p class="card-text compact hanging">
-                  <b>{{ action.name }}.</b>
-                  {{ action.text | append: '' | markdownify | remove_first: '<p>' }}
-                <!-- the missing /p is closed by markdownify -->
-              {% endfor %}
-            {% endif %}
-          </div>
-        </div>
-      </div>
-
-      <div class="tab-pane" id="stats-4th" role="tabpanel">
-        <div class="card">
-          <div class="card-header p-y-half">
-            <p class="card-text compact">
-              <strong>{{ page.title }}</strong>
-              <span class="pull-xs-right"><strong>Level {{ display_challenge }}
-              {% if page.legendary_actions %}Legendary{% endif %}</strong></span>
-            </p>
-            <p class="card-text compact">
-              {{ page.size | capitalize }} {{ page.type | downcase }}
-              <span class="pull-xs-right">XP {{ xp }}</span>
-            </p>
-          </div>
-          <div class="card-block p-y-half">
-            <p class="card-text compact hanging">
-              <strong>Initiative</strong> {{ page.ability_scores.Dexterity | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-'}}
-
-              <span class="pull-xs-right"><strong>Senses</strong> Perception {{ page.skills | where: 'name', 'Perception' | map: 'bonus' | first | plus: 0 | prepend: '+' | remove_first: '+-' }}{% if page.senses %}; {% endif %}{% for sense in page.senses %}{{ sense.name }} {{ sense.range }}{% unless forloop.last %}, {% endunless %}{% endfor %}
-            </p>
-
-            <p class="card-text compact hanging"><strong>HP</strong> {{ page.hp }}</p>
-
-            <p class="card-text compact hanging"><strong>AC</strong> {{ page.armor_class }};
-              {% for ability_score in page.ability_scores %}
-                <strong>{{ ability_score[0] | truncate: 3, '' }}</strong>
-                {% if page.saving_throw_proficiencies contains ability_score[0] %}
-                  {{ ability_score[1] | divided_by: 2 | minus: 5 | plus: proficiency_bonus | prepend: '+' | replace_first: '+-', '-' }}{% unless forloop.last %}, {% endunless %}
-                {% else %}
-                  {{ ability_score[1] | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-' }}{% unless forloop.last %}, {% endunless %}
-                {% endif %}
-              {% endfor %}
-            </p>
-
-            {% if page.damage_immunities or page.condition_immunities or page.damage_resistances %}
-              <p class="card-text compact hanging">
-                {% if page.damage_immunities or page.condition_immunities %}
-                  <strong>Immune</strong> {% if page.damage_immunities %}{{ page.damage_immunities | array_to_sentence_string }}{% endif %}{% if page.damage_immunities and page.condition_immunities %}; {% endif %} {% if page.condition_immunities %}{{ page.condition_immunities | array_to_sentence_string }}{% endif %}{% if page.damage_resistances %}; {% endif %}
-                {% endif %}
-
-                {% if page.damage_resistances %}
-                  <strong>Resist</strong> {{ page.damage_resistances | array_to_sentence_string }}
-                {% endif %}
-              </p>
-            {% endif %}
-
-            <p class="card-text compact hanging">
-              <strong>Speed</strong> {% for speed in page.speeds %}{% if speed.name != 'walk' %}{{ speed.name }}{% endif %} {{ speed.speed | divided_by: 5 }}{% unless forloop.last %}, {% endunless %}{% endfor %}
-            </p>
-          </div>
-
-          {% for action in page.actions %}
-            <div class="card-header p-y-half">
-              <p class="card-text"><strong>{{ action.name | append: '' | markdownify | remove: '<p>' | remove: '</p>' }}</strong> (action)</p>
-            </div>
-            <div class="card-block p-y-half">
-              {{ action.text | append: '' | markdownify }}
-            </div>
-          {% endfor %}
-
-          {% for action in page.legendary_actions %}
-            <div class="card-header p-y-half">
-              <p class="card-text"><strong>{{ action.name | remove: '<p>' | remove: '</p>'  }}</strong> (legendary action)</p>
-            </div>
-            <div class="card-block p-y-half">
-              {{ action.text | append: '' | markdownify }}
-            </div>
-          {% endfor %}
-
-          {% for action in page.reactions %}
-            <div class="card-header p-y-half">
-              <p class="card-text"><strong>{{ action.name | remove: '<p>' | remove: '</p>'  }}</strong> (reaction)</p>
-            </div>
-            <div class="card-block p-y-half">
-              {{ reaction.text | append: '' | markdownify }}
-            </div>
-          {% endfor %}
-
-          {% for trait in page.special_traits %}
-            <div class="card-header p-y-half">
-              <p class="card-text"><strong>{{ trait.name | remove: '<p>' | remove: '</p>'  }}</strong></p>
-            </div>
-            <div class="card-block p-y-half">
-              {{ trait.text | append: '' | markdownify }}
-            </div>
-          {% endfor %}
-
-          <div class="card-header p-y-half">
-            <p class="card-text compact hanging">
-              <strong>Alignment</strong> {{ page.alignment }}
-
-              <span class="pull-xs-right">
-                <strong>Languages</strong>
-                {% if page.languages %}
-                  {{ page.languages | array_to_sentence_string }}
-                {% else %}
-                  &mdash;
-                {% endif %}
-              </span>
-            </p>
-
-            {% if page.skills %}
-              <p class="card-text compact hanging">
-                <strong>Skills</strong>
-
-                {% for skill in page.skills %}{{ skill.name }} {% if skill.bonus >= 0 %}+{% else %}-{% endif %}{{ skill.bonus }}{% unless forloop.last %}, {% endunless %}{% endfor %}
-              </p>
-            {% endif %}
-
-            <div class="row">
-              <div class="col-xs-4">
-                <strong>Str</strong>
-                {{ page.ability_scores.Strength }}
-                ({{ page.ability_scores.Strength | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-'}})
-              </div>
-              <div class="col-xs-4">
-                <strong>Dex</strong>
-                {{ page.ability_scores.Dexterity }}
-                ({{ page.ability_scores.Dexterity | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-'}})
-              </div>
-              <div class="col-xs-4">
-                <strong>Wis</strong>
-                {{ page.ability_scores.Wisdom }}
-                ({{ page.ability_scores.Wisdom | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-'}})
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-4">
-                <strong>Con</strong>
-                {{ page.ability_scores.Constitution }}
-                ({{ page.ability_scores.Constitution | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-'}})
-              </div>
-              <div class="col-xs-4">
-                <strong>Int</strong>
-                {{ page.ability_scores.Intelligence }}
-                ({{ page.ability_scores.Intelligence | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-'}})
-              </div>
-              <div class="col-xs-4">
-                <strong>Cha</strong>
-                {{ page.ability_scores.Charisma }}
-                ({{ page.ability_scores.Charisma | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-'}})
-              </div><!-- /.col -->
-            </div><!-- /.row -->
-          </div><!-- /.card-header -->
-        </div><!-- /.card -->
-      </div><!-- /.tab-pane -->
-
-      <div class="tab-pane" id="stats-1st" role="tabpanel">
-        <div class="card">
-          <div class="card-block">
-            <p class="card-text">
-              <b>{{ page.title | upcase }}:</b>
-
-              <b>HP</b> {{ page.hp }}{% if page.hd %} ({{ page.hd }}d{{ hd_size }}+{{ hp_bonus | prepend: '+' | remove_first: '+-' }}){% endif %};
-
-              <b>AC</b> {{ page.armor_class }};
-
-              <b>Speed</b> {% for speed in page.speeds %}{% if speed.name != 'walk' %}{{ speed.name }}{% endif %} {{ speed.speed }}'{% unless forloop.last %}, {% endunless %}{% endfor %};
-
-              <b>Abilities</b>
-              {% for ability_score in page.ability_scores %}{{ ability_score[0] | truncate: 3, '' }} {{ ability_score[1] | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-'}}{% unless forloop.last %}, {% endunless %}{% endfor %};
-
-              <b>Perception</b> {{ page.skills | where: 'name', 'Perception' | map: 'bonus' | plus: 10 }};
-
-              <b>CR</b> {{ display_challenge }};
-
-              <b>XP</b> {{ xp }};
-
-              <b>Special</b>
-              {% for trait in page.special_traits %}{{ trait.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}.
-            </p>
-
-            {% for action in page.actions %}
-              <p class="card-text"><b>{{ action.name }}</b> {{ action.text | append: '' | markdownify | remove_first: '<p>' }}
-              <!-- /p is closed by markdownify -->
-            {% endfor %}
-
-            {% for action in page.reactions %}
-              <p class="card-text"><b>{{ action.name }} (Reaction)</b> {{ action.text | append: '' | markdownify | remove_first: '<p>' }}
-              <!-- /p is closed by markdownify -->
-            {% endfor %}
-
-            {% if page.legendary_actions %}
-              <p class="card-text"><b>Legendary Actions (3/turn)</b></p>
-              <ul class="unstyled">
-                {% for action in page.legendary_actions %}
-                  <li><i>{{ action.name }}</i> {{ action.text | append: '' | markdownify }}</li>
-                  <!-- /p is closed by markdownify -->
-                {% endfor %}
-              </ul>
-            {% endif %}
-          </div>
-        </div><!-- /.card -->
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-6">
-    {{ content }}
-  </div>
-</div>
+<section class="statblock">
+  <p class="compact smallcaps" style="font-size: 1.8rem;">{{ page.title }}</p>
+
+  <p class="compact"><i>{{ page.size | capitalize }} {{ page.type | downcase }}{{ page.tags | join: ', ' | prepend: ' (' | append: ')' | remove_first: ' ()' }}, {{ page.alignment | downcase }}</i></p>
+
+  <hr>
+
+  <p class="compact hanging">
+    <strong>Armor Class</strong>
+    {{ page.armor_class }}
+    {{ page.armor_class_descriptor | prepend: '(' | append: ')' | remove_first: '()' }}
+  </p>
+
+  <p class="compact hanging">
+    <strong>Hit Points</strong>
+    {{ page.hp }}
+    {% if page.hd %}
+      ({{ page.hd }}d{{ hd_size }}+{{ hp_bonus | prepend: '+' | remove_first: '+-' | replace: '+', ' + ' | replace: '-', ' - ' }})
+    {% endif %}
+  </p>
+
+  <p class="compact hanging">
+    <strong>Speed</strong>
+    {% for speed in page.speeds %}{% if speed.name != 'walk' %}{{ speed.name }}{% endif %} {{ speed.speed }} ft.{% unless forloop.last %}, {% endunless %}{% endfor %}
+  </p>
+
+  <hr>
+
+  <table class="compact">
+    <thead>
+      <tr>
+        {% for ability_score in page.ability_scores %}
+          <th style="text-align: center; border-bottom: none;">
+            <strong>{{ ability_score[0] | upcase | truncate: 3, '' }}</strong>
+          </th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        {% for ability_score in page.ability_scores %}
+          <td style="text-align: center;">
+            {{ ability_score[1] }}
+            ({{ ability_score[1] | divided_by: 2 | minus: 5 | prepend: '+' | replace_first: '+-', '-'}})
+          </td>
+        {% endfor %}
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+
+  {% if page.saving_throw_proficiencies %}
+    <p class="compact hanging">
+      <strong>Saving Throws</strong>
+      {% for save in page.saving_throw_proficiencies %}
+        {{ save }} {{ page.ability_scores[save] | divided_by: 2 | minus: 5 | plus: proficiency_bonus | prepend: '+' }}{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    </p>
+  {% endif %}
+
+  {% if page.skills %}
+    <p class="compact hanging">
+      <strong>Skills</strong>
+      {% for skill in page.skills %}
+        {{ skill.name }} {{ skill.bonus | prepend: '+' }}{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    </p>
+  {% endif %}
+
+  {% if page.damage_resistances %}
+    <p class="compact hanging">
+      <strong>Damage Resistances</strong>
+      {{ page.damage_resistances | array_to_sentence_string }}
+    </p>
+  {% endif %}
+
+  {% if page.damage_immunities %}
+    <p class="compact hanging">
+      <strong>Damage Immunities</strong>
+      {{ page.damage_immunities | array_to_sentence_string }}
+    </p>
+  {% endif %}
+
+  {% if page.condition_immunities %}
+    <p class="compact hanging">
+      <strong>Condition Immunities</strong>
+      {{ page.condition_immunities | array_to_sentence_string }}
+    </p>
+  {% endif %}
+
+  <p class="compact hanging">
+    <strong>Senses</strong>
+    {% for sense in page.senses %}
+      {{ sense.name | downcase }} {{ sense.range }} ft.,
+    {% endfor %}
+    passive Perception {{ page.skills.Perception | plus: 10 }}
+  </p>
+
+  {% if page.languages %}
+    <p class="compact hanging">
+      <strong>Languages</strong>
+      {{ page.languages | array_to_sentence_string }}
+    </p>
+  {% endif %}
+
+  <p class="compact hanging">
+    <strong>Challenge</strong>
+    {{ display_challenge }} ({{ xp }} XP)
+  </p>
+
+  {% if page.special_traits %}
+    <hr>
+
+    {% for trait in page.special_traits %}
+      <p>
+        <strong><i>{{ trait.name }}.</i></strong>
+        {{ trait.text | append: '' | markdownify | remove_first: '<p>' }}
+      <!-- the missing /p is closed by markdownify -->
+    {% endfor %}
+  {% endif %}
+
+  {% if page.actions %}
+    <p class="smallcaps" style="margin-bottom: 0;">Actions</p>
+
+    <hr class="compact">
+
+    {% for action in page.actions %}
+      <p>
+        <strong><i>{{ action.name }}.</i></strong>
+        {{ action.text | append: '' | markdownify | remove_first: '<p>' }}
+      <!-- the missing /p is closed by markdownify -->
+    {% endfor %}
+  {% endif %}
+
+  {% if page.reactions %}
+    <p class="smallcaps" style="margin-bottom: 0;">Reactions</p>
+
+    <hr class="compact">
+
+    {% for action in page.reactions %}
+      <p>
+        <strong><i>{{ action.name }}.</i></strong>
+        {{ action.text | append: '' | markdownify | remove_first: '<p>' }}
+      <!-- the missing /p is closed by markdownify -->
+    {% endfor %}
+  {% endif %}
+
+  {% if page.legendary_actions %}
+    <p class="smallcaps" style="margin-bottom: 0;">Legendary Actions</p>
+
+    <hr class="compact">
+
+    <p>The creature can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The creature regains spent legendary actions at the start of its turn.</p>
+
+    {% for action in page.legendary_actions %}
+      <p class="compact hanging">
+        <strong>{{ action.name }}.</strong>
+        {{ action.text | append: '' | markdownify | remove_first: '<p>' }}
+      <!-- the missing /p is closed by markdownify -->
+    {% endfor %}
+  {% endif %}
+</section>
+
+{{ content }}

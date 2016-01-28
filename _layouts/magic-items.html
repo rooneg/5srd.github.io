@@ -2,42 +2,37 @@
 layout: ogl-notice
 ---
 
-<div class="col-md-5 pull-md-right">
-  {% assign magic_item_categories = (site.magic-items | group_by: 'category' | sort: 'name') %}
-  {% for magic_item_category in magic_item_categories %}
-    <div class="card">
-      <div class="card-block">
-        <table class="table table-sm">
-          <caption>{{ magic_item_category.name | capitalize }} Items</caption>
-          <thead>
-            <tr>
-              <th>Item</th>
-              <th class="text-sm-center">Rarity</th>
-            </tr>
-          </thead>
-          <tbody>
-          {% assign sorted_items = (magic_item_category.items | sort: 'title') %}
-          {% for magic_item in sorted_items %}
-            <tr>
-              <td>
-                <a href="{{ magic_item.url }}"><i>{{ magic_item.title | downcase }}</i></a>
-                {% if magic_item.requires_attunement %}
-                  <sup>T</sup>
-                {% endif %}
-                {% unless site.data.first_party_sources contains magic_item.source %}
-                  <span class="label label-info">Third-Party</span>
-                {% endunless %}
-              </td>
-              <td class="text-sm-center">
-                {{ magic_item.rarity }}
-              </td>
-            </tr>
-          {% endfor %}
-          </tbody>
-        </table>
-      </div>
-    </div>
-  {% endfor %}
-</div>
+{% assign magic_item_categories = (site.magic-items | group_by: 'category' | sort: 'name') %}
+{% for magic_item_category in magic_item_categories %}
+  <div class="marginnote">
+    <table class="fullwidth">
+      <thead>
+        <tr>
+          <th>{{ magic_item_category.name | capitalize }} Item</th>
+          <th style="text-align: center;">Rarity</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% assign sorted_items = (magic_item_category.items | sort: 'title') %}
+      {% for magic_item in sorted_items %}
+        <tr>
+          <td>
+            <a href="{{ magic_item.url }}"><i>{{ magic_item.title | downcase }}</i></a>
+            {% if magic_item.requires_attunement %}
+              <sup>T</sup>
+            {% endif %}
+            {% unless site.data.first_party_sources contains magic_item.source %}
+              <small>(Third-Party)</small>
+            {% endunless %}
+          </td>
+          <td style="text-align: center;">
+            {{ magic_item.rarity }}
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endfor %}
 
 {{ content }}

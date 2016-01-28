@@ -2,5 +2,6 @@
 title: Classes
 permalink: /classes/
 nav: true
-layout: classes
+layout: listing
+listing_collection: classes
 ---

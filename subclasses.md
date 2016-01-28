@@ -2,5 +2,6 @@
 title: Subclasses
 permalink: /subclasses/
 nav: true
-layout: subclasses
+layout: listing
+listing_collection: subclasses
 ---

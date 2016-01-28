@@ -2,49 +2,44 @@
 layout: ogl-notice
 ---
 
-<div class="col-md-4 pull-md-right">
-  {% assign monster_types = site.monsters | group_by: 'type' | sort: 'name' %}
-  {% for monster_type in monster_types %}
-    <div class="card">
-      <div class="card-block">
-        <table class="table table-sm">
-          <caption>{{ monster_type.name | capitalize }} Creatures</caption>
-          <thead>
-            <tr>
-              <th>Monster</th>
-              <th class="text-sm-center">Challenge</th>
-            </tr>
-          </thead>
-          <tbody>
-          {% for monster in monster_type.items %}
-            <tr>
-              <td>
-                <a href="{{ monster.url }}">{{ monster.title }}</a>
-                {% unless site.data.first_party_sources contains monster.source %}
-                  <span class="label label-info">Third-Party</span>
-                {% endunless %}
-              </td>
-              <td class="text-sm-center">
-                {% case monster.challenge %}
-                  {% when '---' %}
-                    &mdash;
-                  {% when 0.125 %}
-                    &#8539;
-                  {% when 0.25 %}
-                    &frac14;
-                  {% when 0.5 %}
-                    &frac12;
-                  {% else %}
-                    {{ monster.challenge }}
-                {% endcase %}
-              </td>
-            </tr>
-          {% endfor %}
-          </tbody>
-        </table>
-      </div>
-    </div>
-  {% endfor %}
-</div>
+{% assign monster_types = site.monsters | group_by: 'type' | sort: 'name' %}
+{% for monster_type in monster_types %}
+  <div class="marginnote">
+    <table class="fullwidth">
+      <thead>
+        <tr>
+          <th>{{ monster_type.name | capitalize }} Monster</th>
+          <th style="text-align: center;">Challenge</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for monster in monster_type.items %}
+        <tr>
+          <td>
+            <a href="{{ monster.url }}">{{ monster.title }}</a>
+            {% unless site.data.first_party_sources contains monster.source %}
+              <small>(Third-Party)</small>
+            {% endunless %}
+          </td>
+          <td style="text-align: center;">
+            {% case monster.challenge %}
+              {% when '---' %}
+                &mdash;
+              {% when 0.125 %}
+                &#8539;
+              {% when 0.25 %}
+                &frac14;
+              {% when 0.5 %}
+                &frac12;
+              {% else %}
+                {{ monster.challenge }}
+            {% endcase %}
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endfor %}
 
 {{ content }}

@@ -1,143 +1,219 @@
+
+/*
+================================================================================
+Headers
+================================================================================
+*/
+
+h1 {
+  font-size: 3.5rem;
+}
 h2 {
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  font-size: 36px;
+  font-size: 2.5rem;
+  width: 55%;
 }
-
-h2.h1,
-h2.h3,
-h2.h4,
-h2.h5,
-h2.h6 {
-  border: none;
-}
-
 h3 {
-  font-size: 30px;
-  margin-top: 1.5rem;
+  font-size: 2rem;
+  width: 55%;
 }
-
 h4 {
-  font-size: 24px;
-  font-weight: normal;
   font-style: italic;
-  margin-top: 1rem;
-}
-
-h5 {
-  font-size: 18px;
-  font-weight: normal;
-  margin-top: 1rem;
-  text-decoration: underline;
-}
-
-h6 {
-  font-size: 14px;
-  font-weight: normal;
-  margin-top: 1rem;
-  text-decoration: underline;
-}
-
-blockquote {
-  padding: 0.5rem 1rem;
-  margin-bottom: 1rem;
-  border-left: 0.25rem solid #eceeef;
-}
-
-caption {
-  caption-side: top;
-  text-align: center;
-  color: rgb(55, 58, 60);
-  font-style: italic;
-}
-
-table caption:before {
-  content: "Table: ";
-}
-
-table th, table td {
-  padding: 0.25rem;
-}
-
-.table-ability-scores thead td,
-.table-ability-scores thead th,
-.table-ability-scores tbody td,
-.table-ability-scores tbody th {
-  border: none;
-  text-align: center;
-  padding: 0.25rem;
-}
-
-.dl-horizontal dt {
-  clear: both;
-  margin-bottom: 0.5rem;
-}
-
-.navbar .navbar-nav .nav-item {
-  margin-left: 0.3rem;
-}
-
-.nav-tabs {
-  border-bottom: none;
-}
-
-.stats-standard {
-  font-size: 0.95rem;
-}
-
-.card-title {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.card :last-child {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
   margin-bottom: 0;
+  line-height: 1;
+  width: 55%;
+}
+h5 { width: 55%; }
+h6 { width: 55%; }
+
+/*
+================================================================================
+Rules
+================================================================================
+*/
+
+hr {
+  text-align: left;
+  width: 55%;
+  margin: 1rem auto 1rem 0;
+  border: 0;
+  border-top: 1px solid #aaa;
 }
 
-.card .compact {
-  margin-bottom: 0;
-  padding-top: 0;
+@media (max-width: 760px) {
+  hr {
+    margin-right: 0;
+    width: 90%;
+  }
 }
 
-.label {
-  font-size: 0.75em;
-  vertical-align: 0.15em;
-}
+/*
+================================================================================
+Typography and Spacing
+================================================================================
+*/
 
-h1 .label {
-  font-size: 0.5em;
-  vertical-align: 0.3em;
-}
-
-/* Utilities */
-
-.font-smallcaps {
+.smallcaps {
   font-variant: small-caps;
 }
 
+article {
+  padding-top: 0;
+}
+
+article > .marginnote,
+section > .marginnote,
+article > .sidenote,
+section > .sidenote {
+  width: 27.5%;
+  margin-right: 12%;
+  margin-bottom: 1rem;
+}
+
+caption,
+figcaption {
+  font-weight: bold;
+}
+
+ol p,
+li p {
+  margin: 0;
+  width: 100%;
+}
+
+blockquote {
+  border-left: 2px solid #999;
+  padding-left: 1rem;
+}
+
+blockquote + blockquote {
+  margin-top: 1rem;
+}
+
+.compact {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .hanging {
-  text-indent: -1rem;
-  margin-left: 1rem;
+  padding-left: 2rem;
+  text-indent: -2rem;
 }
 
-.m-t-half {
-  margin-top: 0.5rem;
+.statblock {
+  font-size: 1.2rem;
+  font-family: Calibri, sans-serif;
+  letter-spacing: .03em;
 }
 
-.m-b-half {
-  margin-bottom: 0.5rem;
+.statblock p,
+.statblock table,
+.statblock ul,
+.statblock ol {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
 }
 
-.m-y-half {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+/*
+================================================================================
+Tables
+================================================================================
+*/
+
+table {
+  overflow-x: scroll;
+  clear: left;
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin: 1.4rem 0;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+  -webkit-font-feature-settings: 'tnum'; /* This is technically redundant */
+  -moz-font-feature-settings: 'tnum';
+  -ms-font-feature-settings: 'tnum';
 }
 
-.p-y-half {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+td {
+  vertical-align: top;
+}
+
+th {
+  text-align: left;
+  border-bottom: 1px solid #AAAAAA;
+  font-weight: 400;
+}
+
+th + th,
+th + td,
+td + td,
+td + th {
+  padding-left: 1rem;
+}
+
+/*
+================================================================================
+Table of Contents
+========================================================================== ======
+*/
+
+.toc > i {
+  display: none;
+}
+
+.toc > ol {
+  margin-bottom: 1rem;
+}
+
+/*
+================================================================================
+Margin and Side Notes
+================================================================================
+*/
+
+.marginnote-toc {
+  margin-bottom: 0;
+}
+
+.marginnote-listing,
+article > .marginnote-listing,
+section > .marginnote-listing {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.marginnote-listing table {
+  margin-bottom: 0;
+}
+
+.marginnote ol,
+.marginnote ul,
+.sidenote ol,
+.sidenote ul {
+  width: 95%;
+  font-size: 1.1rem;
+  margin-left: 5%;
+}
+
+.marginnote li,
+.sidenote li {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media (max-width: 760px) {
+  .marginnote,
+  .sidenote,
+  article > .marginnote,
+  article > .sidenote {
+    display: block;
+    width: 90%;
+    margin: 1rem 10% 1rem 22.5%;
+  }
 }

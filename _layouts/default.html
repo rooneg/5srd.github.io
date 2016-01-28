@@ -7,9 +7,9 @@
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-    <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.3.0/octicons.min.css">
+    <link rel="stylesheet" href="/vendor/tufte-css/tufte.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.3.0/octicons.min.css">
 
     <!--[if lt IE 9]>
       <script src="/vendor/html5shiv/dist/html5shiv.min.js"></script>
@@ -18,62 +18,57 @@
     <![endif]-->
   </head>
   <body>
-    <nav class="navbar navbar-light bg-faded">
-      <div class="container">
-        <a class="navbar-brand m-r-0" href="/">{{ site.title }}</a>
-        <ul class="nav navbar-nav">
-          {% if page.collection %}
-            {% assign collection_url = page.collection | append: '/' | prepend: '/' %}
-            {% assign other_pages = site.pages | where: 'url', collection_url %}
-            {% for other_page in other_pages %}
-              <li class="nav-item">
-                <a class="nav-link" href="{{ other_page.url }}">&raquo; {{ other_page.title }}</a>
-              </li>
-            {% endfor %}
-          {% endif %}
-          {% if page.url != "/index.html" %}
-            <li class="nav-item active">
-              <a class="nav-link" href="{{ page.url }}">&raquo; {{ page.title }}</a>
-            </li>
-          {% endif %}
-        </ul>
-      </div>
+    <nav>
+      <p>
+        <a href="/">{{ site.title }}</a>
+        {% if page.collection %}
+          {% assign collection_url = page.collection | slugify | append: '/' | prepend: '/' %}
+          {% assign other_pages = site.pages | where: 'url', collection_url %}
+          {% for other_page in other_pages %}
+            &raquo; <a class="nav-link" href="{{ other_page.url }}"> {{ other_page.title }}</a>
+          {% endfor %}
+        {% endif %}
+        {% if page.url != "/index.html" %}
+          &raquo; <a class="nav-link" href="{{ page.url }}">{{ page.title }}</a>
+        {% endif %}
+      </p>
     </nav>
 
-    <p></p>
-
-    <div class="container">
+    <article>
       {% if page.title %}
-        <h1 class="display-4 m-b-1">
+        <h1>
           {{ page.title }}
           {% if page.subtitle %}<small>{{ page.subtitle }}</small>{% endif %}
           {% if page.source %}
             {% unless site.data.first_party_sources contains page.source %}
-              <span class="label label-info">Third-Party</span>
+              <small>(Third-Party)</small>
             {% endunless %}
           {% endif %}
         </h1>
       {% endif %}
 
       {% if page.source %}
-        <div class="card">
-          <div class="card-header">
-            <strong>Source:</strong> {{ page.source | markdownify | remove: '<p>' | remove: '</p>' }}
-          </div>
+        <div class="marginnote">
+          <strong>Source:</strong> {{ page.source | markdownify | remove: '<p>' | remove: '</p>' }}
         </div>
       {% endif %}
 
-      <div id="toc"></div>
+      <div class="marginnote toc-marginnote">
+        <div class="toc"></div>
+      </div>
 
       {{ content }}
-    </div>
+    </article>
 
     <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/vendor/jekyll-table-of-contents/toc.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
-        // $('#toc').toc();
+        $('.toc').toc({
+          headers: 'h2, h3',
+          showSpeed: 0,
+          noBackToTopLinks: true
+        });
     });
     </script>
   </body>

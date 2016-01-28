@@ -21,3 +21,6 @@
 [submodule "jekyll-table-of-contents"]
 	path = vendor/jekyll-table-of-contents
 	url = https://github.com/ghiculescu/jekyll-table-of-contents
+[submodule "tufte-css"]
+	path = vendor/tufte-css
+	url = https://github.com/edwardtufte/tufte-css.git

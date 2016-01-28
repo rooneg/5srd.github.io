@@ -1,0 +1,30 @@
+---
+layout: ogl-notice
+---
+
+{% assign item_groups = (site.collections[page.listing_collection].docs | group_by: 'group') %}
+{% for item_group in item_groups %}
+<div class="marginnote marginnote-listing">
+  <table class="fullwidth">
+    <thead>
+      <tr>
+        <th>{{ item_group.name | capitalize }} {{ page.title }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in item_group.items %}
+        <tr>
+          <td>
+            <a href="{{ item.url }}">{{ item.title }}</a>
+            {% unless site.data.first_party_sources contains item.source %}
+              <small>(Third-Party)</small>
+            {% endunless %}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endfor %}
+
+{{ content }}

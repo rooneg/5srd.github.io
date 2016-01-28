@@ -2,7 +2,8 @@
 title: Languages
 permalink: /languages/
 nav: true
-layout: languages
+layout: listing
+listing_collection: languages
 ---
 
 Your race indicates the languages your character can speak by default, and your background might give you access to one or more additional languages of your choice. Note these languages on your character sheet.

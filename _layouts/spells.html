@@ -2,7 +2,7 @@
 layout: ogl-notice
 ---
 
-<table class="table table-responsive">
+<table class="fullwidth">
   <caption>Spells</caption>
   <thead>
     <tr>
@@ -23,7 +23,7 @@ layout: ogl-notice
         <td>
           <i><a href="{{ spell.url }}">{{ spell.title | downcase }}</a></i>
           {% unless site.data.first_party_sources contains spell.source %}
-            <span class="label label-info">Third-Party</span>
+            <small>(Third-Party)</small>
           {% endunless %}
         </td>
         <td class="text-sm-center">{{ spell.level }} {% if spell.at_higher_levels %}<sup>A</sup>{% endif %}</td>

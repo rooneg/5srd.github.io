@@ -1,5 +1,7 @@
 ---
 title: Monsters
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 permalink: /monsters/
 nav: true
 layout: monsters
@@ -13,7 +15,7 @@ A monster can be Tiny, Small, Medium, Large, Huge, or Gargantuan. The Size Categ
 
 | Size       |         Space          | Examples            |
 |:-----------|:----------------------:|:--------------------|
-| Tiny       |    21⁄2 by 21⁄2 ft.    | Imp, sprite         |
+| Tiny       |   2-1⁄2 by 2-1⁄2 ft.   | Imp, sprite         |
 | Small      |       5 by 5 ft.       | Giant rat, goblin   |
 | Medium     |       5 by 5 ft.       | Orc, werewolf       |
 | Large      |      10 by 10 ft.      | Hippogriff, ogre    |

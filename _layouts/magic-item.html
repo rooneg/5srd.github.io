@@ -3,32 +3,24 @@ layout: ogl-notice
 ---
 
 {% unless page.category %}
-  <div class="alert alert-warning" role="alert">
-    This magic item is missing a category.
-  </div>
+  <p><i>This magic item is missing a category.</i></p>
 {% endunless %}
 
 {% unless page.rarity %}
-  <div class="alert alert-warning" role="alert">
-    This magic item is missing a rarity.
-  </div>
+  <p><i>This magic item is missing a rarity.</i></p>
 {% endunless %}
 
-<dl class="dl-horizontal row">
-    <dt class="col-sm-3 col-md-2">Category</dt>
-    <dd class="col-sm-9 col-md-10">{{ page.category }}</dd>
+<p><strong>Category:</strong> {{ page.category }}</p>
 
-  <dt class="col-sm-3 col-md-2">Rarity</dt>
-  <dd class="col-sm-9 col-md-10">{{ page.rarity }}</dd>
+<p><strong>Rarity:</strong> {{ page.rarity }}</p>
 
-  <dt class="col-sm-3 col-md-2">Attunement?</dt>
-  <dd class="col-sm-9 col-md-10">
-    {% if page.requires_attunement %}
-      Yes{% if page.attunement_conditions %}, {{ page.attunement_conditions }}{% endif %}
-    {% else %}
-      No
-    {% endif %}
-  </dd>
-</dl>
+<p>
+  <strong>Attunement:</strong>
+  {% if page.requires_attunement %}
+    Yes{% if page.attunement_conditions %}, {{ page.attunement_conditions }}{% endif %}
+  {% else %}
+    No
+  {% endif %}
+</p>
 
 {{ content }}

@@ -5,7 +5,7 @@ source: |
 class: Sorcerer
 features:
   - name: Dragon Ancestor
-    level:
+    level: 1
     text: |
       At 1st level, you choose one type of dragon as your ancestor. The damage type associated with each dragon is used by features you gain later.
 

@@ -1,8 +1,11 @@
 ---
 title: Races
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
 permalink: /races/
 nav: true
-layout: races
+layout: listing
+listing_collection: races
 ---
 
 The description of each race includes racial traits that are common to members of that race. The following entries appear among the traits of most races.
