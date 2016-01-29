@@ -127,6 +127,7 @@ Tables
 */
 
 table {
+  width: auto;
   overflow-x: scroll;
   clear: left;
   text-align: left;
@@ -138,6 +139,10 @@ table {
   -webkit-font-feature-settings: 'tnum'; /* This is technically redundant */
   -moz-font-feature-settings: 'tnum';
   -ms-font-feature-settings: 'tnum';
+}
+
+.stats-table {
+  min-width: 55%;
 }
 
 td {
@@ -154,7 +159,17 @@ th + th,
 th + td,
 td + td,
 td + th {
-  padding-left: 1rem;
+  padding-left: 2em;
+}
+
+@media (max-width: 760px) {
+  table {
+    max-width: 90%;
+  }
+
+  .stats-table {
+    width: 90%;
+  }
 }
 
 /*
@@ -191,6 +206,7 @@ section > .marginnote-listing {
 
 .marginnote-listing table {
   margin-bottom: 0;
+  width: 100%;
 }
 
 .marginnote ol,
