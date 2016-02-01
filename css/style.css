@@ -128,6 +128,7 @@ Tables
 
 table {
   width: auto;
+  max-width: 55%;
   overflow-x: scroll;
   clear: left;
   text-align: left;
