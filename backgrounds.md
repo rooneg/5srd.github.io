@@ -6,6 +6,7 @@ permalink: /backgrounds/
 nav: true
 layout: listing
 listing_collection: backgrounds
+group_listing_by: group
 ---
 
 Every story has a beginning. Your character's background reveals where you came from, how you became an adventurer, and your place in the world. Your fighter might have been a courageous knight or a grizzled soldier. Your wizard could have been a sage or an artisan. Your rogue might have gotten by as a guild thief or commanded audiences as a jester.

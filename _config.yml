@@ -3,16 +3,6 @@ title: 5srd
 baseurl: ""
 url: "http://5srd.com"
 
-markdown: redcarpet
-redcarpet:
-  extensions:
-    - no_intra_emphasis
-    - autolink
-    - tables
-    - with_toc_data
-    - footnotes
-    - smart
-
 exclude:
   - CNAME
   - CONTRIBUTING.md

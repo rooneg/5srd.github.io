@@ -6,6 +6,7 @@ permalink: /races/
 nav: true
 layout: listing
 listing_collection: races
+group_listing_by: group
 ---
 
 The description of each race includes racial traits that are common to members of that race. The following entries appear among the traits of most races.

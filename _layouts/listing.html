@@ -2,7 +2,7 @@
 layout: ogl-notice
 ---
 
-{% assign item_groups = (site.collections[page.listing_collection].docs | group_by: 'group') %}
+{% assign item_groups = (site[page.listing_collection] | group_by: page.group_listing_by) %}
 {% for item_group in item_groups %}
 <div class="marginnote marginnote-listing">
   <table class="fullwidth">
