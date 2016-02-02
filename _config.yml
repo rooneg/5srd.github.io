@@ -28,6 +28,11 @@ defaults:
       layout: class
   - scope:
       path: ""
+      type: equipment
+    values:
+      layout: equipment
+  - scope:
+      path: ""
       type: languages
     values:
       layout: language
@@ -71,6 +76,9 @@ collections:
     permalink: /:collection/:title/
     output: true
   diseases:
+    permalink: /:collection/:title/
+    output: true
+  equipment:
     permalink: /:collection/:title/
     output: true
   languages:

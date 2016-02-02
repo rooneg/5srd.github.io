@@ -1,0 +1,13 @@
+{% assign cp_cost = include.cost | times: 100 %}
+{% assign sp_cost = include.cost | times: 10 %}
+{% if include.cost == '---' %}
+  &mdash;
+{% elsif include.cost == 'varies' %}
+  varies
+{% elsif cp_cost < 10 %}
+  {{ cp_cost | append: '' | remove: '.0' }} cp
+{% elsif sp_cost < 10 %}
+  {{ sp_cost | append: '' | remove: '.0' }} sp
+{% else %}
+  {{ include.cost }} gp
+{% endif %}

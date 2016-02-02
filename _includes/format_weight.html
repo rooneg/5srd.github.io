@@ -1,0 +1,9 @@
+{% if include.weight == '---' %}
+  &mdash;
+{% elsif include.weight == 'varies' %}
+  varies
+{% elsif include.weight == 'special' %}
+  special
+{% else %}
+  {{ include.weight }} {% if include.weight == 1 %}lb.{% else %}lbs.{% endif %}
+{% endif %}

@@ -1,0 +1,61 @@
+---
+layout: ogl-notice
+---
+
+{% unless page.category %}
+  <p><i>This equipment is missing a category.</i></p>
+{% endunless %}
+
+<p>
+  <strong>Category:</strong>
+  {{ page.category }}
+  {% if page.subcategory %}
+    ({{ page.subcategory }})
+  {% endif %}
+</p>
+
+{% if page.category == 'Armor' %}
+  <p>
+    <strong>Armor Class:</strong>
+    {% if armor.subcategory == 'Shield' %}+{% endif %}{{ armor.armor_class }}
+    {% unless armor.subcategory == 'Heavy' %}
+      + Dex {% if armor.subcategory == 'Medium' %}(max 2){% endif %}
+    {% endunless %}
+  </p>
+
+  <p>
+    <strong>Strength:</strong>
+    {% if armor.strength_requirement == '---' %}&mdash;{% else %}{{ armor.strength_requirement }}{% endif %}
+  </p>
+
+  <p>
+    <strong>Stealth:</strong>
+    {% if armor.stealth_disadvantage %}Disadvantage{% else %}&mdash;{% endif %}
+  </p>
+{% endif %}
+
+{% if page.category == 'Weapon' %}
+  <p>
+    <strong>Damage:</strong>
+    {{ page.damage }} ({{ page.damage_type }})
+  </p>
+
+  <p>
+    <strong>Properties:</strong>
+    {% if page.properties %}
+      {{ page.properties | array_to_sentence_string }}
+    {% endif %}
+  </p>
+{% endif %}
+
+<p>
+  <strong>Cost:</strong>
+  {% include format_cost.html cost=page.cost %}
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  {% include format_weight.html weight=page.weight %}
+</p>
+
+{{ content }}
