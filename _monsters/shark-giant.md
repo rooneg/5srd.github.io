@@ -43,4 +43,4 @@ actions:
 >
 > Among the largest of predatory fish, giant sharks speed through the world's oceans, perpetually hunting.
 >
-> One of the most notorious maneaters of the sea, the truly immense giant shark can reach lengths of more than 20 ft. and weigh up to 5000 lbs. The giant shark is a predator with a well known taste for human flesh.
+> One of the most notorious maneaters of the sea, the truly immense giant shark can reach lengths of more than 20 ft. and weigh up to 5000 lb. The giant shark is a predator with a well known taste for human flesh.
