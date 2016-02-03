@@ -60,7 +60,7 @@ The table shows the cost, weight, and other properties of the common types of ar
 {% assign armor_groups = site.equipment | where: 'category', 'Armor' | group_by: 'subcategory' %}
 {% for armor_group in armor_groups %}
   {% assign armors_sorted = armor_group.items | sort: 'title' %}
-  <table>
+  <table class="fullwidth">
     <thead>
       <tr>
         <th>{{ armor_group.name }} {% if armor_group.name != 'Shield' %}armors{% endif %}</th>
@@ -115,7 +115,7 @@ The table shows the most common weapons used in the fantasy gaming worlds, their
 {% assign weapon_groups = site.equipment | where: 'category', 'Weapon' | group_by: 'subcategory' %}
 {% for weapon_group in weapon_groups %}
   {% assign weapons_sorted = weapon_group.items | sort: 'title' %}
-  <table>
+  <table class="fullwidth">
     <thead>
       <tr>
         <th>{{ weapon_group.name }} weapons</th>
@@ -129,7 +129,7 @@ The table shows the most common weapons used in the fantasy gaming worlds, their
       {% for weapon in weapons_sorted %}
         <tr>
           <td><a href="{{ weapon.url }}">{{ weapon.title }}</a></td>
-          <td>{{ weapon.damage }} ({{ weapon.damage_type }})</td>
+          <td>{{ weapon.damage }} {{ weapon.damage_type }}</td>
           <td>{% if weapon.properties %}{{ weapon.properties | array_to_sentence_string }}{% else %}&mdash;{% endif %}</td>
           <td style="text-align: right;">{% include format_cost.html cost=weapon.cost %}</td>
           <td style="text-align: right;">{% include format_weight.html weight=weapon.weight %}</td>
