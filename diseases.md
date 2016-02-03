@@ -2,7 +2,6 @@
 title: Diseases
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
-permalink: /diseases/
 nav: true
 layout: listing
 listing_collection: diseases

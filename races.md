@@ -2,7 +2,6 @@
 title: Races
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
-permalink: /races/
 nav: true
 layout: listing
 listing_collection: races

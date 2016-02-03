@@ -1,6 +1,5 @@
 ---
 title: Languages
-permalink: /languages/
 nav: true
 layout: listing
 listing_collection: languages

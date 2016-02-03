@@ -2,7 +2,6 @@
 title: Beyond 1st Level
 source: |
  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
-permalink: /beyond-1st-level/
 nav: true
 layout: ogl-notice
 ---

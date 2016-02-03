@@ -2,7 +2,6 @@
 title: Character Details
 source: |
  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
-permalink: /character-details/
 nav: true
 layout: ogl-notice
 ---

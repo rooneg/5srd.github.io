@@ -2,7 +2,6 @@
 title: Poisons
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
-permalink: /poisons/
 nav: true
 layout: poisons
 ---

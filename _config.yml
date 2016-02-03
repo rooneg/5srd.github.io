@@ -14,7 +14,7 @@ exclude:
 keep_files:
   - vendor
 
-permalink: /:title/
+permalink: pretty
 
 defaults:
   - scope:
@@ -73,6 +73,9 @@ collections:
     permalink: /:collection/:title/
     output: true
   classes:
+    permalink: /:collection/:title/
+    output: true
+  conditions:
     permalink: /:collection/:title/
     output: true
   diseases:

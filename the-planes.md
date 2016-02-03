@@ -2,7 +2,6 @@
 title: The Planes
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
-permalink: /the-planes/
 nav: true
 layout: ogl-notice
 ---

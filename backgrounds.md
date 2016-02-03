@@ -2,7 +2,6 @@
 title: Backgrounds
 source: |
   [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
-permalink: /backgrounds/
 nav: true
 layout: listing
 listing_collection: backgrounds
