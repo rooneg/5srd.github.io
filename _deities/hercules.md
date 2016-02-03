@@ -1,0 +1,14 @@
+---
+title: Hercules
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
+descriptor: god
+portfolio: strength and adventure
+alignment: chaotic good
+domains:
+  - Tempest
+  - War
+symbol: lion's head
+pantheons:
+  - Greek
+---

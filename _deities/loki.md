@@ -1,0 +1,13 @@
+---
+title: Loki
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
+descriptor: god
+portfolio: thieves and trickery
+alignment: chaotic evil
+domains:
+  - Trickery
+symbol: flame
+pantheons:
+  - Norse
+---

@@ -1,0 +1,43 @@
+---
+layout: ogl-notice
+---
+
+{% assign domains_text = '' %}
+{% for domain in page.domains %}
+  {% assign domain_subclass_title = domain | append: ' Domain' %}
+  {% assign matching_domain = site.subclasses | where: 'title', domain_subclass_title | first %}
+  {% capture domains_text %}{{ domains_text }}|{% if matching_domain %}<a href="{{ matching_domain.url }}">{% endif %}{{ domain }}{% if matching_domain %}</a>{% endif %}{% endcapture %}
+{% endfor %}
+
+{% assign pantheons_text = '' %}
+{% for pantheon in page.pantheons %}
+  {% assign matching_pantheon = site.pantheons | where: 'title', pantheon | first %}
+  {% capture pantheons_text %}{{ pantheons_text }}|{% if matching_pantheon %}<a href="{{ matching_pantheon.url }}">{% endif %}{{ pantheon }}{% if matching_pantheon %}</a>{% endif %}{% endcapture %}
+{% endfor %}
+
+<p>
+  <strong>Pantheons:</strong>
+  {{ pantheons_text | remove_first: '|' | split: '|' | join: ', ' }}
+</p>
+
+<p>
+  <strong>Portfolio:</strong>
+  {{ page.descriptor | capitalize }} of {{ page.portfolio }}
+</p>
+
+<p>
+  <strong>Alignment:</strong>
+  {{ page.alignment }}
+</p>
+
+<p>
+  <strong>Domains:</strong>
+  {{ domains_text | remove_first: '|' | split: '|' | join: ', ' }}
+</p>
+
+<p>
+  <strong>Symbol:</strong>
+  {{ page.symbol }}
+</p>
+
+{{ content }}

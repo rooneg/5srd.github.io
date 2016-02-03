@@ -1,0 +1,35 @@
+---
+layout: ogl-notice
+---
+
+<table>
+  <thead>
+    <tr>
+      <th>{{ page.title }} Deities</th>
+      <th>Portfolio</th>
+      <th>Alignment</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for deity in site.deities %}
+    {% if deity.pantheons contains page.title %}
+      <tr>
+        <td>
+          <a href="{{ deity.url }}">{{ deity.title }}</a>
+          {% unless site.data.first_party_sources contains deity.source %}
+            <small>(Third-Party)</small>
+          {% endunless %}
+        </td>
+        <td>
+          {{ deity.descriptor }} of {{ deity.portfolio }}
+        </td>
+        <td>
+          {{ deity.alignment }}
+        </td>
+      </tr>
+    {% endif %}
+  {% endfor %}
+  </tbody>
+</table>
+
+{{ content }}

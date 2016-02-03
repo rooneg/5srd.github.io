@@ -28,6 +28,11 @@ defaults:
       layout: class
   - scope:
       path: ""
+      type: deities
+    values:
+      layout: deity
+  - scope:
+      path: ""
       type: equipment
     values:
       layout: equipment
@@ -46,6 +51,11 @@ defaults:
       type: monsters
     values:
       layout: monster
+  - scope:
+      path: ""
+      type: pantheons
+    values:
+      layout: pantheon
   - scope:
       path: ""
       type: poisons
@@ -78,6 +88,9 @@ collections:
   conditions:
     permalink: /:collection/:title/
     output: true
+  deities:
+    permalink: /:collection/:title/
+    output: true
   diseases:
     permalink: /:collection/:title/
     output: true
@@ -94,6 +107,9 @@ collections:
     permalink: /:collection/:title/
     output: true
   npcs:
+    permalink: /:collection/:title/
+    output: true
+  pantheons:
     permalink: /:collection/:title/
     output: true
   poisons:

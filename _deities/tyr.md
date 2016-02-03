@@ -1,0 +1,14 @@
+---
+title: Tyr
+source: |
+  [System Reference Document 5.0](https://dnd.wizards.com/articles/features/systems-reference-document-srd)
+descriptor: god
+portfolio: courage and strategy
+alignment: lawful neutral
+domains:
+  - Knowledge
+  - War
+symbol: sword
+pantheons:
+  - Norse
+---
