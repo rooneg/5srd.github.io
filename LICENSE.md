@@ -213,6 +213,7 @@ Open Game License v 1.0a Copyright 2000, Wizards of the Coast, Inc.
 - *Relics & Rituals*, Copyright 2001, Clark Peterson.
 - *Wilderness & Wastelands: Scarred Lands Encounters*, Copyright 2002, White Wolf Publishing, Inc.
 - *Gauntlet of Spiragos*, Copyright 2014, Onyx Path and Nocturnal Publishing, LLC.
+- [EN World TRAILSEEKER & EN World EN5IDER](http://www.enworld.org/ensider/ensider_ogl.pdf), Copyright 2015, EN Publishing. Managing Editor Russ Morrissey. See [www.enworld.org/ensider/index.html](www.enworld.org/ensider/index.html).
 
 - *5srd*, Copyright 2016, Drumanagh Wilpole.
 
