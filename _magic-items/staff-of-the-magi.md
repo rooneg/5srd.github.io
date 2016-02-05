@@ -5,7 +5,7 @@ source: |
 category: Staff
 rarity: legendary
 requires_attunement: true
-attunement_conditions: by a sorcerer, warlock, or wizard
+attunement_conditions: by a [sorcerer](/classes/sorcerer/), [warlock](/classes/warlock/), or [wizard](/classes/wizard/)
 ---
 
 This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While you hold it, you gain a +2 bonus to spell attack rolls.

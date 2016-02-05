@@ -5,7 +5,7 @@ source: |
 category: Staff
 rarity: rare
 requires_attunement: true
-attunement_conditions: by a druid
+attunement_conditions: by a [druid](/classes/druid/)
 ---
 
 This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While holding it, you have a +2 bonus to spell attack rolls.

@@ -5,7 +5,7 @@ source: |
 category: Staff
 rarity: very rare
 requires_attunement: true
-attunement_conditions: by a druid, sorcerer, warlock, or wizard
+attunement_conditions: by a [druid](/classes/druid/), [sorcerer](/classes/sorcerer/), [warlock](/classes/warlock/), or [wizard](/classes/wizard/)
 ---
 
 You have resistance to fire damage while you hold this staff.

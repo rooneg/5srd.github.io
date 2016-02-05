@@ -5,7 +5,7 @@ source: |
 category: Staff
 rarity: rare
 requires_attunement: true
-attunement_conditions: by a bard, cleric, druid, sorcerer, warlock, or wizard
+attunement_conditions: by a [bard](/classes/bard/), [cleric](/classes/cleric/), [druid](/classes/druid/), [sorcerer](/classes/sorcerer/), [warlock](/classes/warlock/), or [wizard](/classes/wizard/)
 ---
 
 This staff has 10 charges and regains 1d6+4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, a swarm of insects consumes and destroys the staff, then disperses.

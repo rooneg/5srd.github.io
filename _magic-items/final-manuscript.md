@@ -6,7 +6,7 @@ category: Wondrous
 subcategory: spellbook
 rarity: very rare
 requires_attunement: true
-attunement_conditions: by a cleric, druid, sorcerer, or wizard
+attunement_conditions: by a [cleric](/classes/cleric/), [druid](/classes/druid/), [sorcerer](/classes/sorcerer/), or [wizard](/classes/wizard/)
 ---
 
 {% include pinotice.html %}

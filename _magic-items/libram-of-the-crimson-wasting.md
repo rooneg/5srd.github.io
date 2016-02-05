@@ -6,7 +6,7 @@ category: Wondrous
 subcategory: spellbook
 rarity: very rare
 requires_attunement: true
-attunement_conditions: by a bard, cleric, druid, sorcerer, warlock, or wizard
+attunement_conditions: by a [bard](/classes/bard/), [cleric](/classes/cleric/), [druid](/classes/druid/), [sorcerer](/classes/sorcerer/), [warlock](/classes/warlock/), or [wizard](/classes/wizard/)
 ---
 
 When a creature within 60 feet of you deals damage to you with a spell, you may spend a spell slot as a reaction to infect them with the [crimson wasting](/diseases/crimson-wasting/). The Constitution saving throw DC to resist this disease is equal to 10 + the level of the expended spell slot. A creature that succeeds a saving throw against the crimson wasting is immune to further infections for 24 hours.

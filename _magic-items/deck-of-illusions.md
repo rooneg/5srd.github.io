@@ -18,7 +18,7 @@ The illusion lasts until its card is moved or the illusion is dispelled. When th
 |:------------------|:---------------------------------|
 | King of hearts    | Knight and four guards           |
 | Queen of hearts   | Succubus or incubus              |
-| Jack of hearts    | Druid                            |
+| Jack of hearts    | [Druid](/classes/druid/)         |
 | Ten of hearts     | Cloud giant                      |
 | Nine of hearts    | Ettin                            |
 | Two of hearts     | Goblin                           |
@@ -30,8 +30,8 @@ The illusion lasts until its card is moved or the illusion is dispelled. When th
 | Jack of diamonds  | Assassin                         |
 | Ten of diamonds   | Fire giant                       |
 | Nine of diamonds  | Ogre mage                        |
-| Eight of diamonds | Gnoll                            |
-| Two of diamonds   | Kobold                           |
+| Eight of diamonds | [Gnoll](/monsters/gnoll/)        |
+| Two of diamonds   | [Kobold](/monsters/kobold/)      |
 | Ace of spades     | Lich                             |
 | King of spades    | Priest and two acolytes          |
 | Queen of spades   | Medusa                           |

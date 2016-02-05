@@ -6,7 +6,7 @@ category: Weapon
 subcategory: any sword
 rarity: legendary
 requires_attunement: true
-attunement_conditions: by a paladin
+attunement_conditions: by a [paladin](/classes/paladin/)
 ---
 
 You gain a +3 bonus to attack and damage rolls made with this magic weapon. When you hit a fiend or an undead with it, that creature takes an extra 2d10 radiant damage.

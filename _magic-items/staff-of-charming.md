@@ -5,7 +5,7 @@ source: |
 category: Staff
 rarity: rare
 requires_attunement: true
-attunement_conditions: by a bard, cleric, druid, sorcerer, warlock, or wizard
+attunement_conditions: by a [bard](/classes/bard/), [cleric](/classes/cleric/), [druid](/classes/druid/), [sorcerer](/classes/sorcerer/), [warlock](/classes/warlock/), or [wizard](/classes/wizard/)
 ---
 
 While holding this staff, you can use an action to expend 1 of its 10 charges to cast [*charm person*](/spells/charm-person/), [*command*](/spells/command/), or [*comprehend languages*](/spells/comprehend-languages/) from it using your spell save DC. The staff can also be used as a magic quarterstaff.

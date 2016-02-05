@@ -37,7 +37,6 @@ Once a card is drawn, it fades from existence. Unless the card is the Fool or th
 | Joker (with TM)    | Fool*       |
 | Joker (without TM) | Jester      |
 
-
 [^1]: Found only in a deck with twenty-two cards
 
 **Balance.** Your mind suffers a wrenching alteration, causing your alignment to change. Lawful becomes chaotic, good becomes evil, and vice versa. If you are true neutral or unaligned, this card has no effect on you.
@@ -62,7 +61,7 @@ Once a card is drawn, it fades from existence. Unless the card is the Fool or th
 
 **Key.** A rare or rarer magic weapon with which you are proficient appears in your hands. The GM chooses the weapon.
 
-**Knight.** You gain the service of a 4th-level fighter who appears in a space you choose within 30 feet of you. The fighter is of the same race as you and serves you loyally until death, believing the fates have drawn him or her to you. You control this character.
+**Knight.** You gain the service of a 4th-level [fighter](/classes/fighter/) who appears in a space you choose within 30 feet of you. The [fighter](/classes/fighter/) is of the same race as you and serves you loyally until death, believing the fates have drawn him or her to you. You control this character.
 
 **Moon.** You are granted the ability to cast the wish spell 1d3 times.
 

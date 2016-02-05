@@ -5,7 +5,7 @@ source: |
 category: Staff
 rarity: rare
 requires_attunement: true
-attunement_conditions: by a cleric, druid, or warlock
+attunement_conditions: by a [cleric](/classes/cleric/), [druid](/classes/druid/), or warlock
 ---
 
 This staff has 3 charges and regains 1d3 expended charges daily at dawn.
