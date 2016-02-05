@@ -1,7 +1,7 @@
 ---
 title: Elemental, Magma
 source: |
-  [*EN World EN5ider*, "Epic Threats: Elementals"](https://www.patreon.com/posts/4229783)
+  [*EN World EN5IDER*, "Epic Threats: Elementals"](https://www.patreon.com/posts/4229783)
 size: Huge
 type: elemental
 alignment: neutral
