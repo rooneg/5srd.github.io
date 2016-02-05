@@ -10,14 +10,14 @@ layout: ogl-notice
   <p><i>This magic item is missing a rarity.</i></p>
 {% endunless %}
 
-<p><strong>Category:</strong> {{ page.category }}</p>
+<p><strong>Category:</strong> {{ page.category }} {% if page.subcategory %}({{ page.subcategory }}){% endif %}</p>
 
 <p><strong>Rarity:</strong> {{ page.rarity }}</p>
 
 <p>
   <strong>Attunement:</strong>
   {% if page.requires_attunement %}
-    Yes{% if page.attunement_conditions %}, {{ page.attunement_conditions }}{% endif %}
+    Yes{% if page.attunement_conditions %}, {{ page.attunement_conditions | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}
   {% else %}
     No
   {% endif %}
