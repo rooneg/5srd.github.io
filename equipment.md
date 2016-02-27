@@ -38,7 +38,7 @@ Opportunities abound to find treasure, equipment, weapons, armor, and more in th
 
 **Trade Goods.** On the borderlands, many people conduct transactions through barter. Like gems and art objects, trade goods---bars of iron, bags of salt, livestock, and so on---retain their full value in the market and can be used as currency.
 
-### Armor
+## Armor
 
 Fantasy gaming worlds are a vast tapestry made up of many different cultures, each with its own technology level. For this reason, adventurers have access to a variety of armor types, ranging from leather armor to chain mail to costly plate armor, with several other kinds of armor in between. The Armor table collects the most commonly available types of armor found in the game and separates them into three categories: light armor, medium armor, and heavy armor. Many warriors supplement their armor with a shield.
 
@@ -90,7 +90,7 @@ The table shows the cost, weight, and other properties of the common types of ar
   </table>
 {% endfor %}
 
-#### Getting Into and Out of Armor
+### Getting Into and Out of Armor
 
 The time it takes to don or doff armor depends on the armor's category.
 
